@@ -786,7 +786,6 @@ p {
     }
     @media all and (min-width: 1560px) {
       width: 80vw;
-      z-index: 2000;
       margin: 0 7vw;
     }
   }
@@ -823,7 +822,7 @@ p {
         border-radius: 100px;
         font-size: 1.35rem;
         font-weight: 300;
-        background-color: rgb(0, 0, 0);
+        // background-color: rgb(0, 0, 0);
         text-decoration: none;
         transition: all 0.4s ease-in-out;
         filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
@@ -831,8 +830,7 @@ p {
           font-size: 1.6rem;
         }
       }
-      .cta-btn,
-      .cta-btnTouch {
+      .cta-btn {
         background-color: black;
         color: white;
         filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));

@@ -1,5 +1,5 @@
 #mainContainer {
-  z-index: 0;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,6 @@
   background-size: cover;
   &::after {
     border-radius: 20px;
-    z-index: 1;
     content: '';
     position: absolute;
     top: 0;
@@ -61,16 +60,17 @@
     }
   }
   #todoForm {
+    z-index: 13;
     margin: 0 auto;
     max-width: 80%;
     width: 100%;
     display: flex;
-    z-index: 900;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     height: fit-content;
     #todoText {
+      z-index: 13;
       height: 2rem;
       width: 50%;
       margin: 0.25vh 0;
@@ -86,7 +86,6 @@
       -webkit-backdrop-filter: blur(20px);
       box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.439);
       outline: none;
-      opacity: 0;
       opacity: 1;
       font-size: 1.2rem;
       padding: 0.2rem 0.6rem;
@@ -98,6 +97,7 @@
       }
     }
     button {
+      z-index: 13;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -126,6 +126,7 @@
       }
     }
     .checkbox {
+      z-index: 13;
       border: 1px solid #00adb5;
       display: flex;
       justify-content: center;
@@ -176,12 +177,12 @@
   position: relative;
   align-items: center;
   flex-direction: row;
-  z-index: 2;
+  z-index: 125;
   padding: 0.5rem;
   height: fit-content;
   opacity: 1;
   .filterImportanceButton {
-    z-index: 15;
+    z-index: 125;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +242,7 @@
   }
 }
 #todoListContent {
-  z-index: 2;
+  z-index: 4;
   display: block;
   align-items: center;
   height: 50%;

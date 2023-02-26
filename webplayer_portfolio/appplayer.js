@@ -43,7 +43,8 @@ const songs = [
     musicName: 'tulip',
     artist: 'escapingSamsara',
     // cover: '../webplayer_portfolio/img/song-img/compressedSongImg/tulip.png',
-    cover: 'https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2',
+    cover:
+      'https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2',
   },
   {
     // path: '../webplayer_portfolio/audioFiles/float_mastered_v1.mp3',
@@ -51,34 +52,38 @@ const songs = [
     musicName: 'float',
     artist: 'escapingSamsara',
     // cover: '../webplayer_portfolio/img/song-img/compressedSongImg/float.jpg',
-    cover: 'https://docs.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
+    cover:
+      'https://docs.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
   },
   {
     // path: '../webplayer_portfolio/audioFiles/todayisagift_audio.mp3',
     path: 'https://docs.google.com/uc?export=download&id=1bI2bCYoF7r5W9mS_UzbYXazGw8RclmFi',
     musicName: 'today is a gift',
     artist: 'escapingSamsara',
+    // cover:
+    // '../webplayer_portfolio/img/song-img/compressedSongImg/todayisagift2.png',
     cover:
-      // '../webplayer_portfolio/img/song-img/compressedSongImg/todayisagift2.png',
-    cover: 'https://docs.google.com/uc?export=download&id=1FDxXqUxkwt-HWk1uEo0Vt8l82zs3H3z2',
+      'https://docs.google.com/uc?export=download&id=1FDxXqUxkwt-HWk1uEo0Vt8l82zs3H3z2',
   },
   {
     // path: '../webplayer_portfolio/audioFiles/themessage_audio.mp3',
     path: 'https://docs.google.com/uc?export=download&id=1_zuMc6KCqCrN7o8cvUU1I-NT58U1ra0Q ',
     musicName: 'the message',
     artist: 'escapingSamsara',
+    // cover:
+    // '../webplayer_portfolio/img/song-img/compressedSongImg/themessage.png',
     cover:
-      // '../webplayer_portfolio/img/song-img/compressedSongImg/themessage.png',
-    cover: 'https://docs.google.com/uc?export=download&id=14vrB6AKaF6sNx7zT4kNoKboVAAQfC541',
+      'https://docs.google.com/uc?export=download&id=14vrB6AKaF6sNx7zT4kNoKboVAAQfC541',
   },
   {
     // path: '../webplayer_portfolio/audioFiles/vanillaicecream_audio.mp3',
     path: 'https://docs.google.com/uc?export=download&id=17h8mMXdi6tsgT2TAS9XfvbX6eLOnUfPa',
     musicName: 'vanilla icecream',
     artist: 'escapingSamsara',
+    // cover:
+    // '../webplayer_portfolio/img/song-img/compressedSongImg/vanillaicecream.png',
     cover:
-      // '../webplayer_portfolio/img/song-img/compressedSongImg/vanillaicecream.png',
-    cover: 'https://docs.google.com/uc?export=download&id=11XRdNATAeM-QKTiNbNqhb25Cdsey2KZX',
+      'https://docs.google.com/uc?export=download&id=11XRdNATAeM-QKTiNbNqhb25Cdsey2KZX',
   },
 ]
 //----------------------------------------

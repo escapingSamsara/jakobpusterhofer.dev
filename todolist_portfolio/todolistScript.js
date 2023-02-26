@@ -4,7 +4,6 @@ window.addEventListener('load', function () {
   const objects = []
   const myTodoForm = document.querySelector('#todoForm')
   let _idCounter = 0
-
   // MOCKUP OBJECT Array
   const mockupObjectArray = [
     {
@@ -31,30 +30,16 @@ window.addEventListener('load', function () {
       isImportant: false,
       date: getDate(),
     },
-    // {
-    //   id: 'todoElement_4',
-    //   text: 'practice guitar',
-    //   isImportant: true,
-    //   date: getDate(),
-    // },
-    // {
-    //   id: 'todoElement_5',
-    //   text: 'practice coding',
-    //   isImportant: true,
-    //   date: getDate(),
-    // },
   ]
   mockupObjectArray.forEach((object) => {
     renderHtmlContent(object)
     objects.push(object)
   })
-
   // SUBMIT Button and Main Logic and Object
   myTodoForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const todoTextVal = document.querySelector('#todoText').value
     const todoCheckboxChecked = document.querySelector('#todoCheckbox').checked
-
     //Putting Output in an Object and the Object in an array
     const object = {
       id: `todoElement_${_idCounter}`,
@@ -64,11 +49,9 @@ window.addEventListener('load', function () {
     }
     renderHtmlContent(object)
     objects.push(object)
-
     //reset form entries on submit
     myTodoForm.reset()
   })
-
   //FUNCTIONS
   //DATE Function
   function getDate() {
@@ -96,7 +79,6 @@ window.addEventListener('load', function () {
     textKeyElement.classList.add('todoText')
     textKeyElement.innerText = `${object.text}`
     todoElement.append(textKeyElement)
-
     //span for IMPORTANCE SIGN (svg)
     const importantSign = document.createElement('span')
     todoElement.append(importantSign)
@@ -111,13 +93,11 @@ window.addEventListener('load', function () {
       importantSVG.src = './todolist_portfolio/img/important-svg5.svg'
       importantSign.append(importantSVG)
     }
-
     //Date Element
     const dateElement = document.createElement('p')
     dateElement.innerText = `${object.date}`
     todoElement.append(dateElement)
     dateElement.classList.add('dateElement')
-
     //Delete Button
     const btnElement = document.createElement('button')
     btnElement.innerText = `done`
@@ -133,7 +113,6 @@ window.addEventListener('load', function () {
         todoElement.remove()
       })
   }
-
   let isFirstClick = true
   //Filter Todos (important not important toggle)
   const filterImportanceBtn = document.querySelector('.filterImportanceButton')
@@ -151,7 +130,4 @@ window.addEventListener('load', function () {
       })
     }
   })
-  // const todoWrapperImportant = document.querySelectorAll(
-  //   '.todoWrapperImportant'
-  // )
 })

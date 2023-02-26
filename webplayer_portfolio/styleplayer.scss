@@ -1,11 +1,9 @@
 /* GLOBAL SETTINGS for MAIN CSS ALSO !*/
-
 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 p {
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
@@ -13,13 +11,6 @@ p {
   text-align: justify;
   hyphens: auto;
 }
-
-// h1 {
-//   font-size: 4rem;
-//   font-weight: 600;
-//   color: white;
-//   text-transform: lowercase;
-// }
 h2 {
   font-size: 10px;
   font-weight: 400;
@@ -28,7 +19,6 @@ h2 {
   letter-spacing: 0;
   color: white;
 }
-
 h3 {
   font-size: 10px;
   color: white;
@@ -37,22 +27,6 @@ h3 {
   letter-spacing: 0;
   margin: 2px;
 }
-
-// body {
-//   background-color: black;
-//   justify-content: center;
-//   /* display: flex; */
-// }
-/* EXTRA CSS ONLY FOR FINALIZING SIZING OF PLAYER START -----------------------*/
-/* body {
-  height: 100vh;
-}
-#wrapper {
-  display: flex;
-  align-items: center;
-} */
-/* EXTRA CSS ONLY FOR FINALIZING SIZING OF PLAYER END -------------------------*/
-
 #music {
   margin: 0 auto;
   display: flex;
@@ -70,10 +44,8 @@ h3 {
 #music .music-bottom-holder {
   // border: solid 2px white;
   position: relative;
-  // height: 50vh;
   width: 50vw;
 }
-
 #music .musica-player {
   position: absolute;
   top: 50%;
@@ -87,7 +59,6 @@ h3 {
   padding: 0;
   // border: 1px solid white;
 }
-
 #background {
   height: 280px;
   max-width: 500px;
@@ -103,11 +74,9 @@ h3 {
   // border: 1px solid #ffffff;
   border: 2px outset rgba(255, 255, 255, 0.3);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-
   filter: brightness(220%);
   filter: saturate(1.25);
 }
-
 /* PLAYER CONTAINER, CONTAINING ALL CONTROLS AND TITLE, ARTIST AND SPINNING COVER */
 #music .player-container {
   margin: auto;
@@ -120,7 +89,6 @@ h3 {
   justify-content: center;
   border-radius: 30px;
 }
-
 #music .img-container {
   max-width: 120px;
   max-height: 120px;
@@ -129,9 +97,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  // mix-blend-mode: normal;
 }
-
 #circle-vinyl {
   position: absolute;
   display: flex;
@@ -142,7 +108,6 @@ h3 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
   #playerDot {
     position: absolute;
     box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.688);
@@ -184,7 +149,6 @@ h3 {
     box-shadow: #292929 1px 1px 4px;
   }
 }
-
 /* VINYL CONTAINER EFFECTS --------------------------------------------*/
 #music .img-container img {
   height: 100%;
@@ -195,7 +159,6 @@ h3 {
   mix-blend-mode: normal;
   // border: 1px solid #ffffff;
   border: 2px outset rgba(255, 255, 255, 0.3);
-
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #music .img-container img.play {
@@ -214,7 +177,6 @@ h3 {
   }
 }
 /* END VINYL CONTAINER EFFECTS --------------------------------------------*/
-
 #music h2 {
   position: absolute;
   line-height: 0.7;
@@ -225,35 +187,26 @@ h3 {
   bottom: 140px;
   font-weight: 400;
   z-index: 300;
-  // color: black;
-  // mix-blend-mode: darken;
   text-shadow: #292929 1px 1px 4px;
 }
-
 #music h3 {
   position: absolute;
   font-family: 'Raleway', sans-serif;
-  // color: black;
   font-size: 100%;
   bottom: 100px;
   font-weight: 400;
-  // mix-blend-mode: darken;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
-
 /* PROGRESS BAR */
-
 #music .progress-container {
   position: absolute;
   bottom: 85px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
   border-radius: 300px;
   background: rgb(255, 255, 255);
-  // cursor: pointer;
   height: 0.4rem;
   width: 80%;
 }
-
 #music .progress {
   position: relative;
   bottom: 0rem;
@@ -264,7 +217,6 @@ h3 {
   width: 0%;
   transition: width 0.1s linear;
 }
-
 #music .duration-wrapper {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -274,11 +226,8 @@ h3 {
   justify-content: space-between;
   position: relative;
   bottom: 1.5rem;
-  // color: white;
 }
-
 /* CONTROLS (Play, Pause, Next, Prev.) */
-
 #music .player-controls {
   bottom: -30px;
   position: absolute;
@@ -291,8 +240,6 @@ h3 {
   color: rgb(255, 255, 255);
   justify-content: center;
   display: flex;
-
-  // cursor: pointer;
   user-select: none;
 }
 #music .fa-forward,
@@ -313,7 +260,6 @@ h3 {
   position: relative;
   top: -81.5px;
 }
-
 /* VOLUME CSS */
 #music .volumeHolder {
   width: 180px;
@@ -346,12 +292,10 @@ h3 {
   appearance: none;
   border: rgba(130, 129, 129, 0.4) 0.5px solid;
   background-color: black;
-  // text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   width: 0.15rem;
   height: 0.65rem;
-  // cursor: pointer;
   z-index: 3;
   position: relative;
 }
@@ -363,7 +307,6 @@ h3 {
   border-radius: 10px;
   width: 0.25rem;
   height: 0.7rem;
-  // cursor: pointer;
   z-index: 3;
   position: relative;
 }
@@ -371,9 +314,7 @@ h3 {
   position: absolute;
   top: 12.5px;
 }
-
 /* MEDIA QUERY FOR MOBILE TO DESKTOP TRANSITION */
-
 /* MOBILE DEVICES 320px-480px */
 @media all and (min-width: 320px) and (max-width: 390px) {
   #background {
@@ -426,7 +367,6 @@ h3 {
     width: 0%;
   }
 }
-
 /* iPADs TABLET 481px-768px */
 @media all and (min-width: 486px) and (max-width: 610px) {
   #background {
@@ -491,7 +431,6 @@ h3 {
     top: 12.5px;
   }
 }
-
 @media all and (min-width: 611px) {
   #background {
     height: 100%;
@@ -622,11 +561,8 @@ h3 {
     font-weight: 500;
     letter-spacing: 0.025rem;
     font-size: 1.25rem;
-
     bottom: 2.5rem;
-    // color: white;
   }
-
   #music .volumeHolder {
     width: 200px;
     bottom: 25px;
@@ -642,7 +578,6 @@ h3 {
     width: 50%;
     height: 0.45rem;
   }
-
   #volume::-moz-range-thumb,
   #volume::-webkit-slider-thumb {
     width: 0.25rem;

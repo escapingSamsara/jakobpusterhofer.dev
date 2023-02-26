@@ -1,9 +1,7 @@
 /////////////////////////////////////////
 // B2T BUTTON
 /////////////////////////////////////////
-
 let b2tBtn = document.getElementById('b2tBtn')
-
 const showAnim = gsap
   .from('#b2tBtn', {
     start: 'top top',
@@ -14,7 +12,6 @@ const showAnim = gsap
     ease: 'easeInOut',
   })
   .progress(1)
-
 ScrollTrigger.create({
   trigger: '#heroWrapper',
   start: 'top top',

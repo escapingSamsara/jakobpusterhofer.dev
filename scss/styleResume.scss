@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
 
-//////////////////////////////////////////////
-/// VARIABLES
-//////////////////////////////////////////////
 $mainFont: 'Poppins', sans-serif;
 $secondaryFont: 'Raleway', serif;
 $bgColor: #15191e;
 $highlightColor: #00adb5;
-
-//////////////////////////////////////////////
-/// GLOBAL STYLES
-//////////////////////////////////////////////
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +38,6 @@ input {
   cursor: none;
   color: white;
 }
-
 //////////////////////////////////////////////
 /// GSAP CURSOR
 //////////////////////////////////////////////
@@ -62,14 +54,13 @@ input {
   overflow: visible;
   background-color: white;
   filter: drop-shadow(0px 0px 4px rgba(188, 188, 188, 0.372));
-  //added because of js bug
+  //added because of js bug:
   width: 25px;
   height: 25px;
   z-index: 10000;
   mix-blend-mode: difference;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
 }
-
 //////////////////////////////////////////////
 /// MAIN WRAPPER RESUME
 //////////////////////////////////////////////
@@ -113,13 +104,6 @@ input {
         // border: 1px solid white;
         margin: 8px 0;
         border: 1px solid $highlightColor;
-
-        // @media all and (min-width: 900px) {
-        //   width: 44%;
-        // }
-        // @media all and (min-width: 1200px) {
-        //   max-width: 350px;
-        // }
       }
       h2 {
         font-family: 'Poppins', sans-serif;
@@ -195,19 +179,16 @@ input {
   height: 45vh;
   width: 100vw;
   // border: 1px solid white;
-
   .contentGridWrapper {
     height: 100%;
     width: 100vw;
     display: flex;
     background-color: #000;
-
     .personalInfosContainer {
       position: relative;
       width: 100vw;
       height: 100%;
     }
-
     .downloadResume {
       display: flex;
       position: absolute;
@@ -246,16 +227,12 @@ input {
         justify-content: center;
         align-items: center;
         width: fit-content;
-        // padding: 15px 15px;
         height: 100%;
         z-index: 6;
         // border: 1px solid rgb(255, 255, 255);
         border-radius: 20px;
-        // background: #00adb5;
-        // background: #15191e;
         background: transparent;
         filter: drop-shadow(0px 0px 10px #ffffff13);
-
         .btnHover::after {
           content: '';
           position: absolute;
@@ -265,7 +242,6 @@ input {
           bottom: 0px;
           left: 0;
           background-color: #00adb5;
-          // background-color: #15191e;
           transform-origin: center;
           transition: 0.2s ease-in-out;
         }
@@ -273,7 +249,6 @@ input {
           transform: scaleX(1);
           transform-origin: bottom left right;
         }
-
         h2 {
           filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.477));
           width: 100%;
@@ -313,7 +288,6 @@ input {
           line-height: 1.25;
           font-size: 1.32rem;
           font-weight: 300;
-          // font-family: 'Raleway', sans-serif;
           @media all and (min-width: 400px) {
             font-size: 1.35rem;
           }

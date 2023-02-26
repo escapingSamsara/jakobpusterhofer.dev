@@ -2,7 +2,6 @@ window.addEventListener('load', function () {
   //initializing API from https://openweathermap.org/ via registered API Key
   // https://api.openweathermap.org/data/2.5/weather?q=Graz&units=metric&lang=en&appid=bf1b245c3eb80c2eff8fdafb1d0ad17f
   //---------------------------------------------------------------------------------------------------
-
   let weather = {
     apiKey: 'bf1b245c3eb80c2eff8fdafb1d0ad17f',
     fetchWeather: function fetchWeather(city) {
@@ -18,7 +17,6 @@ window.addEventListener('load', function () {
       const { icon, description } = data.weather[0]
       const { temp, humidity } = data.main
       const { speed } = data.wind
-
       //innerText and background output:
       document.querySelector('.city').innerText = `Weather in ${name}`
       document.querySelector(
@@ -36,20 +34,17 @@ window.addEventListener('load', function () {
       rgba(0, 0, 0, 0.75) 100%
     ), url(https://source.unsplash.com/featured/?${name})`
     },
-
     //Search Function:
     search: function () {
       this.fetchWeather(document.querySelector('.search-bar').value)
     },
   }
   //---------------------------------------------------------------------------------------------------
-
   //Geocode Object to determine Users Location (City only)
   let geocode = {
     reverseGeocode: function (latitude, longitude) {
       let api_key = 'e4dd8f89a9d8442e8853cf32ef36cf9f'
       let api_url = 'https://api.opencagedata.com/geocode/v1/json'
-
       let request_url =
         api_url +
         '?' +
@@ -59,10 +54,8 @@ window.addEventListener('load', function () {
         encodeURIComponent(latitude + ',' + longitude) +
         '&pretty=1' +
         '&no_annotations=1'
-
       // see full list of required and optional parameters:
       // https://opencagedata.com/api#forward
-
       let request = new XMLHttpRequest()
       request.open('GET', request_url, true)
       request.onload = function () {
@@ -101,7 +94,6 @@ window.addEventListener('load', function () {
     },
   }
   //---------------------------------------------------------------------------------------------------
-
   //Search Button and Search Bar EventListener
   document.querySelector('.search-btn').addEventListener('click', function () {
     weather.search()
@@ -114,7 +106,6 @@ window.addEventListener('load', function () {
       }
     })
   //---------------------------------------------------------------------------------------------------
-
   // weather.fetchWeather('Graz')
   geocode.getLocation()
 })

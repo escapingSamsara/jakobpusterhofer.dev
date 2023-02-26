@@ -753,7 +753,6 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* ABOUT ME CONTACT ME BUTTON */
 }
 #aboutWrapper .aboutButtonContainer .aboutButtonContact {
   z-index: 100;

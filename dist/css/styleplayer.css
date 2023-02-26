@@ -33,15 +33,6 @@ h3 {
   margin: 2px;
 }
 
-/* EXTRA CSS ONLY FOR FINALIZING SIZING OF PLAYER START -----------------------*/
-/* body {
-  height: 100vh;
-}
-#wrapper {
-  display: flex;
-  align-items: center;
-} */
-/* EXTRA CSS ONLY FOR FINALIZING SIZING OF PLAYER END -------------------------*/
 #music {
   margin: 0 auto;
   display: flex;

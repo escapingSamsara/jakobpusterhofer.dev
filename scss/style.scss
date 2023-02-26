@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
-
 //////////////////////////////////////////////
 /// Variables
 //////////////////////////////////////////////
@@ -8,7 +7,6 @@ $secondaryFont: 'Raleway', serif;
 $bgColor: #15191e;
 $highlightColor: #00adb5;
 $sectionFontSize: 7.5rem;
-
 //////////////////////////////////////////////
 /// Global Styles
 //////////////////////////////////////////////
@@ -67,14 +65,12 @@ p {
   z-index: 1000;
   background-color: $bgColor;
   transition: all 3s ease-in-out;
-
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
     .preloaderSVGContainer {
       display: flex;
       justify-content: center;
@@ -87,11 +83,9 @@ p {
         0% {
           opacity: 1;
         }
-
         65% {
           opacity: 1;
         }
-
         100% {
           opacity: 0;
         }
@@ -119,13 +113,11 @@ p {
       }
     }
   }
-
   .preload-finish {
     opacity: 0;
     transition: all 2s ease-in-out;
   }
 }
-
 //////////////////////////////////////////////
 /// GSAP CURSOR Start
 //////////////////////////////////////////////
@@ -142,8 +134,7 @@ p {
   overflow: visible;
   background-color: white;
   filter: drop-shadow(0px 0px 4px rgba(188, 188, 188, 0.25));
-
-  // because of bug
+  // because of bug:
   width: 25px;
   height: 25px;
   mix-blend-mode: difference;
@@ -162,7 +153,6 @@ p {
 //   width: 35px;
 //   height: 35px;
 //   z-index: 10000;
-
 //   mix-blend-mode: difference;
 //   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
 // }
@@ -170,7 +160,6 @@ p {
 //   width: 15px;
 //   height: 15px;
 //   z-index: 10000;
-
 //   mix-blend-mode: normal;
 //   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
 // }
@@ -178,7 +167,6 @@ p {
 //   width: 15px;
 //   height: 15px;
 //   z-index: 10000;
-
 //   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
 //   mix-blend-mode: normal;
 // }
@@ -186,11 +174,9 @@ p {
 //   width: 10px;
 //   height: 10px;
 //   z-index: 10000;
-
 //   mix-blend-mode: normal;
 //   transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
 // }
-
 //////////////////////////////////////////////
 /// B2T Button Start
 //////////////////////////////////////////////
@@ -206,7 +192,6 @@ p {
   border-radius: 50%;
   border: 2px solid rgb(255, 255, 255);
   filter: drop-shadow(0px 0px 4px rgba(187, 187, 187, 0.5));
-
   .scrollBar {
     height: 100%;
     width: 100%;
@@ -222,7 +207,7 @@ p {
   position: relative;
   display: inline-block;
   background-color: rgb(255, 255, 255);
-  background-color: #00adb5;
+  background-color: $highlightColor;
   opacity: 1;
   filter: drop-shadow(0px 0px 1px rgba(0, 150, 158, 0.25));
 }
@@ -245,7 +230,6 @@ p {
       transform: translateY(0);
     }
   }
-
   .navbar {
     height: 8vh;
     width: 100%;
@@ -348,7 +332,6 @@ p {
     }
   }
 }
-
 //////////////////////////////////////////////
 /// HERO Start
 //////////////////////////////////////////////
@@ -403,7 +386,7 @@ p {
 
       &:hover,
       &:active {
-        stroke: #00adb5;
+        stroke: $highlightColor;
         scale: 1.15;
         transition: all 0.4s ease-in-out;
         fill: none;
@@ -433,7 +416,6 @@ p {
     // border: 1px solid white;
   }
 }
-
 //////////////////////////////////////////////
 // ABOUT Start
 //////////////////////////////////////////////
@@ -494,7 +476,6 @@ p {
     padding: 8vh 0 0 7vw;
     z-index: 100;
     // border: 2px solid rgb(255, 3, 217);
-
     h2 {
       z-index: 2000;
       filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
@@ -514,15 +495,6 @@ p {
       @media all and (min-width: 950px) {
         font-size: 8rem;
       }
-      // @media all and (min-width: 1000px) {
-      //   font-size: 8.25rem;
-      // }
-      // @media all and (min-width: 1200px) {
-      //   font-size: 8.5rem;
-      // }
-      // @media all and (min-width: 1440px) {
-      //   font-size: 9rem;
-      // }
     }
   }
   .aboutContainerBottom {
@@ -566,20 +538,11 @@ p {
       @media all and (min-width: 1000px) {
         width: 78vmin;
       }
-      // @media all and (min-width: 1100px) {
-      //   width: 82%;
-      // }
       @media all and (min-width: 1000px) {
         width: 36%;
         padding-right: 2vw;
         align-items: flex-start;
       }
-      // @media all and (min-width: 1240px) {
-      //   width: 80%;
-      // }
-      // @media all and (min-width: 1300px) {
-      //   width: 85%;
-      // }
     }
     .aboutSkillsTextContainerLeftTwo {
       z-index: 100;
@@ -636,24 +599,6 @@ p {
       @media all and (min-width: 1000px) {
         padding-top: 5vh;
       }
-      // @media all and (min-width: 550px) {
-      //   font-size: 1.55rem;
-      // }
-      // @media all and (min-width: 768px) {
-      //   font-size: 1.7rem;
-      // }
-      // @media all and (min-width: 950px) {
-      //   font-size: 1.8rem;
-      // }
-      // @media all and (min-width: 1000px) {
-      //   font-size: 1.9rem;
-      // }
-      // @media all and (min-width: 1200px) {
-      //   font-size: 2rem;
-      // }
-      // @media all and (min-width: 1440px) {
-      //   font-size: 2.25rem;
-      // }
     }
     .aboutSkillProgressWrapper {
       z-index: 100;
@@ -685,7 +630,6 @@ p {
       margin: 0;
       height: 100%;
       @media all and (min-width: 1000px) {
-        // flex-direction: row;
         scale: 0.5;
       }
       img {
@@ -711,7 +655,6 @@ p {
     /* Colors for the circles and positions for the graphics */
     svg {
       filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
-      // z-index: 100;
       height: 200px;
       width: 200px;
       position: absolute;
@@ -752,7 +695,6 @@ p {
         from {
           stroke-dashoffset: 537;
         }
-
         to {
           stroke-dashoffset: 0;
         }
@@ -766,7 +708,6 @@ p {
         from {
           stroke-dashoffset: 537;
         }
-
         to {
           stroke-dashoffset: 134;
         }
@@ -780,7 +721,6 @@ p {
         from {
           stroke-dashoffset: 537;
         }
-
         to {
           stroke-dashoffset: 161;
         }
@@ -794,7 +734,6 @@ p {
         from {
           stroke-dashoffset: 537;
         }
-
         to {
           stroke-dashoffset: 187;
         }
@@ -808,7 +747,6 @@ p {
         from {
           stroke-dashoffset: 537;
         }
-
         to {
           stroke-dashoffset: 267;
         }
@@ -822,7 +760,6 @@ p {
         from {
           stroke-dashoffset: 537;
         }
-
         to {
           stroke-dashoffset: 401;
         }
@@ -834,12 +771,9 @@ p {
     height: 30vh;
     z-index: 10;
     width: 100vw;
-    // width: 86vw;
     // border: 2px yellow solid;
     position: absolute;
-    // margin: 0 7vw;
     display: flex;
-    // justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 1vh;
@@ -890,7 +824,6 @@ p {
         border-radius: 100px;
         font-size: 1.35rem;
         font-weight: 300;
-        // width: 145px;
         background-color: rgb(0, 0, 0);
         text-decoration: none;
         transition: all 0.4s ease-in-out;
@@ -898,24 +831,6 @@ p {
         @media all and (min-width: 400px) {
           font-size: 1.6rem;
         }
-        // @media all and (min-width: 550px) {
-        //   font-size: 1.55rem;
-        // }
-        // @media all and (min-width: 768px) {
-        //   font-size: 1.7rem;
-        // }
-        // @media all and (min-width: 950px) {
-        //   font-size: 1.8rem;
-        // }
-        // @media all and (min-width: 1000px) {
-        //   font-size: 1.9rem;
-        // }
-        // @media all and (min-width: 1200px) {
-        //   font-size: 2rem;
-        // }
-        // @media all and (min-width: 1440px) {
-        //   font-size: 2.25rem;
-        // }
       }
       .cta-btn,
       .cta-btnTouch {
@@ -932,41 +847,20 @@ p {
       p {
         z-index: 100;
         text-align: justify;
-        // color: white;
         width: 100%;
         line-height: 1;
         font-family: $secondaryFont;
         @media all and (min-width: 400px) {
           font-size: 1.6rem;
         }
-        // @media all and (min-width: 550px) {
-        //   font-size: 1.55rem;
-        // }
-        // @media all and (min-width: 768px) {
-        //   font-size: 1.7rem;
-        // }
-        // @media all and (min-width: 950px) {
-        //   font-size: 1.8rem;
-        // }
-        // @media all and (min-width: 1000px) {
-        //   font-size: 1.9rem;
-        // }
-        // @media all and (min-width: 1200px) {
-        //   font-size: 2rem;
-        // }
-        // @media all and (min-width: 1440px) {
-        //   font-size: 2.25rem;
-        // }
       }
     }
-    /* ABOUT ME CONTACT ME BUTTON */
   }
 }
 :root {
   --marquee-height: 10vh;
 }
 .marquee {
-  // justify-content: center;
   align-self: center;
   display: flex;
   z-index: 300;
@@ -975,7 +869,6 @@ p {
   color: #eee;
   overflow: hidden;
   position: relative;
-
   .marquee-content {
     // border: 1px solid white;
     list-style: none;
@@ -1000,10 +893,8 @@ p {
       }
     }
   }
-
   .fab {
     position: relative;
-    // animation: pulse2 3s infinite alternate ease-in-out 200ms;
     scale: 1;
   }
   .fa-js {
@@ -1022,8 +913,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: 35%;
-    // right: 0.4%;
   }
   .fa-sass {
     opacity: 0;
@@ -1041,8 +930,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: -10%;
-    // right: 5%;
   }
   .fa-git {
     opacity: 0;
@@ -1060,8 +947,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: 24%;
-    // right: 28%;
   }
   .fa-figma {
     opacity: 0;
@@ -1079,7 +964,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: -4%;
     i {
       font-size: 2.6rem;
     }
@@ -1101,8 +985,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: 15%;
-    // left: -20%;
   }
   .fa-node {
     opacity: 0;
@@ -1121,9 +1003,7 @@ p {
         filter: blur(0);
       }
     }
-    // top: -10%;
   }
-
   .sass_about_2 {
     opacity: 0;
     animation: pulseSass_2 4.1s infinite alternate ease-in-out 600ms;
@@ -1140,7 +1020,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: 32%;
   }
   .js_about_2 {
     opacity: 0;
@@ -1158,8 +1037,6 @@ p {
         filter: blur(0);
       }
     }
-    // left: 0%;
-    // top: 3%;
   }
   .git_about_2 {
     opacity: 0;
@@ -1177,8 +1054,6 @@ p {
         filter: blur(0);
       }
     }
-    // left: 0%;
-    // top: 25%;
   }
   .react_about_2 {
     opacity: 0;
@@ -1196,8 +1071,6 @@ p {
         filter: blur(0);
       }
     }
-    // left: 0%;
-    // top: 6%;
   }
   .fa-css3 {
     opacity: 0;
@@ -1215,7 +1088,6 @@ p {
         filter: blur(0);
       }
     }
-    // top: -12%;
   }
   .node_about_2 {
     opacity: 0;
@@ -1233,14 +1105,11 @@ p {
         filter: blur(0);
       }
     }
-    // top: 31%;
   }
 }
-
 // //////////////////////////////////////////////
 // /// PORTFOLIO SECTION
 // //////////////////////////////////////////////
-
 ///PORTFOLIO WRAPPER 1
 #portfolioWrapper1 {
   height: 100vh;
@@ -1249,7 +1118,6 @@ p {
   flex-direction: row;
   // border: 1px solid rgb(252, 141, 141);
   scroll-snap-align: start;
-
   .portfolioHeader {
     height: 20vh;
     width: 100vw;
@@ -1273,15 +1141,6 @@ p {
       @media all and (min-width: 950px) {
         font-size: 8rem;
       }
-      // @media all and (min-width: 1000px) {
-      //   font-size: 8.25rem;
-      // }
-      // @media all and (min-width: 1200px) {
-      //   font-size: 8.5rem;
-      // }
-      // @media all and (min-width: 1440px) {
-      //   font-size: 9rem;
-      // }
     }
   }
   .portfolioContainerContentProject1 {
@@ -1306,7 +1165,6 @@ p {
         width: 100%;
         display: flex;
         flex-direction: column;
-        // background-color: #c3edb8;
         @media all and (min-width: 480px) {
           flex-direction: row;
         }
@@ -1370,11 +1228,6 @@ p {
             z-index: 1;
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             animation: pulsePhone 6s infinite alternate ease-in-out;
-            // &:hover,
-            // &:active {
-            //   scale: 1.15;
-            //   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            // }
             @media all and (min-width: 960px) {
               top: 35%;
               left: 10%;
@@ -1383,13 +1236,8 @@ p {
           .portfolioContainerPhoneBox2 {
             position: relative;
             top: 0%;
-            // left: 65%;
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             animation: pulsePhone 6s infinite alternate ease-in-out 2s;
-            // &:hover {
-            //   scale: 1.15;
-            //   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            // }
             @media all and (min-width: 960px) {
               top: 45%;
               left: 10%;
@@ -1403,16 +1251,11 @@ p {
           .portfolioContainerPhoneBox3 {
             position: relative;
             top: 0%;
-            // left: 95%;
             z-index: 3000;
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             // border: 1px solid white;
             z-index: 2000;
             animation: pulsePhone 6s infinite alternate ease-in-out 4s;
-            // &:hover {
-            //   scale: 1.15;
-            //   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            // }
             @media all and (min-width: 960px) {
               top: 45%;
               left: 10%;
@@ -1472,33 +1315,12 @@ p {
               width: 100%;
               height: 100%;
               font-size: 1.32rem;
-              // border: 1px solid white;
-              // color: white;
-
               @media all and (min-width: 400px) {
                 font-size: 1.6rem;
               }
               @media all and (min-width: 960px) {
                 width: 90%;
               }
-              // @media all and (min-width: 550px) {
-              //   font-size: 1.55rem;
-              // }
-              // @media all and (min-width: 768px) {
-              //   font-size: 1.7rem;
-              // }
-              // @media all and (min-width: 950px) {
-              //   font-size: 1.8rem;
-              // }
-              // @media all and (min-width: 1000px) {
-              //   font-size: 1.9rem;
-              // }
-              // @media all and (min-width: 1200px) {
-              //   font-size: 2rem;
-              // }
-              // @media all and (min-width: 1440px) {
-              //   font-size: 2.25rem;
-              // }
             }
           }
         }
@@ -1508,15 +1330,12 @@ p {
         justify-content: center;
         height: 65%;
         width: 100%;
-        // background-color: white;
-
         @media all and (min-width: 960px) {
           height: 100%;
           width: 65%;
         }
         @media all and (min-width: 1200px) {
           position: relative;
-          // justify-content: flex-end;
           right: 2%;
         }
         .portfolioContentProjectImageMacbook,
@@ -1544,8 +1363,6 @@ p {
             max-height: 100%;
             width: auto;
             z-index: 1;
-            // border: 1px solid white;
-
             @media all and (min-width: 520px) {
               scale: 0.85;
             }
@@ -1570,10 +1387,8 @@ p {
             top: 46%;
             left: 50.5%;
             transform: translate(-50%, -50%);
-            // bottom: 4%;
             width: 70%;
             height: 80%;
-            // border: 1px solid white;
             z-index: 2;
             .macbookHero,
             .macbookAbout,
@@ -1650,7 +1465,6 @@ p {
           flex-direction: column;
           height: 100%;
           width: 100%;
-          // justify-content: center;
           align-items: center;
           .portfolioProject1LinkBtnContainer {
             flex-direction: row;
@@ -1671,7 +1485,6 @@ p {
               .cta-btn-Project1-Demo,
               .cta-btn-Project1-Code {
                 letter-spacing: 1.2;
-
                 padding: 5.5px 15px;
                 border-radius: 100px;
                 font-size: 1.5rem;
@@ -1684,24 +1497,6 @@ p {
                 @media all and (min-width: 400px) {
                   font-size: 1.6rem;
                 }
-                // @media all and (min-width: 550px) {
-                //   font-size: 1.55rem;
-                // }
-                // @media all and (min-width: 768px) {
-                //   font-size: 1.7rem;
-                // }
-                // @media all and (min-width: 950px) {
-                //   font-size: 1.8rem;
-                // }
-                // @media all and (min-width: 1000px) {
-                //   font-size: 1.9rem;
-                // }
-                // @media all and (min-width: 1200px) {
-                //   font-size: 2rem;
-                // }
-                // @media all and (min-width: 1440px) {
-                //   font-size: 2.25rem;
-                // }
               }
               .cta-btn-Project1-Demo,
               .cta-btn-Project1-Code {
@@ -1722,10 +1517,7 @@ p {
     }
   }
 }
-
 /// PORTFOLIO WRAPPER - WIDGETS
-///
-///
 #portfolioWrapperWidgets {
   position: relative;
   scroll-snap-align: start;
@@ -1736,7 +1528,6 @@ p {
   align-items: center;
   flex-direction: column;
   background: $bgColor;
-
   @media all and (min-width: 800px) {
     height: 100vh;
     width: 100vw;
@@ -1770,10 +1561,8 @@ p {
         height: 10%;
         height: fit-content;
         display: flex;
-        // justify-content: center;
         flex-direction: row;
         margin-bottom: 2rem;
-
         .portfolioLinkBtn {
           z-index: 300;
           width: 85%;
@@ -1801,18 +1590,6 @@ p {
             @media all and (min-width: 400px) {
               font-size: 1.6rem;
             }
-            // @media all and (min-width: 550px) {
-            //   font-size: 1.55rem;
-            // }
-            // @media all and (min-width: 768px) {
-            //   font-size: 1.7rem;
-            // }
-            // @media all and (min-width: 950px) {
-            //   font-size: 1.8rem;
-            // }
-            // @media all and (min-width: 1000px) {
-            //   font-size: 1.9rem;
-            // }
           }
         }
       }
@@ -1838,15 +1615,12 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
         height: 100%;
         width: 100%;
         padding: 0 8vw 0 8vw;
-        // padding: 2rem;
         @media all and (min-width: 640px) {
           font-size: 1.6rem;
         }
-
         .widgetHeader {
           font-size: 1.85rem;
           font-weight: 600;
@@ -1873,8 +1647,6 @@ p {
           justify-content: center;
           text-align: justify;
           margin: 0 auto 4vh;
-          // padding: 1vh 0;
-          // width: 65%;
           font-size: 1.32rem;
           // border: 1px solid white;
           @media all and (min-width: 400px) {
@@ -1884,7 +1656,6 @@ p {
           }
           @media all and (max-width: 1000px) {
             width: 100%;
-            // margin: 0 0 4vh;
           }
         }
       }
@@ -1894,7 +1665,6 @@ p {
     }
   }
 }
-
 //////////////////////////////////////////////
 /// CONTACT Start
 //////////////////////////////////////////////
@@ -1915,11 +1685,9 @@ p {
       width: 100%;
       // border: 2px solid rgb(255, 3, 217);
     }
-
     & .contactHeader {
       height: 100%;
       width: 100%;
-
       // border: 1px solid rgb(252, 141, 141);
       & .contactHeaderBox {
         // border: 2px solid rgb(252, 141, 141);
@@ -1945,15 +1713,6 @@ p {
           @media all and (min-width: 950px) {
             font-size: 8rem;
           }
-          // @media all and (min-width: 1000px) {
-          //   font-size: 8.25rem;
-          // }
-          // @media all and (min-width: 1200px) {
-          //   font-size: 8.5rem;
-          // }
-          // @media all and (min-width: 1440px) {
-          //   font-size: 9rem;
-          // }
         }
       }
     }
@@ -2003,7 +1762,6 @@ p {
             width: 100%;
             height: 100%;
             text-align: justify;
-            // margin: 0 auto;
             z-index: 100;
             .breakContact {
               margin: 0.5rem 0;
@@ -2012,7 +1770,6 @@ p {
               font-size: 1.6rem;
             }
           }
-
           .gooeyBtn {
             height: 39vh;
             width: 100%;
@@ -2446,7 +2203,6 @@ p {
               @media all and (min-width: 600px) {
                 height: 75%;
               }
-
               &:hover,
               &:active {
                 filter: drop-shadow(0px 0px 4px rgba(1, 150, 158, 0.25));
@@ -2491,7 +2247,7 @@ p {
             }
           }
           .rotated2 {
-            color: #00adb5;
+            color: $highlightColor;
             filter: drop-shadow(0px 0px 2px #00969e54);
           }
           .rotated1 {
@@ -2507,7 +2263,7 @@ p {
     }
   }
 }
-/// Contact Banner 1
+/// Contact Banner
 :root {
   --marquee3-width: 100vw;
   --marquee3-height: 12vh;
@@ -2567,7 +2323,7 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 .marquee-content3 span {
-  color: #00adb5;
+  color: $highlightColor;
 }
 @media (max-width: 600px) {
   :root {
@@ -2576,7 +2332,6 @@ p {
     --marquee3-elements-displayed: 1;
   }
 }
-
 //////////////////////////////////////////////
 /// FOOTER Start
 //////////////////////////////////////////////

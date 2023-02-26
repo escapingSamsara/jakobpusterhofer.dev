@@ -1,7 +1,6 @@
 ///////////////////////////////////////////////
 //PRELOADER
 ///////////////////////////////////////////////
-
 window.addEventListener('load', function () {
   const preload = document.getElementById('preloader')
   this.setTimeout(function () {
@@ -12,7 +11,6 @@ window.addEventListener('load', function () {
   }, 100)
 })
 //preloading screen end
-
 ///////////////////////////////////////////////
 //GSAP CURSOR AND TOUCH EVENTS
 ///////////////////////////////////////////////
@@ -26,10 +24,8 @@ window.addEventListener('load', function () {
   })
   document.addEventListener('mousedown', function () {})
   document.addEventListener('mouseup', function () {})
-
   ///////////////////////////////////////////////
   //TOUCH EVENTS
-
   //cta-btn Touch Event:
   let ctaBtn = document.querySelectorAll('.cta-btn')
   ctaBtn.addEventListener('touchstart', () => {
@@ -40,7 +36,6 @@ window.addEventListener('load', function () {
   chart.addEventListener('touchstart', () => {
     chart.classList.add('chartTouch')
   })
-
   let portfolioContentProjectImageMacbook = document.querySelector(
     '.portfolioContentProjectImageMacbook'
   )

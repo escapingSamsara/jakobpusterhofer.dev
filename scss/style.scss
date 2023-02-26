@@ -2260,8 +2260,8 @@ p {
             }
             #gooey-button {
               padding: 1rem;
-              font-size: 1.8rem;
-              font-weight: 400;
+              font-size: 2rem;
+              font-weight: 500;
               border: none;
               color: white;
               filter: url('#gooey');
@@ -2553,7 +2553,6 @@ p {
   text-transform: uppercase;
   width: var(--marquee3-element-width);
   max-height: 100%;
-  // font-size: calc(var(--marquee3-height) * 2.5 / 4);
   white-space: nowrap;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
@@ -2568,79 +2567,6 @@ p {
     --marquee3-elements-displayed: 1;
   }
 }
-/// Contact Banner 2
-// :root {
-//   --marquee4-width: 100vw;
-//   --marquee4-height: 10vh;
-//   --marquee4-elements-displayed: 2;
-//   --marquee4-element-width: calc(
-//     var(--marquee4-width) / var(--marquee4-elements-displayed)
-//   );
-//   --marquee4-animation-duration: calc(var(--marquee4-elements) * 20s);
-// }
-// .marquee4 {
-//   width: var(--marquee4-width);
-//   height: var(--marquee4-height);
-//   color: #eee;
-//   overflow: hidden;
-//   position: relative;
-// }
-// .marqueeCTA {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-// }
-// .marquee-content4 {
-//   list-style: none;
-//   height: 100%;
-//   display: flex;
-//   animation: scrolling4 var(--marquee3-animation-duration) linear reverse
-//     infinite;
-//   &:hover,
-//   &:active {
-//     animation-play-state: paused;
-//   }
-// }
-// @keyframes scrolling4 {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   100% {
-//     transform: translateX(
-//       calc(-1 * var(--marquee3-element-width) * var(--marquee3-elements))
-//     );
-//   }
-// }
-// .marquee-content4 li {
-//   display: flex;
-//   justify-content: center;
-//   flex-shrink: 0;
-//   text-transform: uppercase;
-//   width: var(--marquee3-element-width);
-//   max-height: 100%;
-//   font-size: calc(var(--marquee3-height) * 2.5 / 4);
-//   position: relative;
-//   top: -4px;
-//   white-space: nowrap;
-//   font-weight: 600;
-//   font-family: 'Raleway', sans-serif;
-// }
-// .marquee-content4 span {
-//   color: #00adb5;
-// }
-
-// @media (max-width: 600px) {
-//   :root {
-//     --marquee4-width: 100vw;
-//     --marquee4-height: 10vh;
-//     --marquee4-elements-displayed: 1;
-//   }
-//   .marquee4:before,
-//   .marquee4:after {
-//     width: 5rem;
-//   }
-// }
 
 //////////////////////////////////////////////
 /// FOOTER Start
@@ -2653,9 +2579,11 @@ p {
   height: 8vh;
   width: 100%;
   // border: 1px solid gold;
-  span {
+
+  .footerSpan {
+    margin: 0 30px;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-    font-size: 1rem;
+    font-size: 0.85rem;
     display: flex;
     text-align: center;
   }

@@ -1955,8 +1955,8 @@ p {
 }
 #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button {
   padding: 1rem;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 500;
   border: none;
   color: white;
   filter: url("#gooey");
@@ -2256,9 +2256,10 @@ p {
   height: 8vh;
   width: 100%;
 }
-#footerWrapper span {
+#footerWrapper .footerSpan {
+  margin: 0 30px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-  font-size: 1rem;
+  font-size: 0.85rem;
   display: flex;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

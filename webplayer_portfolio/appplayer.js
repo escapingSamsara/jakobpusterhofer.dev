@@ -38,47 +38,47 @@ https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2 
 //SONG ARRAY (PLAYER SONG LIST)
 const songs = [
   {
-    path: '../webplayer_portfolio/audioFiles/tulip_audio.mp3',
-    // path: 'https://docs.google.com/uc?export=download&id=1aEJ2GpUv2Ge10NOLlK8ow9u0bxLe2iyJ',
+    // path: '../webplayer_portfolio/audioFiles/tulip_audio.mp3',
+    path: 'https://docs.google.com/uc?export=download&id=1aEJ2GpUv2Ge10NOLlK8ow9u0bxLe2iyJ',
     musicName: 'tulip',
     artist: 'escapingSamsara',
-    cover: '../webplayer_portfolio/img/song-img/compressedSongImg/tulip.png',
-    // cover: 'https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2',
+    // cover: '../webplayer_portfolio/img/song-img/compressedSongImg/tulip.png',
+    cover: 'https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2',
   },
   {
-    path: '../webplayer_portfolio/audioFiles/float_mastered_v1.mp3',
-    // path: 'https://docs.google.com/uc?export=download&id=1TReKakpjZiUB3CcZtLV9IZ58fxwc1d7b',
+    // path: '../webplayer_portfolio/audioFiles/float_mastered_v1.mp3',
+    path: 'https://docs.google.com/uc?export=download&id=1TReKakpjZiUB3CcZtLV9IZ58fxwc1d7b',
     musicName: 'float',
     artist: 'escapingSamsara',
-    cover: '../webplayer_portfolio/img/song-img/compressedSongImg/float.jpg',
-    // cover: 'https://docs.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
+    // cover: '../webplayer_portfolio/img/song-img/compressedSongImg/float.jpg',
+    cover: 'https://docs.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
   },
   {
-    path: '../webplayer_portfolio/audioFiles/todayisagift_audio.mp3',
-    // path: 'https://docs.google.com/uc?export=download&id=1bI2bCYoF7r5W9mS_UzbYXazGw8RclmFi',
+    // path: '../webplayer_portfolio/audioFiles/todayisagift_audio.mp3',
+    path: 'https://docs.google.com/uc?export=download&id=1bI2bCYoF7r5W9mS_UzbYXazGw8RclmFi',
     musicName: 'today is a gift',
     artist: 'escapingSamsara',
     cover:
-      '../webplayer_portfolio/img/song-img/compressedSongImg/todayisagift2.png',
-    // cover: 'https://docs.google.com/uc?export=download&id=1FDxXqUxkwt-HWk1uEo0Vt8l82zs3H3z2',
+      // '../webplayer_portfolio/img/song-img/compressedSongImg/todayisagift2.png',
+    cover: 'https://docs.google.com/uc?export=download&id=1FDxXqUxkwt-HWk1uEo0Vt8l82zs3H3z2',
   },
   {
-    path: '../webplayer_portfolio/audioFiles/themessage_audio.mp3',
-    // path: 'https://docs.google.com/uc?export=download&id=1_zuMc6KCqCrN7o8cvUU1I-NT58U1ra0Q ',
+    // path: '../webplayer_portfolio/audioFiles/themessage_audio.mp3',
+    path: 'https://docs.google.com/uc?export=download&id=1_zuMc6KCqCrN7o8cvUU1I-NT58U1ra0Q ',
     musicName: 'the message',
     artist: 'escapingSamsara',
     cover:
-      '../webplayer_portfolio/img/song-img/compressedSongImg/themessage.png',
-    // cover: 'https://docs.google.com/uc?export=download&id=14vrB6AKaF6sNx7zT4kNoKboVAAQfC541',
+      // '../webplayer_portfolio/img/song-img/compressedSongImg/themessage.png',
+    cover: 'https://docs.google.com/uc?export=download&id=14vrB6AKaF6sNx7zT4kNoKboVAAQfC541',
   },
   {
-    path: '../webplayer_portfolio/audioFiles/vanillaicecream_audio.mp3',
-    // path: 'https://docs.google.com/uc?export=download&id=17h8mMXdi6tsgT2TAS9XfvbX6eLOnUfPa',
+    // path: '../webplayer_portfolio/audioFiles/vanillaicecream_audio.mp3',
+    path: 'https://docs.google.com/uc?export=download&id=17h8mMXdi6tsgT2TAS9XfvbX6eLOnUfPa',
     musicName: 'vanilla icecream',
     artist: 'escapingSamsara',
     cover:
-      '../webplayer_portfolio/img/song-img/compressedSongImg/vanillaicecream.png',
-    // cover: 'https://docs.google.com/uc?export=download&id=11XRdNATAeM-QKTiNbNqhb25Cdsey2KZX',
+      // '../webplayer_portfolio/img/song-img/compressedSongImg/vanillaicecream.png',
+    cover: 'https://docs.google.com/uc?export=download&id=11XRdNATAeM-QKTiNbNqhb25Cdsey2KZX',
   },
 ]
 //----------------------------------------

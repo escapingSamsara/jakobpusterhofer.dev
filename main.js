@@ -27,24 +27,24 @@ window.addEventListener('load', function () {
   ///////////////////////////////////////////////
   //TOUCH EVENTS
   //cta-btn Touch Event:
-  let ctaBtn = document.querySelectorAll('.cta-btn')
-  ctaBtn.addEventListener('touchstart', () => {
-    ctaBtn.classList.add('cta-btnTouch')
-  })
+  // let ctaBtn = document.querySelectorAll('.cta-btn')
+  // ctaBtn.addEventListener('touchstart', () => {
+  //   ctaBtn.classList.add('cta-btnTouch')
+  // })
   //AboutMe Touch Events:
-  let chart = document.querySelectorAll('.chart')
-  chart.addEventListener('touchstart', () => {
-    chart.classList.add('chartTouch')
-  })
-  let portfolioContentProjectImageMacbook = document.querySelector(
-    '.portfolioContentProjectImageMacbook'
-  )
-  portfolioContentProjectImageMacbook.addEventListener('touchstart', () => {
-    chart.classList.add('portfolioContentProjectImageMacbookTouch')
-  })
-  portfolioContentProjectImageMacbook.addEventListener('touchend', () => {
-    chart.classList.remove('portfolioContentProjectImageMacbookTouch')
-  })
+  // let chart = document.querySelectorAll('.chart')
+  // chart.addEventListener('touchstart', () => {
+  //   chart.classList.add('chartTouch')
+  // })
+  // let portfolioContentProjectImageMacbook = document.querySelector(
+  //   '.portfolioContentProjectImageMacbook'
+  // )
+  // portfolioContentProjectImageMacbook.addEventListener('touchstart', () => {
+  //   chart.classList.add('portfolioContentProjectImageMacbookTouch')
+  // })
+  // portfolioContentProjectImageMacbook.addEventListener('touchend', () => {
+  //   chart.classList.remove('portfolioContentProjectImageMacbookTouch')
+  // })
   // function addHoverHandlers(elements, className) {
   //   elements.forEach((element) => {
   //     element.addEventListener('mouseover', () => {

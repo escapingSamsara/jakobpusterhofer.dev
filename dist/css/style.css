@@ -10,7 +10,7 @@ html,
 body {
   overflow-x: hidden;
   cursor: none;
-  height: 100%;
+  height: 100dvh;
   width: 100vw;
   background-color: #15191e;
   font-size: 10px;

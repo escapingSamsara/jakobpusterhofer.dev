@@ -1,0 +1,144 @@
+/* Import the Google Font 'Lato' */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Container styles */
+body {
+  background-color: #fff;
+  background-color: #202020;
+  color: #333;
+  font-family: 'Lato';
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.aboutSkillProgressWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid white;
+  width: 50vw;
+}
+.aboutSkillsProgress {
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  padding: 1%;
+  height: fit-content;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.chart {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid green;
+  scale: 0.3;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .html + svg .outer {
+    stroke: #e34f26;
+  }
+  .css + svg .outer {
+    stroke: #0d84ce;
+  }
+  .javascript + svg .outer {
+    stroke: #f0e040;
+  }
+}
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+svg {
+  // z-index: 100;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+}
+.outer {
+  width: 100%;
+  height: 100%;
+  border: 1px solid snow;
+  position: relative;
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 10;
+  stroke-dasharray: 537;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  //   /* firefox bug fix - won't rotate at 90deg angles */
+}
+.chart:hover .outer {
+  stroke-dashoffset: 537 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  @-webkit-keyframes show100 {
+    from {
+      stroke-dashoffset: 537;
+    }
+
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 124;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+  @keyframes show75 {
+    from {
+      stroke-dashoffset: 537;
+    }
+
+    to {
+      stroke-dashoffset: 124;
+    }
+  }
+}
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+  @keyframes show50 {
+    from {
+      stroke-dashoffset: 537;
+    }
+
+    to {
+      stroke-dashoffset: 267;
+    }
+  }
+}
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+  @keyframes show25 {
+    from {
+      stroke-dashoffset: 537;
+    }
+
+    to {
+      stroke-dashoffset: 401;
+    }
+  }
+}

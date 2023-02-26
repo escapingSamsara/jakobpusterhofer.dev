@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
+
+//////////////////////////////////////////////
+/// VARIABLES
+//////////////////////////////////////////////
+$mainFont: 'Poppins', sans-serif;
+$secondaryFont: 'Raleway', serif;
+$bgColor: #15191e;
+$highlightColor: #00adb5;
+
+//////////////////////////////////////////////
+/// GLOBAL STYLES
+//////////////////////////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow: hidden;
+  cursor: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: $bgColor;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+li,
+ul,
+button,
+input {
+  cursor: none;
+  color: white;
+}
+
+//////////////////////////////////////////////
+/// GSAP CURSOR
+//////////////////////////////////////////////
+.gsapCursor {
+  z-index: 10000;
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  overflow: visible;
+  background-color: white;
+  filter: drop-shadow(0px 0px 4px rgba(188, 188, 188, 0.372));
+  //added because of js bug
+  width: 25px;
+  height: 25px;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+//////////////////////////////////////////////
+/// MAIN WRAPPER RESUME
+//////////////////////////////////////////////
+#mainWrapperResume {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#resumeWrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  .resumeTopContainer {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid white;
+    background-color: #000;
+    .resumeHeader {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-family: 'Raleway', sans-serif;
+      width: 100%;
+      height: 80vh;
+      margin-top: 20vh;
+      // border: 1px solid green;
+      padding: 55vh 5vw 10vh 10vw;
+      @media all and (max-width: 600px) {
+        padding: 55vh 5vw 10vh 5vw;
+      }
+      hr {
+        width: 100%;
+        max-width: 350px;
+        // border: 1px solid white;
+        margin: 8px 0;
+        border: 1px solid $highlightColor;
+
+        // @media all and (min-width: 900px) {
+        //   width: 44%;
+        // }
+        // @media all and (min-width: 1200px) {
+        //   max-width: 350px;
+        // }
+      }
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 4.5vmin;
+      }
+      .firstNameSVGContainer,
+      .lastNameSVGContainer {
+        .firstNameSVG,
+        .lastNameSVG {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+        .firstNameSVG {
+          padding-bottom: 10px;
+          stroke-dasharray: 150;
+          stroke-dashoffset: 150;
+          animation: dash 4s infinite alternate;
+
+          @keyframes dash {
+            to {
+              stroke-dashoffset: 0;
+            }
+            from {
+              stroke-dashoffset: 150;
+            }
+          }
+        }
+        .lastNameSVG {
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .resumeImg {
+      // border: 1px solid white;
+      z-index: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      margin: auto 0;
+      background-color: black;
+      @media all and (max-width: 600px) {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        left: 15%;
+      }
+      #canvasPortraitHeader {
+        position: relative;
+        bottom: -5%;
+        scale: 1;
+
+        @media all and (min-width: 800px) {
+          right: 5%;
+        }
+        @media all and (min-width: 1200px) {
+          scale: 1.15;
+          bottom: 5%;
+          right: 10%;
+        }
+      }
+    }
+  }
+}
+.resumeBottomContainer {
+  display: flex;
+  height: 45vh;
+  width: 100vw;
+  // border: 1px solid white;
+
+  .contentGridWrapper {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    background-color: #000;
+
+    .personalInfosContainer {
+      position: relative;
+      width: 100vw;
+      height: 100%;
+    }
+
+    .downloadResume {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      // border: 1px solid white;
+      width: 100%;
+      height: 20vh;
+      bottom: 0;
+      padding: 0 10vw;
+      @media all and (max-width: 600px) {
+        padding: 0 5vw;
+      }
+      a {
+        text-decoration: none;
+        &:hover,
+        &:active {
+          transition: all 0.4s ease-in-out;
+          span {
+            transition: all 0.4s ease-in-out;
+            filter: drop-shadow(0px 0px 10px #00000007);
+
+            color: #ffffff;
+          }
+        }
+      }
+      .buttonInfoBox {
+        height: 20%;
+        display: flex;
+        margin: 10px 0px;
+        align-items: center;
+      }
+      .textBoxResume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        // padding: 15px 15px;
+        height: 100%;
+        z-index: 6;
+        // border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        // background: #00adb5;
+        // background: #15191e;
+        background: transparent;
+        filter: drop-shadow(0px 0px 10px #ffffff13);
+
+        .btnHover::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0px;
+          left: 0;
+          background-color: #00adb5;
+          // background-color: #15191e;
+          transform-origin: center;
+          transition: 0.2s ease-in-out;
+        }
+        .btnHover:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left right;
+        }
+
+        h2 {
+          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.477));
+          width: 100%;
+          height: 100%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          font-size: 2.5vmin;
+          transition: all 0.4s ease-in-out;
+          color: rgb(255, 255, 255);
+
+          @media all and (max-width: 700px) {
+            font-size: 1.5rem;
+          }
+          &:hover {
+            transition: all 0.4s ease-in-out;
+            color: #000000;
+            color: #00adb5;
+            filter: drop-shadow(0px 0px 10px #ffffff93);
+          }
+        }
+        span {
+          color: rgb(255, 255, 255);
+          transition: all 0.4s ease-in-out;
+
+          &:hover {
+            color: #ffffff;
+
+            transition: all 0.4s ease-in-out;
+            filter: drop-shadow(0px 0px 10px #00000007);
+          }
+        }
+        p {
+          text-align: center;
+          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+          margin: 0;
+          z-index: 81;
+          line-height: 1.25;
+          font-size: 1.32rem;
+          font-weight: 300;
+          // font-family: 'Raleway', sans-serif;
+          @media all and (min-width: 400px) {
+            font-size: 1.35rem;
+          }
+          @media all and (min-width: 550px) {
+            font-size: 1.45rem;
+          }
+          @media all and (min-width: 768px) {
+            font-size: 1.55rem;
+          }
+        }
+      }
+    }
+  }
+}

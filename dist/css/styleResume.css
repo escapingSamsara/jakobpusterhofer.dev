@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow: hidden;
+  cursor: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: #15191e;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+li,
+ul,
+button,
+input {
+  cursor: none;
+  color: white;
+}
+
+.gsapCursor {
+  z-index: 10000;
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  overflow: visible;
+  background-color: white;
+  filter: drop-shadow(0px 0px 4px rgba(188, 188, 188, 0.372));
+  width: 25px;
+  height: 25px;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+#mainWrapperResume {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#resumeWrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#resumeWrapper .resumeTopContainer {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+#resumeWrapper .resumeTopContainer .resumeHeader {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 80vh;
+  margin-top: 20vh;
+  padding: 55vh 5vw 10vh 10vw;
+}
+@media all and (max-width: 600px) {
+  #resumeWrapper .resumeTopContainer .resumeHeader {
+    padding: 55vh 5vw 10vh 5vw;
+  }
+}
+#resumeWrapper .resumeTopContainer .resumeHeader hr {
+  width: 100%;
+  max-width: 350px;
+  margin: 8px 0;
+  border: 1px solid #00adb5;
+}
+#resumeWrapper .resumeTopContainer .resumeHeader h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4.5vmin;
+}
+#resumeWrapper .resumeTopContainer .resumeHeader .firstNameSVGContainer .firstNameSVG,
+#resumeWrapper .resumeTopContainer .resumeHeader .firstNameSVGContainer .lastNameSVG,
+#resumeWrapper .resumeTopContainer .resumeHeader .lastNameSVGContainer .firstNameSVG,
+#resumeWrapper .resumeTopContainer .resumeHeader .lastNameSVGContainer .lastNameSVG {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#resumeWrapper .resumeTopContainer .resumeHeader .firstNameSVGContainer .firstNameSVG,
+#resumeWrapper .resumeTopContainer .resumeHeader .lastNameSVGContainer .firstNameSVG {
+  padding-bottom: 10px;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: dash 4s infinite alternate;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 150;
+  }
+}
+#resumeWrapper .resumeTopContainer .resumeHeader .firstNameSVGContainer .lastNameSVG,
+#resumeWrapper .resumeTopContainer .resumeHeader .lastNameSVGContainer .lastNameSVG {
+  padding-bottom: 10px;
+}
+#resumeWrapper .resumeTopContainer .resumeImg {
+  z-index: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: auto 0;
+  background-color: black;
+}
+@media all and (max-width: 600px) {
+  #resumeWrapper .resumeTopContainer .resumeImg {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: 15%;
+  }
+}
+#resumeWrapper .resumeTopContainer .resumeImg #canvasPortraitHeader {
+  position: relative;
+  bottom: -5%;
+  scale: 1;
+}
+@media all and (min-width: 800px) {
+  #resumeWrapper .resumeTopContainer .resumeImg #canvasPortraitHeader {
+    right: 5%;
+  }
+}
+@media all and (min-width: 1200px) {
+  #resumeWrapper .resumeTopContainer .resumeImg #canvasPortraitHeader {
+    scale: 1.15;
+    bottom: 5%;
+    right: 10%;
+  }
+}
+
+.resumeBottomContainer {
+  display: flex;
+  height: 45vh;
+  width: 100vw;
+}
+.resumeBottomContainer .contentGridWrapper {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  background-color: #000;
+}
+.resumeBottomContainer .contentGridWrapper .personalInfosContainer {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+  padding: 0 10vw;
+}
+@media all and (max-width: 600px) {
+  .resumeBottomContainer .contentGridWrapper .downloadResume {
+    padding: 0 5vw;
+  }
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume a {
+  text-decoration: none;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume a:hover, .resumeBottomContainer .contentGridWrapper .downloadResume a:active {
+  transition: all 0.4s ease-in-out;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume a:hover span, .resumeBottomContainer .contentGridWrapper .downloadResume a:active span {
+  transition: all 0.4s ease-in-out;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.0274509804));
+  color: #ffffff;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .buttonInfoBox {
+  height: 20%;
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  z-index: 6;
+  border-radius: 20px;
+  background: transparent;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.0745098039));
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume .btnHover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #00adb5;
+  transform-origin: center;
+  transition: 0.2s ease-in-out;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume .btnHover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left right;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume h2 {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.477));
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.5vmin;
+  transition: all 0.4s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+@media all and (max-width: 700px) {
+  .resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume h2 {
+    font-size: 1.5rem;
+  }
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume h2:hover {
+  transition: all 0.4s ease-in-out;
+  color: #000000;
+  color: #00adb5;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5764705882));
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume span {
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume span:hover {
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.0274509804));
+}
+.resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume p {
+  text-align: center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  margin: 0;
+  z-index: 81;
+  line-height: 1.25;
+  font-size: 1.32rem;
+  font-weight: 300;
+}
+@media all and (min-width: 400px) {
+  .resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume p {
+    font-size: 1.35rem;
+  }
+}
+@media all and (min-width: 550px) {
+  .resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume p {
+    font-size: 1.45rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .resumeBottomContainer .contentGridWrapper .downloadResume .textBoxResume p {
+    font-size: 1.55rem;
+  }
+}/*# sourceMappingURL=styleResume.css.map */

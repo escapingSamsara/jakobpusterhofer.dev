@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="150"
+   height="150"
+   viewBox="0 0 6 6"
+   fill="none"
+   version="1.1"
+   id="svg23669"
+   sodipodi:docname="figma-svgrepo-com.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs23673" />
+  <sodipodi:namedview
+     id="namedview23671"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false" />
+  <g
+     id="g25975"
+     transform="matrix(0.24961522,0,0,0.24961522,-0.96021942,-0.99756547)"
+     style="stroke-width:4.00616">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 16,16 c 0,-2.2091 1.7909,-4 4,-4 2.2091,0 4,1.7909 4,4 0,2.2091 -1.7909,4 -4,4 -2.2091,0 -4,-1.7909 -4,-4 z"
+       fill="#1abcfe"
+       id="path23659"
+       style="stroke-width:9.75836" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 8,24 c 0,-2.2091 1.79086,-4 4,-4 h 4 v 4 c 0,2.2091 -1.7909,4 -4,4 -2.20914,0 -4,-1.7909 -4,-4 z"
+       fill="#0acf83"
+       id="path23661"
+       style="stroke-width:9.75836" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 16,4 v 8 h 4 c 2.2091,0 4,-1.7909 4,-4 0,-2.20914 -1.7909,-4 -4,-4 z"
+       fill="#ff7262"
+       id="path23663"
+       style="stroke-width:9.75836" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 8,8 c 0,2.2091 1.79086,4 4,4 h 4 V 4 H 12 C 9.79086,4 8,5.79086 8,8 Z"
+       fill="#f24e1e"
+       id="path23665"
+       style="stroke-width:9.75836" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 8,16 c 0,2.2091 1.79086,4 4,4 h 4 v -8 h -4 c -2.20914,0 -4,1.7909 -4,4 z"
+       fill="#a259ff"
+       id="path23667"
+       style="stroke-width:9.75836" />
+  </g>
+</svg>

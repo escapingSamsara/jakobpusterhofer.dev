@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/css/styleplayer.css" />
+
+    <title>music player escapingSamsara</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- <div id="test1">
+        <div id="test1inner">
+          <div id="test1left"></div>
+          <div id="test1right"></div>
+        </div> -->
+
+      <!-- WEBPLAYER TO COPY FOR MAIN-->
+      <div id="music">
+        <!-- <div class="music-top"></div> -->
+        <div class="music-bottom-holder">
+          <!-- <div class="musica-text">
+            <h1 class="section-title">my music</h1>
+            <p>
+              Regen der gegen Fensterglas prasselt, Wellen die an felsigen
+              Küsten brechen oder Vögel die im dichten Blattwerk eines Waldes
+              die Stille durchbrechen...mit Elementen aller Art und aus aller
+              Welt entsteht ein Herzschlag, der einen in tiefere Entspannung,
+              Gedankenreisen und Emotionen begleitet...
+            </p>
+          </div> -->
+
+          <div class="musica-player">
+            <div class="player-holder">
+              <div class="player-container">
+                <img src="#" alt="" id="background" class="background-img" />
+                <!-- Song -->
+                <!-- <div class="bg-container"></div> -->
+                <div class="bg-bg"></div>
+                <div class="img-container">
+                  <div id="circle-vinyl">
+                    <div id="circle-vinyl-dot"></div>
+                  </div>
+                  <img src="#" alt="" id="cover" />
+                </div>
+                <h2 id="title"></h2>
+                <h3 id="artist"></h3>
+                <audio src=""></audio>
+
+                <!-- Progress -->
+
+                <div class="progress-container" id="progress-container">
+                  <div class="progress" id="progress"></div>
+
+                  <div class="duration-wrapper">
+                    <span id="current-time"></span>
+
+                    <span id="duration"></span>
+                  </div>
+                </div>
+                <!-- Controls -->
+
+                <div class="player-controls">
+                  <i class="fas fa-backward" id="prev" title="Previous"></i>
+
+                  <i class="fas fa-play main-button" id="play" title="Play"></i>
+
+                  <i class="fas fa-forward" id="next" title="Next"></i>
+                </div>
+                <div class="volumeHolder">
+                  <div class="volume-bar">
+                    <input
+                      class="e-range"
+                      type="range"
+                      id="volume"
+                      min="0"
+                      max="100"
+                      value="50"
+                    />
+                  </div>
+                  <div class="volumeBtn">
+                    <i
+                      class="fas fa-volume-up fa-xl"
+                      id="volume-icon"
+                      title="Volume"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="appplayer.js"></script>
+    </div>
+  </body>
+</html>

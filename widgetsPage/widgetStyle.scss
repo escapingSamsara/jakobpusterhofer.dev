@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
+
+//////////////////////////////////////////////
+/// Variables
+//////////////////////////////////////////////
+$mainFont: 'Poppins', sans-serif;
+$secondaryFont: 'Raleway', serif;
+$bgColor: #15191e;
+$highlightColor: #00adb5;
+$sectionFontSize: 7.5rem;
+
+//////////////////////////////////////////////
+/// Global Styles
+//////////////////////////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden;
+  cursor: none;
+  height: 100%;
+  width: 100vw;
+  background-color: $bgColor;
+  font-size: 10px;
+  font-family: $mainFont;
+  color: #ffffff;
+}
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  @media all and (max-width: 1000px) {
+    scroll-snap-type: none;
+    overflow-y: auto;
+  }
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+li,
+ul,
+button,
+input {
+  cursor: none;
+  color: white;
+}
+p {
+  letter-spacing: 1.2;
+}
+
+//////////////////////////////////////////////
+/// PORTFOLIO SECTION
+//////////////////////////////////////////////
+
+/// PORTFOLIO WRAPPER - WIDGETS
+///
+///
+#portfolioWrapperWidgets {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $bgColor;
+
+  @media all and (min-width: 800px) {
+    height: 100vh;
+    width: 100vw;
+  }
+  .portfolioWidgets_Grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 50%;
+    // background-color: slategrey;
+    @media all and (min-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+      width: 100%;
+    }
+    .gridBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      height: 50vh;
+      // border: 1px solid white;
+      @media all and (max-width: 800px) {
+        width: 100%;
+      }
+      .portfolioBtnContainer {
+        // border: 1px solid white;
+        z-index: 4;
+        width: 70%;
+        height: 10%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        .portfolioLinkBtn {
+          z-index: 300;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .cta-btn-Project3-Code,
+          .cta-btn-Project3-Figma {
+            letter-spacing: 1.2;
+            padding: 5.5px 15px;
+            border-radius: 100px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+            &:hover,
+            &:active {
+              filter: drop-shadow(0px 0px 10px rgba(187, 187, 187, 0.25));
+              background-color: white;
+              color: #000000;
+            }
+            @media all and (min-width: 400px) {
+              font-size: 1.6rem;
+            }
+            @media all and (min-width: 550px) {
+              font-size: 1.55rem;
+            }
+            @media all and (min-width: 768px) {
+              font-size: 1.7rem;
+            }
+            @media all and (min-width: 950px) {
+              font-size: 1.8rem;
+            }
+            @media all and (min-width: 1000px) {
+              font-size: 1.9rem;
+            }
+          }
+        }
+      }
+    }
+    .portfolioWidgetsContentBox_Text {
+      padding-top: 10vh;
+      .appContainerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        height: 100%;
+        width: 80%;
+        padding: 2rem;
+        @media all and (min-width: 640px) {
+          font-size: 1.6rem;
+        }
+
+        .widgetHeader {
+          font-size: 1.85rem;
+          font-weight: 600;
+          font-family: 'Raleway', sans-serif;
+          // border: 1px solid rgb(201, 103, 103);
+          @media all and (min-width: 400px) {
+            font-size: 1.95rem;
+          }
+          @media all and (min-width: 550px) {
+            font-size: 2.15rem;
+          }
+          @media all and (min-width: 768px) {
+            font-size: 2.25rem;
+          }
+          @media all and (min-width: 950px) {
+            font-size: 2.3rem;
+          }
+          @media all and (min-width: 1000px) {
+            font-size: 2.4rem;
+          }
+        }
+        p {
+          display: flex;
+          justify-content: center;
+          text-align: justify;
+          margin: 0 auto 4vh;
+          // padding: 1vh 0;
+          // width: 65%;
+          font-size: 1.32rem;
+          // border: 1px solid white;
+          @media all and (min-width: 400px) {
+            font-size: 1.6rem;
+          }
+          @media all and (max-width: 500px) {
+          }
+          @media all and (max-width: 1000px) {
+            width: 100%;
+            // margin: 0 0 4vh;
+          }
+        }
+      }
+    }
+    .portfolioWidgetsContentBox_WeatherWidget {
+      flex-direction: column-reverse;
+    }
+    .portfolioWidgetsContentBox_WeblayerWidget {
+    }
+    .portfolioWidgetsContentBox_TodoListWidget {
+      // grid-row: 1/-1;
+    }
+  }
+}
+//////////////////////////////////////////////
+/// FOOTER Start
+//////////////////////////////////////////////
+#footerWrapper {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  border: 1px solid gold;
+  span {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+}
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+//////////////////////////////////////////////

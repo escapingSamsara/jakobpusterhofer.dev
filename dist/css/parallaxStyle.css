@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  cursor: none;
+  height: 100vh;
+  width: 100%;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+li,
+ul,
+button,
+input {
+  cursor: none;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* GSAP Cursor Start */
+.gsapCursor {
+  z-index: 99;
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  overflow: visible;
+  mix-blend-mode: difference;
+  background-color: white;
+}
+
+.gsapCursorHover {
+  width: 25px;
+  height: 25px;
+  z-index: 99;
+  mix-blend-mode: difference;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.gsapCursorHoverNav {
+  width: 35px;
+  height: 35px;
+  z-index: 99;
+  mix-blend-mode: difference;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.gsapCursorHoverImg {
+  width: 15px;
+  height: 15px;
+  z-index: 99;
+  mix-blend-mode: normal;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.gsapCursorHoverCanvas {
+  width: 15px;
+  height: 15px;
+  z-index: 99;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  mix-blend-mode: normal;
+}
+
+.gsapCursorHoverInput {
+  width: 10px;
+  height: 10px;
+  z-index: 99;
+  mix-blend-mode: normal;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+#b2tBtn {
+  position: fixed;
+  z-index: 90;
+  right: 25px;
+  bottom: -20px;
+  height: 30px;
+  width: 30px;
+  transform: translateY(20px);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+}
+#b2tBtn .scrollBar {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.progressBar {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+/* NAVBAR START */
+#navbar {
+  height: 10vh;
+  background: transparent;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  box-shadow: 1px 1px 20px #12131e;
+  transition: top 0.4s; /* Transition effect when sliding down (and up) */
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo {
+  padding-left: 2.5vw;
+  width: 40%;
+}
+.logo svg {
+  height: 75%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  stroke-dasharray: 90;
+  stroke-dashoffset: 90;
+  -webkit-animation: dash 4s infinite;
+          animation: dash 4s infinite;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 90;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 90;
+  }
+}
+
+.navDiv {
+  width: 60%;
+  padding-right: 1.5vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin: 1vw;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: lowercase;
+  font-family: "Poppins", sans-serif, sans-serif;
+}
+
+.parallax_wrapper {
+  font-size: 3rem;
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+
+.intro_screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #202020 60%, #000000 100%);
+}
+
+.outro_screen {
+  height: 100vh;
+  width: 100%;
+  background-color: #0d84ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax_group {
+  position: relative;
+  height: 200vh;
+  transform-style: preserve-3d;
+}
+
+.parallax_layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid_layer {
+  height: 200vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8vw;
+  transform: translateZ(-100px) scale(1.3);
+}
+
+.top_layer {
+  transform: translateZ(210px) scale(0.3);
+}
+
+#intro {
+  z-index: 0;
+}
+
+#group-1 {
+  flex-direction: column;
+  z-index: -1;
+}
+#group-1 .base_layer {
+  transform: translateZ(-300px) scale(2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+#group-1 .base_layer .imageMac {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#group-1 .base_layer .imageMac img {
+  margin: auto 0;
+  width: auto;
+  height: 80%;
+  position: relative;
+  top: 0;
+  left: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#group-1 .base_layer .imagePhone {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#group-1 .base_layer .imagePhone img {
+  margin: auto 0;
+  width: auto;
+  height: 80%;
+  position: relative;
+  top: 0;
+  left: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#group-2 > .mid_layer {
+  background-color: #202020;
+  border: 1px solid white;
+}
+#group-2 img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#contactWrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+#contactWrapper .contactContainer {
+  height: 40vh;
+  width: 100%;
+  z-index: 1;
+}
+#contactWrapper .contactContainer .contactContainerTop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid rgb(255, 3, 217);
+}
+#contactWrapper .contactContainer .contactContainerUpper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#contactWrapper .contactContainer .contactHeader {
+  height: 100%;
+  width: 40%;
+}
+#contactWrapper .contactContainer .contactHeader .contactHeaderBox {
+  display: flex;
+  height: 100%;
+  padding-top: 10vh;
+}
+#contactWrapper .contactContainer .contactHeader .contactHeaderBox h2 {
+  width: 100%;
+  padding-left: 8vw;
+  color: white;
+  font-size: 7.5rem;
+  font-weight: 300;
+}
+#contactWrapper .contactContainer .contactContainerUpperRight {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+#contactWrapper .contactContainer .contactContainerUpperRight .contactSpacerUpperRight {
+  height: 10vh;
+  width: 100%;
+}
+#contactWrapper .contactContainer .contactContainerUpperRight .contactTextUpperRight {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+}
+#contactWrapper .contactContainer .contactContainerUpperRight .contactTextUpperRight p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  line-height: 1.5;
+  height: 30vh;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+}
+#contactWrapper .contactContainer .contactContentContainer {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+}
+
+#footerWrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(252, 141, 141);
+}
+#footerWrapper .footerContainer .footerContainerText {
+  width: 100%;
+  height: 100%;
+}
+#footerWrapper .footerContainer .footerContainerText p {
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+  color: white;
+}/*# sourceMappingURL=parallaxStyle.css.map */

@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- googleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- favicon -->
+   <link defer rel="apple-touch-icon" sizes="180x180" href="/src/img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+
+   <!-- //////////////////////////////////////////////////////////////////// -->
+   <!-- CSS -->
+   <!-- //////////////////////////////////////////////////////////////////// -->
+   <!-- CSS MAIN -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- CSS WeatherAppWidget -->
+    <link rel="stylesheet" href="./dist/css/weatherAppWidgetStyle.css" />
+    <!-- CSS Webplayer -->
+    <link rel="stylesheet" href="./dist/css/styleplayer.css" />
+    <!-- CSS todoList -->
+    <link rel="stylesheet" href="./dist/css/todolistStyle.css">
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/76f4b1934d.js"
+      crossorigin="anonymous"
+    ></script>
+     <!-- //////////////////////////////////////////////////////////////////// -->
+      <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"
+    ></script>
+ <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- HERO CANVAS JS -->
+     <script  src="./js/particleEffects/heroParticlesName.js"></script>
+    <title>jP</title>
+  </head>
+  <body>
+    <main>
+    <section class="horizontalScroll">
+       <!-- //////////////////////////////////////////////////////////////////// -->
+       <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="overlay">
+    <div class="preloaderSVGContainer">
+    <svg class="preloaderSVG" width="250.72" height="76.24" viewBox="0 0 250.72 76.24" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#00adb5" stroke-width="0.35mm" fill="none" style="stroke: #00adb5;stroke-width:0.35mm;fill:none"><path d="M 249.12 26.56 L 249.12 16.88 L 250.72 16.88 L 250.72 60.16 A 18.76 18.76 0 0 1 250.299 64.24 A 13.301 13.301 0 0 1 248.12 69.2 Q 245.52 72.8 241.32 74.52 Q 237.12 76.24 232.4 76.24 Q 227.491 76.24 224.006 75.012 A 14.099 14.099 0 0 1 220.88 73.48 Q 216.72 70.72 214.4 66.32 L 215.92 65.84 A 16.414 16.414 0 0 0 219.339 70.2 A 14.702 14.702 0 0 0 222.92 72.56 Q 227.36 74.64 232.4 74.64 A 22.068 22.068 0 0 0 237.931 73.967 A 19.283 19.283 0 0 0 240.76 73 Q 244.56 71.36 246.84 68.12 A 12.308 12.308 0 0 0 248.863 63.164 A 16.822 16.822 0 0 0 249.12 60.16 L 249.12 49.76 Q 246.48 53.92 242.04 56.56 A 18.892 18.892 0 0 1 236.741 58.747 A 16.657 16.657 0 0 1 232.88 59.2 Q 228.56 59.2 224.88 57.36 Q 221.2 55.52 218.52 52.44 Q 215.84 49.36 214.36 45.56 Q 212.88 41.76 212.88 37.76 Q 212.88 33.6 214.28 29.72 Q 215.68 25.84 218.24 22.8 Q 220.8 19.76 224.36 18 A 17.209 17.209 0 0 1 231.567 16.249 A 20.093 20.093 0 0 1 232.16 16.24 A 17.811 17.811 0 0 1 237.575 17.036 A 15.29 15.29 0 0 1 242 19.28 Q 246.16 22.32 249.12 26.56 Z M 202.96 35.28 L 202.96 58.4 L 201.36 58.4 L 201.36 35.28 A 51.712 51.712 0 0 0 201.172 30.698 Q 200.671 25.092 198.84 22.04 Q 196.32 17.84 190.72 17.84 A 17.332 17.332 0 0 0 183.188 19.59 A 20.105 20.105 0 0 0 182.92 19.72 Q 179.12 21.6 176.32 24.84 Q 173.52 28.08 172.32 32.16 L 172.32 58.4 L 170.72 58.4 L 170.72 16.88 L 172.32 16.88 L 172.32 27.6 Q 174.08 24.24 176.96 21.68 Q 179.84 19.12 183.4 17.68 Q 186.96 16.24 190.64 16.24 A 14.831 14.831 0 0 1 193.272 16.462 A 10.647 10.647 0 0 1 196.16 17.4 A 9.696 9.696 0 0 1 199.782 20.559 A 11.559 11.559 0 0 1 200 20.88 Q 201.52 23.2 202.24 26.8 A 34.288 34.288 0 0 1 202.732 30.195 Q 202.903 31.95 202.946 33.933 A 62.565 62.565 0 0 1 202.96 35.28 Z M 140.56 26.56 L 140.56 0 L 142.16 0 L 142.16 55.2 Q 142.16 55.842 142.446 56.261 A 1.418 1.418 0 0 0 142.52 56.36 A 1.208 1.208 0 0 0 142.902 56.676 A 1.158 1.158 0 0 0 143.44 56.8 L 143.44 58.4 A 5.15 5.15 0 0 1 143.086 58.389 Q 142.746 58.365 142.529 58.293 A 0.988 0.988 0 0 1 142.4 58.24 Q 141.52 57.84 141.04 57 Q 140.56 56.16 140.56 55.2 L 140.56 49.76 Q 137.92 53.92 133.48 56.56 A 18.892 18.892 0 0 1 128.181 58.747 A 16.657 16.657 0 0 1 124.32 59.2 Q 120 59.2 116.32 57.36 Q 112.64 55.52 109.96 52.44 Q 107.28 49.36 105.8 45.56 Q 104.32 41.76 104.32 37.76 Q 104.32 32 106.84 27.12 Q 109.36 22.24 113.72 19.24 Q 118.08 16.24 123.6 16.24 A 17.78 17.78 0 0 1 130.352 17.504 A 16.828 16.828 0 0 1 133.68 19.32 A 25.199 25.199 0 0 1 138.33 23.475 A 21.74 21.74 0 0 1 140.56 26.56 Z M 92.88 36.96 L 92.88 32.24 A 18.334 18.334 0 0 0 92.335 27.648 A 13.209 13.209 0 0 0 89.16 21.8 A 12.366 12.366 0 0 0 81.415 17.968 A 17.295 17.295 0 0 0 79.28 17.84 Q 76.32 17.84 72.84 19.16 A 29.283 29.283 0 0 0 68.474 21.263 A 36.623 36.623 0 0 0 65.84 22.96 L 64.88 21.68 A 44.777 44.777 0 0 1 68.304 19.56 Q 70.186 18.514 71.972 17.798 A 26.814 26.814 0 0 1 72.48 17.6 A 22.342 22.342 0 0 1 75.927 16.591 A 16.846 16.846 0 0 1 79.28 16.24 Q 86.24 16.24 90.36 20.56 A 14.469 14.469 0 0 1 93.988 27.515 A 21.443 21.443 0 0 1 94.48 32.24 L 94.48 55.2 A 2.844 2.844 0 0 0 94.512 55.64 Q 94.548 55.872 94.626 56.057 A 1.207 1.207 0 0 0 94.84 56.4 A 1.172 1.172 0 0 0 95.691 56.798 A 1.517 1.517 0 0 0 95.76 56.8 L 95.76 58.4 Q 95.368 58.4 95.136 58.373 A 1.924 1.924 0 0 1 95.04 58.36 Q 94.852 58.329 94.713 58.273 A 0.986 0.986 0 0 1 94.64 58.24 A 2.46 2.46 0 0 1 93.556 57.383 A 3.215 3.215 0 0 1 93.36 57.08 A 3.674 3.674 0 0 1 92.884 55.393 A 4.389 4.389 0 0 1 92.88 55.2 L 92.88 51.36 A 19.057 19.057 0 0 1 86.63 56.503 A 22.834 22.834 0 0 1 85.36 57.12 A 24.087 24.087 0 0 1 76.293 59.182 A 27.887 27.887 0 0 1 75.28 59.2 Q 71.52 59.2 68.48 57.52 Q 65.44 55.84 63.64 52.92 Q 61.84 50 61.84 46.48 Q 61.84 42.96 64.04 40.32 Q 66.24 37.68 70.08 36.16 Q 73.92 34.64 78.96 34.64 Q 82.48 34.64 86.2 35.24 Q 89.92 35.84 92.88 36.96 Z M 0 52.24 L 0 0 L 1.6 0 L 1.6 52.24 A 6.029 6.029 0 0 0 1.802 53.844 A 4.407 4.407 0 0 0 3.04 55.92 A 4.859 4.859 0 0 0 5.441 57.14 A 7.055 7.055 0 0 0 6.88 57.28 Q 7.55 57.28 8.427 57.164 A 20.116 20.116 0 0 0 9 57.08 A 18.483 18.483 0 0 0 10.402 56.8 A 14.896 14.896 0 0 0 11.28 56.56 L 11.84 57.84 Q 11.141 58.055 10.154 58.27 A 40.501 40.501 0 0 1 9.12 58.48 A 23.084 23.084 0 0 1 8.031 58.662 Q 7.543 58.731 7.115 58.766 A 9.949 9.949 0 0 1 6.32 58.8 A 7.09 7.09 0 0 1 4.161 58.486 A 5.751 5.751 0 0 1 1.76 57 A 6.059 6.059 0 0 1 0.124 53.731 A 8.581 8.581 0 0 1 0 52.24 Z M 35.28 59.2 Q 31.2 59.2 27.6 57.52 Q 24 55.84 21.28 52.84 Q 18.56 49.84 17.04 45.96 Q 15.52 42.08 15.52 37.76 Q 15.52 33.36 17.08 29.48 Q 18.64 25.6 21.36 22.6 Q 24.08 19.6 27.68 17.92 Q 31.28 16.24 35.28 16.24 Q 39.28 16.24 42.88 17.92 Q 46.48 19.6 49.2 22.6 Q 51.92 25.6 53.48 29.48 Q 55.04 33.36 55.04 37.76 Q 55.04 42.08 53.52 45.96 Q 52 49.84 49.24 52.84 Q 46.48 55.84 42.92 57.52 Q 39.36 59.2 35.28 59.2 Z M 17.12 37.92 Q 17.12 43.28 19.56 47.76 Q 22 52.24 26.12 54.92 Q 30.24 57.6 35.2 57.6 Q 40.16 57.6 44.32 54.88 Q 48.48 52.16 50.96 47.6 Q 53.44 43.04 53.44 37.68 Q 53.44 32.32 50.96 27.8 Q 48.48 23.28 44.36 20.56 Q 40.24 17.84 35.28 17.84 Q 30.4 17.84 26.24 20.6 Q 22.08 23.36 19.6 27.92 Q 17.12 32.48 17.12 37.92 Z M 249.12 44.88 L 249.12 29.92 Q 247.84 26.4 245.16 23.68 Q 242.48 20.96 239.12 19.4 Q 235.76 17.84 232.16 17.84 Q 228 17.84 224.68 19.6 Q 221.36 21.36 219.12 24.28 Q 216.88 27.2 215.68 30.72 A 21.8 21.8 0 0 0 214.485 37.32 A 20.654 20.654 0 0 0 214.48 37.76 Q 214.48 41.68 215.88 45.24 Q 217.28 48.8 219.84 51.6 Q 222.4 54.4 225.72 56 Q 229.04 57.6 232.88 57.6 Q 235.84 57.6 238.64 56.48 Q 241.44 55.36 243.76 53.48 A 18.733 18.733 0 0 0 246.316 50.989 A 15.846 15.846 0 0 0 247.52 49.36 A 11.099 11.099 0 0 0 248.589 47.26 A 8.475 8.475 0 0 0 249.12 44.88 Z M 140.56 44.88 L 140.56 29.92 Q 139.36 26.56 136.64 23.84 Q 133.92 21.12 130.44 19.48 A 17.727 17.727 0 0 0 126.776 18.2 A 14.433 14.433 0 0 0 123.6 17.84 A 17.008 17.008 0 0 0 119.276 18.372 A 14.429 14.429 0 0 0 116.28 19.52 Q 113.04 21.2 110.72 24.08 Q 108.4 26.96 107.16 30.48 Q 105.92 34 105.92 37.76 Q 105.92 41.68 107.32 45.24 Q 108.72 48.8 111.28 51.6 Q 113.84 54.4 117.16 56 Q 120.48 57.6 124.32 57.6 A 13.258 13.258 0 0 0 127.053 57.301 A 18.067 18.067 0 0 0 129.48 56.6 Q 132.24 55.6 134.72 53.8 A 18.261 18.261 0 0 0 137.685 51.131 A 15.972 15.972 0 0 0 138.8 49.72 A 9.898 9.898 0 0 0 140.192 46.914 A 8.852 8.852 0 0 0 140.56 44.88 Z M 157.28 58.4 L 155.68 58.4 L 155.68 16.88 L 157.28 16.88 L 157.28 58.4 Z M 92.88 46.96 L 92.88 38.72 Q 89.68 37.44 86.2 36.84 A 42.235 42.235 0 0 0 79.546 36.244 A 46.72 46.72 0 0 0 78.96 36.24 A 28.422 28.422 0 0 0 74.492 36.571 Q 70.529 37.203 67.72 39.04 A 10.635 10.635 0 0 0 65.283 41.182 A 8.109 8.109 0 0 0 63.44 46.48 Q 63.44 49.6 65 52.12 Q 66.56 54.64 69.28 56.12 A 12.303 12.303 0 0 0 75.076 57.599 A 14.425 14.425 0 0 0 75.28 57.6 Q 80.64 57.6 85.08 55.6 A 18.075 18.075 0 0 0 88.417 53.673 A 13.04 13.04 0 0 0 91.68 50.24 A 7.569 7.569 0 0 0 92.201 49.424 A 5.529 5.529 0 0 0 92.6 48.52 A 5.876 5.876 0 0 0 92.801 47.759 A 4.285 4.285 0 0 0 92.88 46.96 Z M 157.28 6.16 L 155.68 6.16 L 155.68 0 L 157.28 0 L 157.28 6.16 Z" vector-effect="non-scaling-stroke"/></g></svg>
+
+      </div>
+</div>
+    </div>
+     <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- GSAP CURSOR  -->
+    <div class="gsapCursor"></div>
+     <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- BACK TO TOP Button -->
+    <div class="b2tButtonContainer">
+      <a href="#heroWrapper"
+        ><button id="b2tBtn">
+          <div class="b2tBtnFill scrollBar" id="scrollProgress">
+            <span class="progressBar"></span>
+          </div></button
+      ></a>
+    </div>
+     <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- NAVBAR Start-->
+    <header id="navbar">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#heroWrapper">
+            <svg class="jP_2" width="36.4" height="72.1" viewBox="0 0 36.4 74" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#ffffff" stroke-width="0.3mm"  style="stroke:#ffffff;stroke-width:0.3mm;fill:none"><path d="M 0 67.7 L 1.1 66.1 A 23.991 23.991 0 0 0 6.89 68.846 A 27.036 27.036 0 0 0 7.55 69.05 A 25.375 25.375 0 0 0 12.28 69.952 A 31.994 31.994 0 0 0 15.4 70.1 Q 19.941 70.1 23.173 68.942 A 13.401 13.401 0 0 0 25.6 67.8 Q 29.4 65.5 31.3 61.05 Q 33.2 56.6 33.8 50.3 Q 34.381 44.2 34.399 36.6 A 206.031 206.031 0 0 0 34.4 36.1 L 34.4 0 L 36.4 0 L 36.4 36.1 Q 36.4 44.2 35.7 50.8 Q 35.051 56.921 33.197 61.494 A 28.026 28.026 0 0 1 32.9 62.2 A 16.455 16.455 0 0 1 29.574 67.201 A 15.25 15.25 0 0 1 26.6 69.55 A 15.896 15.896 0 0 1 22.389 71.293 Q 20.482 71.797 18.229 71.987 A 33.851 33.851 0 0 1 15.4 72.1 A 33.391 33.391 0 0 1 10.494 71.754 A 26.62 26.62 0 0 1 7 71 Q 3.2 69.9 0 67.7 Z" vector-effect="non-scaling-stroke"/></g></svg>
+  <svg class="jP" width="130" height="100" viewBox="0 0 95 70" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#00adb5" stroke-width="0.3mm" fill="none" style="stroke:#00adb5;stroke-width:0.3mm;fill:none"><path d="M 5.1 71 L 0 71 L 0 0 L 29.2 0 A 18.53 18.53 0 0 1 35.281 0.982 A 17.19 17.19 0 0 1 37.45 1.9 Q 41.2 3.8 44 6.95 Q 46.8 10.1 48.35 14 Q 49.9 17.9 49.9 22 Q 49.9 27.7 47.35 32.75 Q 44.8 37.8 40.35 41 A 17.003 17.003 0 0 1 31.939 44.097 A 21.688 21.688 0 0 1 29.8 44.2 L 5.1 44.2 L 5.1 71 Z M 5.1 4.6 L 5.1 39.5 L 29.6 39.5 A 14.799 14.799 0 0 0 33.912 38.895 A 12.437 12.437 0 0 0 37.7 37 Q 41.1 34.5 42.9 30.5 Q 44.7 26.5 44.7 22 Q 44.7 17.3 42.55 13.35 Q 40.4 9.4 36.85 7 Q 33.3 4.6 29 4.6 L 5.1 4.6 Z" vector-effect="non-scaling-stroke"/></g></svg>
+          </a>
+        </div>
+        <div class="navDiv">
+          <nav>
+            <ul>
+              <li>
+                <a href="#aboutWrapper">about</a>
+              </li>
+              <li>
+                <a href="#portfolioWrapper1">portfolio</a>
+              </li>
+              <li>
+                <a href="#contactWrapper">contact</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+     <!-- //////////////////////////////////////////////////////////////////// -->
+<!-- HERO SECTION -->
+    <section id="heroWrapper" class="horizontalScrollSections">
+      <div class="heroContainer">
+          <canvas id="canvasNameHeader"></canvas>
+          <div class="enterCTA">
+            <a href="#aboutTopFloatContainer">
+           <svg class="enterCTAsvg" stroke="currentColor" fill="currentColor" stroke-width="0.10mm" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path></svg></a></div>
+      </div>
+    </section>
+     <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- ABOUT SECTION -->
+    <section id="aboutWrapper" class="horizontalScrollSections">
+      <div class="aboutContainer">
+        <div class="aboutTopFloatContainer" id="aboutTopFloatContainer">
+              <div class="aboutHeader">
+                <div class="aboutHeaderBox">
+                  <h2>about</h2>
+                </div>
+            </div>
+            <div class="aboutMeImg">
+              <img
+                src="./src/img/mainPageImg/aboutMe/Jakob_Pusterhofer_freeSmaller_cut01.png"
+                alt=""
+                class="hidden"
+              />
+            </div>
+          </div>
+        <div class="aboutContainerBottom">
+              <div class="aboutSkillsTextContainerBottom">
+                <div class="aboutSkillsTextContainerLeftOne">
+                  <p class="aboutSkillsLeftColumn paragraphHoverGSAP">
+                    <!-- This webpage represents the canvas of my creative journey as
+                    a web developer. I am very passionate about creating
+                    aesthetically pleasing, functional and user-friendly
+                    websites and web-applications.
+                    I love expressing and channeling my creativity through my
+                    work as a front-end developer. Besides working as a
+                    developer, I am also a musician and writer. -->
+                    Hey there and welcome to my page! I'm Jakob, a web developer and code enthusiast based in Graz, Austria. This website represents the canvas of my creative journey as a developer. I'm passionate about crafting beautiful, responsive websites and web applications. I love expressing and channeling my creativity through code, to make the internet a more beautiful and exciting place.
+                  </p>
+                </div>
+                <div class="aboutSkillsTextContainerLeftTwo">
+                  <p class="aboutSkillsRightColumn paragraphHoverGSAP">
+                    <!-- My current focus is on deepening my understanding of HTML5, CSS3 and JS. Recently, I started working with HTML-Canvas and already got to check out some
+                    JavaScript libraries like gsap. My next goal is to learn nodeJS and React. I am always looking for collaborations with other creative minds to learn from and
+                    to work with. -->
+                    In addition to my work in development, I also pursue my passions for music and writing.
+                    At present, I am dedicated to expanding my knowledge of HTML5, CSS3, and JS. I have recently begun exploring HTML-Canvas and experimenting with JavaScript libraries such as GSAP. My next objective is to acquire expertise in nodeJS and React to build complex web applications.
+                  </p>
+                </div>
+              </div>
+            <div class="aboutSkillProgressWrapper">
+                <section class="aboutSkillsProgress">
+                  <!-- HTML Chart -->
+                  <figure class="chart hidden" data-percent="75">
+                    <img
+                      class="html"
+                      src="./src/img/aboutMe/aboutMeSkills/html5_150.svg"
+                    />
+                    <svg width="200" height="200">
+                      <circle
+                        class="outer"
+                        cx="100"
+                        cy="95"
+                        r="85"
+                        transform="rotate(-90, 100, 100)"
+                      />
+                    </svg>
+                  </figure>
+                  <!-- CSS Chart -->
+                  <figure class="chart hidden" data-percent="70">
+                    <img
+                      class="css"
+                      src="./src/img/aboutMe/aboutMeSkills/css3_150.svg"
+                    />
+                    <svg width="200" height="200">
+                      <circle
+                        class="outer"
+                        cx="100"
+                        cy="95"
+                        r="85"
+                        transform="rotate(-90, 100, 100)"
+                      />
+                    </svg>
+                  </figure>
+                  <!-- Javascript Chart -->
+                  <figure class="chart hidden" data-percent="65">
+                    <img
+                      class="javascript"
+                      src="./src/img/aboutMe/aboutMeSkills/javascript_150.svg"
+                    />
+                    <svg viewBox="0 0 200 200">
+                      <circle
+                        class="outer"
+                        cx="100"
+                        cy="95"
+                        r="85"
+                        transform="rotate(-90, 100, 100)"
+                      />
+                    </svg>
+                  </figure>
+                </section>
+              </div>
+            <div class="aboutSkillsOthers">
+                <div class="marquee">
+                  <ul class="marquee-content">
+
+                    <span>
+                      <i class="fab fa-js fa-xs"></i>
+                    </span>
+                     <span>
+                      <i class="fab fa-sass fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-git fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-figma fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-react fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-node fa-xs"></i>
+                    </span>
+                     <span>
+                      <i class="fab fa-sass sass_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-js js_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-git git_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-react react_about_2 fa-xs"></i>
+                    </span>
+           <span>
+                      <i class="fab fa-css3 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-node node_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-js fa-xs"></i>
+                    </span>
+                     <span>
+                      <i class="fab fa-sass fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-git fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-figma fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-react fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-node fa-xs"></i>
+                    </span>
+                     <span>
+                      <i class="fab fa-sass sass_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-js js_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-git git_about_2 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-react react_about_2 fa-xs"></i>
+                    </span>
+           <span>
+                      <i class="fab fa-css3 fa-xs"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-node node_about_2 fa-xs"></i>
+                    </span>
+
+
+                  </ul>
+                </div>
+            </div>
+            <div class="aboutButtonContainer">
+            <div class="aboutButtonContact buttonHoverGSAP">
+              <a href="resume.html" type="button" class="cta-btn"
+                >read about me</a>
+            </div>
+            <div class="aboutButtonContact buttonHoverGSAP">
+              <a href="#contactWrapper" type="button" class="cta-btn"
+                >get in touch</a>
+            </div></div>
+          </div>
+        </div>
+    </section>
+        <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- PORTFOLIO SECTION-->
+    <section id="portfolioWrapper1" class="horizontalScrollSections">
+      <div id="porfolioContainer">
+            <div class="portfolioHeader">
+                <h2 class="portfolioHeadline">portfolio</h2>
+            </div>
+        <div class="portfolioContainerContentProject1">
+          <div class="portfolioContainerMacbookBox">
+            <div class="portfolioContainerTopBoxProject1">
+              <div class="portfolioContainerPhoneBox">
+                <div
+                  class="portfolioContainerPhoneBox1 portfolioPhoneContainer"
+                >
+                  <img
+                    src="./src/img/mainPageImg/projects/phoneMockup/aboutPhone.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="portfolioContainerPhoneBox2 portfolioPhoneContainer"
+                >
+                  <img
+                    src="./src/img/mainPageImg/projects/phoneMockup/projectPhone.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="portfolioContainerPhoneBox3 portfolioPhoneContainer"
+                >
+                  <img
+                    src="./src/img/mainPageImg/projects/phoneMockup/contactPhone.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolioContainerTopBoxProject1Text">
+                <div class="portfolioContainerMacbookTextBoxTop">
+                  <h2 class="widgetHeader">responsive websites</h2>
+                </div>
+                <div class="portfolioContainerMacbookTextBoxBottom">
+                  <p class="paragraphHoverGSAP">
+                    <!-- I enjoy creating unique, aesthetic and responsive websites
+                    that are easy to use and navigate. -->
+                    I enjoy creating visually appealing and user-friendly websites that work seamlessly across devices of different sizes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolioContentProject1Macbook">
+            <div class="portfolioContentProjectImageMacbook">
+              <img
+                class="macbookBody"
+                src="./src/img/mainPageImg/projects/lor3mPixum/macbook16Front.png"
+                alt=""
+                srcset=""
+              />
+              <div class="portfolioContentProjectImageMacbookScreen">
+                <img
+                  src="./src/img/mainPageImg/projects/lor3mPixum/lor3mPixum_contact.png"
+                  alt=""
+                  class="macbookContact"
+                />
+                <img
+                  src="./src/img/mainPageImg/projects/lor3mPixum/lor3mPixum_about.png"
+                  alt=""
+                  class="macbookAbout"
+                />
+                <img
+                  class="macbookHero"
+                  src="./src/img/mainPageImg/projects/lor3mPixum/lor3mPixum_hero.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="portfolioContainerProjectMacbookBottom">
+            <div class="portfolioContainerMacbookTextBox">
+              <div class="portfolioContainerMacbookBoxBottom">
+                <div class="portfolioProject1LinkBtnContainer">
+                  <div class="portfolioLinkBtn buttonHoverGSAP">
+                    <a
+                      href="https://escapingsamsara.github.io/lor3mPixum/"
+                      type="button"
+                      class="cta-btn-Project1-Demo"
+                      target="_blank"
+                      rel="noopener"
+                      >live demo</a
+                    >
+                  </div>
+                  <div class="portfolioLinkBtn buttonHoverGSAP">
+                    <a
+                      href="https://github.com/escapingSamsara/lor3mPixum"
+                      type="button"
+                      class="cta-btn-Project1-Code"
+                      target="_blank"
+                      rel="noopener"
+                      >view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </section>
+   <section id="portfolioWrapperWidgets">
+
+      <div class="portfolioWidgets_Grid">
+        <div class="portfolioWidgetsContentBox_Text gridBox">
+           <div class="appContainerText">
+                <h2 class="widgetHeader">Widgets:</h2>
+                <p class="paragraphHoverGSAP">
+
+Apart from my work on websites, I also relish creating responsive web applications and widgets.
+                </p>
+                <h2 class="widgetHeader">UI/UX design:</h2>
+                 <p class="paragraphHoverGSAP">
+
+I love to combine my UI/UX design talents with my proficiency in writing clean code to develop applications that are user-friendly, effortless to maintain, and update.
+                </p>
+              </div>
+        </div>
+            <div class="portfolioWidgetsContentBox_WeatherWidget gridBox">
+   <div class="portfolioBtnContainer BtnContainerWeather">
+                <div class="portfolioLinkBtn buttonHoverGSAP">
+                  <a
+                    href="https://github.com/escapingSamsara/ResponsiveMusicplayerWidget"
+                    type="button"
+                    class="cta-btn-Project3-Code"
+                    target="_blank"
+                    rel="noopener"
+                    >view code</a
+                  >
+                </div>
+                <!-- <div class="portfolioLinkBtn buttonHoverGSAP">
+                  <a
+                    href="https://www.figma.com/community/file/1175904412994175961"
+                    type="button"
+                    class="cta-btn-Project3-Figma"
+                    target="_blank"
+                    rel="noopener"
+                    >UI/UX-design</a
+                  >
+                </div> -->
+              </div>
+  <div class="appContainer">
+                <div class="card">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="search-bar"
+                      placeholder="Search"
+                    />
+                    <button class="search-btn">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 1024 1024"
+                        height="1.25em"
+                        width="1.25em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="weather loading">
+                    <h2 class="weatherHeader city"></h2>
+                    <div class="tempIconContainer">
+                      <h2 class="tempHeader temp"></h2>
+                    </div>
+                    <div class="additionalInfo">
+                      <div class="descriptionContainer">
+                        <img
+                          src="https://openweathermap.org/img/wn/04d@2x.png"
+                          class="icon"
+                          alt=""
+                          srcset=""
+                        />
+                        <div class="description"></div>
+                      </div>
+                      <div class="humidityCentainer">
+                        <div class="humidityIcon">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            version="1.1"
+                            id="Layer_1"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 30 30"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.56,17.19c0-0.88,0.24-1.89,0.72-3.03s1.1-2.25,1.86-3.31c1.56-2.06,2.92-3.62,4.06-4.67l0.75-0.72
+	c0.25,0.26,0.53,0.5,0.83,0.72c0.41,0.42,1.04,1.11,1.88,2.09s1.57,1.85,2.17,2.65c0.71,1.01,1.32,2.1,1.81,3.25
+	s0.74,2.16,0.74,3.03c0,1-0.19,1.95-0.58,2.86c-0.39,0.91-0.91,1.7-1.57,2.36c-0.66,0.66-1.45,1.19-2.37,1.58
+	c-0.92,0.39-1.89,0.59-2.91,0.59c-1,0-1.95-0.19-2.86-0.57c-0.91-0.38-1.7-0.89-2.36-1.55c-0.66-0.65-1.19-1.44-1.58-2.35
+	S7.56,18.23,7.56,17.19z M9.82,14.26c0,0.83,0.17,1.49,0.52,1.99c0.35,0.49,0.88,0.74,1.59,0.74c0.72,0,1.25-0.25,1.61-0.74
+	c0.35-0.49,0.53-1.15,0.54-1.99c-0.01-0.84-0.19-1.5-0.54-2c-0.35-0.49-0.89-0.74-1.61-0.74c-0.71,0-1.24,0.25-1.59,0.74
+	C9.99,12.76,9.82,13.42,9.82,14.26z M11.39,14.26c0-0.15,0-0.27,0-0.35s0.01-0.19,0.02-0.33c0.01-0.14,0.02-0.25,0.05-0.32
+	s0.05-0.16,0.09-0.24c0.04-0.08,0.09-0.15,0.15-0.18c0.07-0.04,0.14-0.06,0.23-0.06c0.14,0,0.25,0.04,0.33,0.12s0.14,0.21,0.17,0.38
+	c0.03,0.18,0.05,0.32,0.06,0.45s0.01,0.3,0.01,0.52c0,0.23,0,0.4-0.01,0.52c-0.01,0.12-0.03,0.27-0.06,0.45
+	c-0.03,0.17-0.09,0.3-0.17,0.38s-0.19,0.12-0.33,0.12c-0.09,0-0.16-0.02-0.23-0.06c-0.07-0.04-0.12-0.1-0.15-0.18
+	c-0.04-0.08-0.07-0.17-0.09-0.24c-0.02-0.08-0.04-0.19-0.05-0.32c-0.01-0.14-0.02-0.25-0.02-0.32S11.39,14.41,11.39,14.26z
+	 M11.98,22.01h1.32l4.99-10.74h-1.35L11.98,22.01z M16.28,19.02c0.01,0.84,0.2,1.5,0.55,2c0.35,0.49,0.89,0.74,1.6,0.74
+	c0.72,0,1.25-0.25,1.6-0.74c0.35-0.49,0.52-1.16,0.53-2c-0.01-0.84-0.18-1.5-0.53-1.99c-0.35-0.49-0.88-0.74-1.6-0.74
+	c-0.71,0-1.25,0.25-1.6,0.74C16.47,17.52,16.29,18.18,16.28,19.02z M17.85,19.02c0-0.23,0-0.4,0.01-0.52
+	c0.01-0.12,0.03-0.27,0.06-0.45s0.09-0.3,0.17-0.38s0.19-0.12,0.33-0.12c0.09,0,0.17,0.02,0.24,0.06c0.07,0.04,0.12,0.1,0.16,0.19
+	c0.04,0.09,0.07,0.17,0.1,0.24s0.04,0.18,0.05,0.32l0.01,0.32l0,0.34c0,0.16,0,0.28,0,0.35l-0.01,0.32l-0.05,0.32l-0.1,0.24
+	l-0.16,0.19l-0.24,0.06c-0.14,0-0.25-0.04-0.33-0.12s-0.14-0.21-0.17-0.38c-0.03-0.18-0.05-0.33-0.06-0.45S17.85,19.25,17.85,19.02z
+	"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="humidity"></div>
+                      </div>
+                      <div class="windspeedContainer">
+                        <div class="windspeedIcon">
+                          <svg
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="wind speed"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolioWidgetsContentBox_WeblayerWidget gridBox">
+                <div id="music">
+                <div class="music-bottom-holder">
+                  <div class="musica-player">
+                    <div class="player-holder">
+                      <div class="player-container">
+                        <div id="playerArm">
+                          <div class="playerArm-Stick"></div>
+                        </div>
+                        <img
+                          src="#"
+                          alt=""
+                          id="background"
+                          class="background-img"
+                        />
+                        <!-- Song -->
+                        <div class="bg-container"></div>
+                        <div class="bg-bg"></div>
+                        <div class="img-container">
+                          <div id="circle-vinyl">
+                            <div class="circle-vinyl-innerdot"></div>
+                            <div class="circle-vinyl-dot"></div>
+                            <div class="circle-vinyl-riffle1"></div>
+                            <div class="circle-vinyl-riffle2"></div>
+                            <div class="circle-vinyl-riffle3"></div>
+                            <div class="circle-vinyl-riffle4"></div>
+                            <div class="circle-vinyl-riffle5"></div>
+                          </div>
+                          <img src="#" alt="" id="cover" />
+                        </div>
+                        <h2 id="title"></h2>
+                        <h3 id="artist"></h3>
+                        <audio src=""></audio>
+                        <!-- Progress -->
+                        <div class="progress-container" id="progress-container">
+                          <div class="progress" id="progress"></div>
+                          <div class="duration-wrapper">
+                            <span id="current-time"></span>
+                            <span id="duration"></span>
+                          </div>
+                        </div>
+                        <!-- Controls -->
+                        <div class="player-controls">
+                          <i
+                            class="fas fa-backward"
+                            id="prev"
+                            title="Previous"
+                          ></i>
+                          <i
+                            class="fas fa-play main-button"
+                            id="play"
+                            title="Play"
+                          ></i>
+                          <i class="fas fa-forward" id="next" title="Next"></i>
+                        </div>
+                        <div class="volumeHolder">
+                          <div class="volume-bar">
+                            <input
+                              class="e-range"
+                              type="range"
+                              id="volume"
+                              min="0"
+                              max="100"
+                              value="80"
+                            />
+                          </div>
+                          <div class="volumeBtn">
+                            <i
+                              class="fas fa-volume-up fa-xl"
+                              id="volume-icon"
+                              title="Volume"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+  <div class="portfolioBtnContainer">
+                <div class="portfolioLinkBtn buttonHoverGSAP">
+                  <a
+                    href="https://github.com/escapingSamsara/ResponsiveMusicplayerWidget"
+                    type="button"
+                    class="cta-btn-Project3-Code"
+                    target="_blank"
+                    rel="noopener"
+                    >view code</a
+                  >
+                </div>
+                <div class="portfolioLinkBtn buttonHoverGSAP">
+                  <a
+                    href="https://www.figma.com/community/file/1175904412994175961"
+                    type="button"
+                    class="cta-btn-Project3-Figma"
+                    target="_blank"
+                    rel="noopener"
+                    >UI/UX-design</a
+                  >
+                </div></div>
+              </div>
+            <div class="portfolioWidgetsContentBox_TodoListWidget gridBox">
+      <div id="mainContainer">
+      <div id="todoListContainer">
+        <svg
+          width="624"
+          height="55"
+          viewBox="0 0 625 55.5"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            id="svgGroup"
+            stroke-linecap="round"
+            fill-rule="evenodd"
+            font-size="9pt"
+            stroke="#ffffff"
+            stroke-width="0.25mm"
+            fill="transparent"
+            style="stroke: rgb(255, 255, 255); stroke-width: 0.25mm"
+          >
+            <path
+              d="M 312 30.825 L 312 54.75 L 303.75 54.75 L 303.75 32.775 A 27.028 27.028 0 0 0 303.613 29.945 Q 303.258 26.588 301.988 24.75 A 5.703 5.703 0 0 0 297.812 22.262 A 8.356 8.356 0 0 0 296.775 22.2 A 10.098 10.098 0 0 0 292.937 22.977 A 12.24 12.24 0 0 0 292.013 23.4 Q 289.65 24.6 287.775 26.663 Q 285.9 28.725 285.075 31.425 L 285.075 54.75 L 276.825 54.75 L 276.825 15.525 L 284.325 15.525 L 284.325 23.4 Q 285.825 20.775 288.263 18.863 Q 290.7 16.95 293.775 15.9 A 19.958 19.958 0 0 1 299.977 14.852 A 22.5 22.5 0 0 1 300.3 14.85 A 16.025 16.025 0 0 1 302.768 15.029 Q 304.682 15.328 306.113 16.125 Q 308.4 17.4 309.713 19.613 A 13.818 13.818 0 0 1 311.127 22.974 A 17.076 17.076 0 0 1 311.513 24.713 A 35.393 35.393 0 0 1 311.97 29.234 A 41.041 41.041 0 0 1 312 30.825 Z M 104.325 22.95 L 104.325 0 L 112.575 0 L 112.575 45.45 A 6.106 6.106 0 0 0 112.612 46.149 Q 112.695 46.87 112.967 47.296 A 1.468 1.468 0 0 0 113.1 47.475 A 1.707 1.707 0 0 0 113.714 47.911 Q 114.169 48.109 114.825 48.15 L 114.825 54.75 A 45.61 45.61 0 0 1 113.728 54.914 Q 112.544 55.076 111.706 55.113 A 10.69 10.69 0 0 1 111.225 55.125 A 6.646 6.646 0 0 1 109.202 54.828 A 5.596 5.596 0 0 1 107.288 53.775 A 5.157 5.157 0 0 1 106.262 52.64 A 4.061 4.061 0 0 1 105.6 50.55 L 105.525 47.625 Q 103.275 51.375 99.45 53.438 A 16.71 16.71 0 0 1 92.782 55.45 A 16.264 16.264 0 0 1 91.5 55.5 A 18.189 18.189 0 0 1 86.064 54.704 A 16.615 16.615 0 0 1 84.038 53.925 Q 80.625 52.35 78.113 49.5 Q 75.6 46.65 74.213 42.975 Q 72.825 39.3 72.825 35.175 A 23.996 23.996 0 0 1 73.719 28.539 A 21.268 21.268 0 0 1 75.113 24.937 A 19.536 19.536 0 0 1 79.164 19.378 A 18.262 18.262 0 0 1 81.375 17.588 A 15.563 15.563 0 0 1 89.724 14.867 A 19.053 19.053 0 0 1 90.525 14.85 Q 95.025 14.85 98.663 17.175 A 17.806 17.806 0 0 1 102.822 20.807 A 16.205 16.205 0 0 1 104.325 22.95 Z M 513.375 22.95 L 513.375 0 L 521.625 0 L 521.625 45.45 A 6.106 6.106 0 0 0 521.662 46.149 Q 521.745 46.87 522.017 47.296 A 1.468 1.468 0 0 0 522.15 47.475 A 1.707 1.707 0 0 0 522.764 47.911 Q 523.219 48.109 523.875 48.15 L 523.875 54.75 A 45.61 45.61 0 0 1 522.778 54.914 Q 521.594 55.076 520.756 55.113 A 10.69 10.69 0 0 1 520.275 55.125 A 6.646 6.646 0 0 1 518.252 54.828 A 5.596 5.596 0 0 1 516.338 53.775 A 5.157 5.157 0 0 1 515.312 52.64 A 4.061 4.061 0 0 1 514.65 50.55 L 514.575 47.625 Q 512.325 51.375 508.5 53.438 A 16.71 16.71 0 0 1 501.832 55.45 A 16.264 16.264 0 0 1 500.55 55.5 A 18.189 18.189 0 0 1 495.114 54.704 A 16.615 16.615 0 0 1 493.088 53.925 Q 489.675 52.35 487.162 49.5 Q 484.65 46.65 483.262 42.975 Q 481.875 39.3 481.875 35.175 A 23.996 23.996 0 0 1 482.769 28.539 A 21.268 21.268 0 0 1 484.163 24.937 A 19.536 19.536 0 0 1 488.214 19.378 A 18.262 18.262 0 0 1 490.425 17.588 A 15.563 15.563 0 0 1 498.774 14.867 A 19.053 19.053 0 0 1 499.575 14.85 Q 504.075 14.85 507.712 17.175 A 17.806 17.806 0 0 1 511.872 20.807 A 16.205 16.205 0 0 1 513.375 22.95 Z M 23.25 46.2 L 24.975 52.725 A 20.717 20.717 0 0 1 24.114 53.129 Q 23.334 53.475 22.35 53.85 Q 20.775 54.45 18.787 54.9 Q 16.8 55.35 14.7 55.35 A 12.68 12.68 0 0 1 11.264 54.895 A 11.442 11.442 0 0 1 9.975 54.45 Q 7.8 53.55 6.488 51.563 A 7.461 7.461 0 0 1 5.493 49.244 Q 5.175 47.975 5.175 46.425 L 5.175 21.9 L 0 21.9 L 0 15.525 L 5.175 15.525 L 5.175 2.625 L 13.425 2.625 L 13.425 15.525 L 21.975 15.525 L 21.975 21.9 L 13.425 21.9 L 13.425 43.8 A 6.054 6.054 0 0 0 13.625 44.99 Q 13.821 45.687 14.189 46.205 A 3.171 3.171 0 0 0 14.738 46.8 A 4.134 4.134 0 0 0 16.897 47.728 A 5.512 5.512 0 0 0 17.625 47.775 Q 19.35 47.775 20.925 47.175 A 55.934 55.934 0 0 0 21.661 46.889 Q 22.688 46.481 23.25 46.2 Z M 386.25 46.2 L 387.975 52.725 A 20.717 20.717 0 0 1 387.114 53.129 Q 386.334 53.475 385.35 53.85 Q 383.775 54.45 381.787 54.9 Q 379.8 55.35 377.7 55.35 A 12.68 12.68 0 0 1 374.264 54.895 A 11.442 11.442 0 0 1 372.975 54.45 Q 370.8 53.55 369.487 51.563 A 7.461 7.461 0 0 1 368.493 49.244 Q 368.175 47.975 368.175 46.425 L 368.175 21.9 L 363 21.9 L 363 15.525 L 368.175 15.525 L 368.175 2.625 L 376.425 2.625 L 376.425 15.525 L 384.975 15.525 L 384.975 21.9 L 376.425 21.9 L 376.425 43.8 A 6.054 6.054 0 0 0 376.625 44.99 Q 376.821 45.687 377.189 46.205 A 3.171 3.171 0 0 0 377.738 46.8 A 4.134 4.134 0 0 0 379.897 47.728 A 5.512 5.512 0 0 0 380.625 47.775 Q 382.35 47.775 383.925 47.175 A 55.934 55.934 0 0 0 384.661 46.889 Q 385.687 46.481 386.25 46.2 Z M 432.3 46.2 L 434.025 52.725 A 20.717 20.717 0 0 1 433.164 53.129 Q 432.384 53.475 431.4 53.85 Q 429.825 54.45 427.837 54.9 Q 425.85 55.35 423.75 55.35 A 12.68 12.68 0 0 1 420.314 54.895 A 11.442 11.442 0 0 1 419.025 54.45 Q 416.85 53.55 415.537 51.563 A 7.461 7.461 0 0 1 414.543 49.244 Q 414.225 47.975 414.225 46.425 L 414.225 21.9 L 409.05 21.9 L 409.05 15.525 L 414.225 15.525 L 414.225 2.625 L 422.475 2.625 L 422.475 15.525 L 431.025 15.525 L 431.025 21.9 L 422.475 21.9 L 422.475 43.8 A 6.054 6.054 0 0 0 422.675 44.99 Q 422.871 45.687 423.239 46.205 A 3.171 3.171 0 0 0 423.788 46.8 A 4.134 4.134 0 0 0 425.947 47.728 A 5.512 5.512 0 0 0 426.675 47.775 Q 428.4 47.775 429.975 47.175 A 55.934 55.934 0 0 0 430.711 46.889 Q 431.737 46.481 432.3 46.2 Z M 607.725 38.175 L 600.825 38.175 A 19.954 19.954 0 0 1 601.015 35.364 A 15.895 15.895 0 0 1 601.425 33.375 Q 602.025 31.2 603.375 29.363 A 11.406 11.406 0 0 1 605.314 27.332 A 15.105 15.105 0 0 1 607.05 26.1 A 78.537 78.537 0 0 1 608.07 25.511 Q 608.972 24.998 610.05 24.413 Q 611.775 23.475 613.35 22.2 Q 614.925 20.925 616.012 19.2 Q 617.1 17.475 617.1 15.15 A 8.46 8.46 0 0 0 616.886 13.202 A 6.263 6.263 0 0 0 615.9 10.988 Q 614.7 9.3 612.863 8.438 Q 611.025 7.575 608.85 7.575 A 9.654 9.654 0 0 0 605.573 8.123 A 9.042 9.042 0 0 0 604.575 8.55 A 12.031 12.031 0 0 0 601.222 11.002 A 11.549 11.549 0 0 0 601.2 11.025 A 17.913 17.913 0 0 0 599.198 13.536 A 16.1 16.1 0 0 0 598.8 14.175 L 593.4 10.5 Q 594.75 7.425 597.15 5.25 Q 599.55 3.075 602.625 1.95 Q 605.7 0.825 609.075 0.825 Q 611.85 0.825 614.587 1.688 Q 617.325 2.55 619.5 4.35 A 13.03 13.03 0 0 1 622.712 8.341 A 15.225 15.225 0 0 1 622.987 8.888 Q 624.252 11.525 624.298 15.171 A 21.948 21.948 0 0 1 624.3 15.45 A 18.193 18.193 0 0 1 624.187 17.538 Q 624.065 18.588 623.814 19.492 A 10.247 10.247 0 0 1 623.662 19.988 Q 623.025 21.9 621.825 23.4 Q 620.625 24.9 619.05 26.063 A 31.61 31.61 0 0 1 616.519 27.743 A 36.406 36.406 0 0 1 615.6 28.275 Q 613.725 29.4 611.925 30.563 Q 610.125 31.725 608.925 33.45 A 6.081 6.081 0 0 0 608.089 35.257 Q 607.725 36.523 607.725 38.175 Z M 253.95 15.225 L 253.95 22.65 A 19.319 19.319 0 0 0 249.157 23.301 A 16.144 16.144 0 0 0 245.437 24.825 Q 241.725 26.925 240.15 30.75 L 240.15 54.75 L 231.9 54.75 L 231.9 15.525 L 239.55 15.525 L 239.55 24.3 A 19.005 19.005 0 0 1 242.404 20.059 A 16.517 16.517 0 0 1 244.875 17.813 Q 248.175 15.375 251.85 15.15 L 253.088 15.15 A 5.434 5.434 0 0 1 253.493 15.164 Q 253.739 15.183 253.95 15.225 Z M 43.142 55.052 A 22.976 22.976 0 0 0 47.775 55.5 A 24.056 24.056 0 0 0 50.28 55.372 A 19.527 19.527 0 0 0 56.063 53.888 Q 59.775 52.275 62.438 49.425 Q 65.1 46.575 66.525 42.938 A 20.26 20.26 0 0 0 66.698 42.481 A 21.181 21.181 0 0 0 67.95 35.175 Q 67.95 31.05 66.525 27.375 Q 65.1 23.7 62.438 20.888 Q 59.775 18.075 56.063 16.463 A 18.72 18.72 0 0 0 52.649 15.36 A 22.465 22.465 0 0 0 47.775 14.85 A 24.056 24.056 0 0 0 45.27 14.978 A 19.527 19.527 0 0 0 39.487 16.462 Q 35.775 18.075 33.113 20.888 Q 30.45 23.7 29.025 27.375 Q 27.6 31.05 27.6 35.175 A 23.809 23.809 0 0 0 27.6 35.304 A 21.057 21.057 0 0 0 29.025 42.937 Q 30.45 46.575 33.113 49.425 Q 35.775 52.275 39.45 53.888 A 18.364 18.364 0 0 0 43.142 55.052 Z M 136.067 55.052 A 22.976 22.976 0 0 0 140.7 55.5 A 24.056 24.056 0 0 0 143.205 55.372 A 19.527 19.527 0 0 0 148.988 53.888 Q 152.7 52.275 155.363 49.425 Q 158.025 46.575 159.45 42.938 A 20.26 20.26 0 0 0 159.623 42.481 A 21.181 21.181 0 0 0 160.875 35.175 Q 160.875 31.05 159.45 27.375 Q 158.025 23.7 155.363 20.888 Q 152.7 18.075 148.988 16.463 A 18.72 18.72 0 0 0 145.574 15.36 A 22.465 22.465 0 0 0 140.7 14.85 A 24.056 24.056 0 0 0 138.195 14.978 A 19.527 19.527 0 0 0 132.412 16.462 Q 128.7 18.075 126.038 20.888 Q 123.375 23.7 121.95 27.375 Q 120.525 31.05 120.525 35.175 A 23.809 23.809 0 0 0 120.525 35.304 A 21.057 21.057 0 0 0 121.95 42.937 Q 123.375 46.575 126.038 49.425 Q 128.7 52.275 132.375 53.888 A 18.364 18.364 0 0 0 136.067 55.052 Z M 199.742 55.052 A 22.976 22.976 0 0 0 204.375 55.5 A 24.056 24.056 0 0 0 206.88 55.372 A 19.527 19.527 0 0 0 212.663 53.888 Q 216.375 52.275 219.038 49.425 Q 221.7 46.575 223.125 42.938 A 20.26 20.26 0 0 0 223.298 42.481 A 21.181 21.181 0 0 0 224.55 35.175 Q 224.55 31.05 223.125 27.375 Q 221.7 23.7 219.038 20.888 Q 216.375 18.075 212.663 16.463 A 18.72 18.72 0 0 0 209.249 15.36 A 22.465 22.465 0 0 0 204.375 14.85 A 24.056 24.056 0 0 0 201.87 14.978 A 19.527 19.527 0 0 0 196.087 16.462 Q 192.375 18.075 189.713 20.888 Q 187.05 23.7 185.625 27.375 Q 184.2 31.05 184.2 35.175 A 23.809 23.809 0 0 0 184.2 35.304 A 21.057 21.057 0 0 0 185.625 42.937 Q 187.05 46.575 189.713 49.425 Q 192.375 52.275 196.05 53.888 A 18.364 18.364 0 0 0 199.742 55.052 Z M 334.592 55.052 A 22.976 22.976 0 0 0 339.225 55.5 A 24.056 24.056 0 0 0 341.73 55.372 A 19.527 19.527 0 0 0 347.513 53.888 Q 351.225 52.275 353.888 49.425 Q 356.55 46.575 357.975 42.938 A 20.26 20.26 0 0 0 358.148 42.481 A 21.181 21.181 0 0 0 359.4 35.175 Q 359.4 31.05 357.975 27.375 Q 356.55 23.7 353.888 20.888 Q 351.225 18.075 347.513 16.463 A 18.72 18.72 0 0 0 344.099 15.36 A 22.465 22.465 0 0 0 339.225 14.85 A 24.056 24.056 0 0 0 336.72 14.978 A 19.527 19.527 0 0 0 330.937 16.462 Q 327.225 18.075 324.563 20.888 Q 321.9 23.7 320.475 27.375 Q 319.05 31.05 319.05 35.175 A 23.809 23.809 0 0 0 319.05 35.304 A 21.057 21.057 0 0 0 320.475 42.937 Q 321.9 46.575 324.563 49.425 Q 327.225 52.275 330.9 53.888 A 18.364 18.364 0 0 0 334.592 55.052 Z M 452.192 55.052 A 22.976 22.976 0 0 0 456.825 55.5 A 24.056 24.056 0 0 0 459.33 55.372 A 19.527 19.527 0 0 0 465.113 53.888 Q 468.825 52.275 471.487 49.425 Q 474.15 46.575 475.575 42.938 A 20.26 20.26 0 0 0 475.748 42.481 A 21.181 21.181 0 0 0 477 35.175 Q 477 31.05 475.575 27.375 Q 474.15 23.7 471.487 20.888 Q 468.825 18.075 465.112 16.463 A 18.72 18.72 0 0 0 461.699 15.36 A 22.465 22.465 0 0 0 456.825 14.85 A 24.056 24.056 0 0 0 454.32 14.978 A 19.527 19.527 0 0 0 448.537 16.462 Q 444.825 18.075 442.162 20.888 Q 439.5 23.7 438.075 27.375 Q 436.65 31.05 436.65 35.175 A 23.809 23.809 0 0 0 436.65 35.304 A 21.057 21.057 0 0 0 438.075 42.937 Q 439.5 46.575 442.162 49.425 Q 444.825 52.275 448.5 53.888 A 18.364 18.364 0 0 0 452.192 55.052 Z M 545.117 55.052 A 22.976 22.976 0 0 0 549.75 55.5 A 24.056 24.056 0 0 0 552.255 55.372 A 19.527 19.527 0 0 0 558.038 53.888 Q 561.75 52.275 564.412 49.425 Q 567.075 46.575 568.5 42.938 A 20.26 20.26 0 0 0 568.673 42.481 A 21.181 21.181 0 0 0 569.925 35.175 Q 569.925 31.05 568.5 27.375 Q 567.075 23.7 564.412 20.888 Q 561.75 18.075 558.037 16.463 A 18.72 18.72 0 0 0 554.624 15.36 A 22.465 22.465 0 0 0 549.75 14.85 A 24.056 24.056 0 0 0 547.245 14.978 A 19.527 19.527 0 0 0 541.462 16.462 Q 537.75 18.075 535.088 20.888 Q 532.425 23.7 531 27.375 Q 529.575 31.05 529.575 35.175 A 23.809 23.809 0 0 0 529.575 35.304 A 21.057 21.057 0 0 0 531 42.937 Q 532.425 46.575 535.088 49.425 Q 537.75 52.275 541.425 53.888 A 18.364 18.364 0 0 0 545.117 55.052 Z M 104.325 40.65 L 104.325 30.375 Q 103.5 27.975 101.663 26.063 Q 99.825 24.15 97.538 23.025 A 11.224 11.224 0 0 0 95.047 22.131 A 9.305 9.305 0 0 0 93 21.9 A 10.575 10.575 0 0 0 89.837 22.362 A 9.486 9.486 0 0 0 88.238 23.025 Q 86.1 24.15 84.563 26.025 Q 83.025 27.9 82.2 30.3 Q 81.375 32.7 81.375 35.325 A 14.354 14.354 0 0 0 81.969 39.49 A 13.321 13.321 0 0 0 82.275 40.387 Q 83.175 42.75 84.863 44.588 Q 86.55 46.425 88.763 47.438 A 11.301 11.301 0 0 0 92.95 48.434 A 13.227 13.227 0 0 0 93.6 48.45 A 9.714 9.714 0 0 0 96.411 48.023 A 11.262 11.262 0 0 0 96.938 47.85 Q 98.625 47.25 100.163 46.2 Q 101.7 45.15 102.788 43.725 Q 103.875 42.3 104.325 40.65 Z M 513.375 40.65 L 513.375 30.375 Q 512.55 27.975 510.712 26.063 Q 508.875 24.15 506.587 23.025 A 11.224 11.224 0 0 0 504.097 22.131 A 9.305 9.305 0 0 0 502.05 21.9 A 10.575 10.575 0 0 0 498.887 22.362 A 9.486 9.486 0 0 0 497.288 23.025 Q 495.15 24.15 493.612 26.025 Q 492.075 27.9 491.25 30.3 Q 490.425 32.7 490.425 35.325 A 14.354 14.354 0 0 0 491.019 39.49 A 13.321 13.321 0 0 0 491.325 40.387 Q 492.225 42.75 493.912 44.588 Q 495.6 46.425 497.812 47.438 A 11.301 11.301 0 0 0 502 48.434 A 13.227 13.227 0 0 0 502.65 48.45 A 9.714 9.714 0 0 0 505.461 48.023 A 11.262 11.262 0 0 0 505.988 47.85 Q 507.675 47.25 509.212 46.2 Q 510.75 45.15 511.837 43.725 Q 512.925 42.3 513.375 40.65 Z M 36.075 35.25 A 15.346 15.346 0 0 0 36.616 39.387 A 13.27 13.27 0 0 0 37.65 42 A 12.995 12.995 0 0 0 40.161 45.38 A 11.839 11.839 0 0 0 41.85 46.725 Q 44.475 48.45 47.775 48.45 Q 51 48.45 53.663 46.688 A 12.43 12.43 0 0 0 57.647 42.354 A 14.767 14.767 0 0 0 57.9 41.887 A 14.188 14.188 0 0 0 59.461 35.858 A 16.747 16.747 0 0 0 59.475 35.175 A 15.346 15.346 0 0 0 58.934 31.038 A 13.27 13.27 0 0 0 57.9 28.425 A 12.911 12.911 0 0 0 54.926 24.621 A 12.256 12.256 0 0 0 53.663 23.662 Q 51 21.9 47.775 21.9 Q 44.475 21.9 41.85 23.7 A 13.123 13.123 0 0 0 37.699 28.37 A 15.224 15.224 0 0 0 37.65 28.463 A 13.441 13.441 0 0 0 36.2 33.167 A 16.97 16.97 0 0 0 36.075 35.25 Z M 129 35.25 A 15.346 15.346 0 0 0 129.541 39.387 A 13.27 13.27 0 0 0 130.575 42 A 12.995 12.995 0 0 0 133.086 45.38 A 11.839 11.839 0 0 0 134.775 46.725 Q 137.4 48.45 140.7 48.45 Q 143.925 48.45 146.588 46.688 A 12.43 12.43 0 0 0 150.572 42.354 A 14.767 14.767 0 0 0 150.825 41.887 A 14.188 14.188 0 0 0 152.386 35.858 A 16.747 16.747 0 0 0 152.4 35.175 A 15.346 15.346 0 0 0 151.859 31.038 A 13.27 13.27 0 0 0 150.825 28.425 A 12.911 12.911 0 0 0 147.851 24.621 A 12.256 12.256 0 0 0 146.588 23.662 Q 143.925 21.9 140.7 21.9 Q 137.4 21.9 134.775 23.7 A 13.123 13.123 0 0 0 130.624 28.37 A 15.224 15.224 0 0 0 130.575 28.463 A 13.441 13.441 0 0 0 129.125 33.167 A 16.97 16.97 0 0 0 129 35.25 Z M 192.675 35.25 A 15.346 15.346 0 0 0 193.216 39.387 A 13.27 13.27 0 0 0 194.25 42 A 12.995 12.995 0 0 0 196.761 45.38 A 11.839 11.839 0 0 0 198.45 46.725 Q 201.075 48.45 204.375 48.45 Q 207.6 48.45 210.263 46.688 A 12.43 12.43 0 0 0 214.247 42.354 A 14.767 14.767 0 0 0 214.5 41.887 A 14.188 14.188 0 0 0 216.061 35.858 A 16.747 16.747 0 0 0 216.075 35.175 A 15.346 15.346 0 0 0 215.534 31.038 A 13.27 13.27 0 0 0 214.5 28.425 A 12.911 12.911 0 0 0 211.526 24.621 A 12.256 12.256 0 0 0 210.263 23.662 Q 207.6 21.9 204.375 21.9 Q 201.075 21.9 198.45 23.7 A 13.123 13.123 0 0 0 194.299 28.37 A 15.224 15.224 0 0 0 194.25 28.463 A 13.441 13.441 0 0 0 192.8 33.167 A 16.97 16.97 0 0 0 192.675 35.25 Z M 327.525 35.25 A 15.346 15.346 0 0 0 328.066 39.387 A 13.27 13.27 0 0 0 329.1 42 A 12.995 12.995 0 0 0 331.611 45.38 A 11.839 11.839 0 0 0 333.3 46.725 Q 335.925 48.45 339.225 48.45 Q 342.45 48.45 345.112 46.688 A 12.43 12.43 0 0 0 349.097 42.354 A 14.767 14.767 0 0 0 349.35 41.887 A 14.188 14.188 0 0 0 350.911 35.858 A 16.747 16.747 0 0 0 350.925 35.175 A 15.346 15.346 0 0 0 350.384 31.038 A 13.27 13.27 0 0 0 349.35 28.425 A 12.911 12.911 0 0 0 346.376 24.621 A 12.256 12.256 0 0 0 345.113 23.662 Q 342.45 21.9 339.225 21.9 Q 335.925 21.9 333.3 23.7 A 13.123 13.123 0 0 0 329.149 28.37 A 15.224 15.224 0 0 0 329.1 28.463 A 13.441 13.441 0 0 0 327.65 33.167 A 16.97 16.97 0 0 0 327.525 35.25 Z M 445.125 35.25 A 15.346 15.346 0 0 0 445.666 39.387 A 13.27 13.27 0 0 0 446.7 42 A 12.995 12.995 0 0 0 449.211 45.38 A 11.839 11.839 0 0 0 450.9 46.725 Q 453.525 48.45 456.825 48.45 Q 460.05 48.45 462.712 46.688 A 12.43 12.43 0 0 0 466.697 42.354 A 14.767 14.767 0 0 0 466.95 41.887 A 14.188 14.188 0 0 0 468.511 35.858 A 16.747 16.747 0 0 0 468.525 35.175 A 15.346 15.346 0 0 0 467.984 31.038 A 13.27 13.27 0 0 0 466.95 28.425 A 12.911 12.911 0 0 0 463.976 24.621 A 12.256 12.256 0 0 0 462.713 23.662 Q 460.05 21.9 456.825 21.9 Q 453.525 21.9 450.9 23.7 A 13.123 13.123 0 0 0 446.749 28.37 A 15.224 15.224 0 0 0 446.7 28.463 A 13.441 13.441 0 0 0 445.25 33.167 A 16.97 16.97 0 0 0 445.125 35.25 Z M 538.05 35.25 A 15.346 15.346 0 0 0 538.591 39.387 A 13.27 13.27 0 0 0 539.625 42 A 12.995 12.995 0 0 0 542.136 45.38 A 11.839 11.839 0 0 0 543.825 46.725 Q 546.45 48.45 549.75 48.45 Q 552.975 48.45 555.637 46.688 A 12.43 12.43 0 0 0 559.622 42.354 A 14.767 14.767 0 0 0 559.875 41.887 A 14.188 14.188 0 0 0 561.436 35.858 A 16.747 16.747 0 0 0 561.45 35.175 A 15.346 15.346 0 0 0 560.909 31.038 A 13.27 13.27 0 0 0 559.875 28.425 A 12.911 12.911 0 0 0 556.901 24.621 A 12.256 12.256 0 0 0 555.638 23.662 Q 552.975 21.9 549.75 21.9 Q 546.45 21.9 543.825 23.7 A 13.123 13.123 0 0 0 539.674 28.37 A 15.224 15.224 0 0 0 539.625 28.463 A 13.441 13.441 0 0 0 538.175 33.167 A 16.97 16.97 0 0 0 538.05 35.25 Z M 607.875 54.75 L 601.05 54.75 L 601.05 45.3 L 607.875 45.3 L 607.875 54.75 Z"
+              vector-effect="non-scaling-stroke"
+            />
+          </g>
+        </svg>
+        <form action="" id="todoForm">
+          <input type="text" id="todoText" placeholder="new todo" required />
+
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              name=""
+              id="todoCheckbox"
+              label="important"
+            />
+            <img src="./todolist_portfolio/img/important-svg5.svg" alt="" />
+          </label>
+          <button id="newTodo-Submit">ADD TODO</button>
+        </form>
+      </div>
+
+      <div id="todoListContent">
+        <div id="todoList"></div>
+      </div>
+      <div class="btnDiv">
+        <button class="deleteAllButton">CLEAR</button>
+        <button class="filterImportanceButton">FILTER</button>
+      </div>
+    </div>
+
+              <div class="portfolioBtnContainer todoListPortfolioButtons">
+                <div class="portfolioLinkBtn buttonHoverGSAP">
+                  <a
+                    href="https://github.com/escapingSamsara/TodoList_Widget"
+                    type="button"
+                    class="cta-btn-Project3-Code"
+                    target="_blank"
+                    rel="noopener"
+                    >view code</a
+                  >
+                </div>
+                <div class="portfolioLinkBtn buttonHoverGSAP">
+                  <a
+                    href="https://escapingsamsara.github.io/TodoList_Widget/"
+                    type="button"
+                    class="cta-btn-Project3-Figma"
+                    target="_blank"
+                    rel="noopener"
+                    >live demo</a
+                  >
+                </div>
+              </div>
+            </div>
+      </div>
+   </section>
+          <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- CONTACT SECTION -->
+    <section id="contactWrapper" class="horizontalScrollSections">
+      <div class="contactContainer">
+        <div class="contactContainerTop">
+          <div class="contactHeader">
+            <div class="contactHeaderBox">
+              <h2 class="contactHeadline">contact</h2>
+            </div>
+          </div>
+        </div>
+        <div class="contactContentContainer">
+          <div class="contactContentMain">
+            <div class="contactContentText">
+              <div class="contactTextWrapper">
+              <p class="contactText contactText1 paragraphHoverGSAP">
+                <!-- I am currently looking for a job or an internship as a web developer. I am motivated, working in a dynamic team to gain experience and broaden my horizon, improving my programming skills.
+              If my portfolio made you curious, please feel free to contact me via e-mail or social media. -->
+              I'm currently seeking job opportunities or internships to enhance my skills and gain experience working in a dynamic team environment. I am highly motivated to improve my programming skills and expand my knowledge in the field. If you're intrigued by my portfolio and would like to learn more, let's chat!  <br class="breakContact">
+              Please don't hesitate to contact me through email or social media.
+            </p>
+
+            <div class="gooeyBtn">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="gooey">
+                <!-- in="sourceGraphic" -->
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+<a
+                    href='./resume.html'
+                    type="button"
+                    class="cta-btn-resume"
+                    target="_blank"
+                    rel="noopener"
+                    >
+
+    <button id="gooey-button" href="./resume.html">
+        MORE ABOUT ME
+        <span class="bubbles">
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+        </span>
+    </button>
+    </a
+                  >
+            </div>
+              <!-- <div class="contactResumeBtn">
+                <a
+                    href='./resume.html'
+                    type="button"
+                    class="cta-btn-resume"
+                    target="_blank"
+                    rel="noopener"
+                    >
+
+                    <span>more</span><span> about me</span>
+                    </a
+                  >
+            </div> -->
+          </div>
+            </div>
+            <div class="contactContentLower">
+              <div class="contactContentCodingIconsCode">
+                <div class="icon" id="github">
+                  <a
+                    href="https://github.com/escapingSamsara"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="github"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div class="icon" id="codepen">
+                  <a
+                    href="https://codepen.io/escapingSamsara"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="codepen"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 15 15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.20938 0.0931333C7.38323 -0.0310444 7.61677 -0.0310444 7.79062 0.0931333L14.7906 5.09313C14.922 5.18699 15 5.33852 15 5.5V9.5C15 9.66148 14.922 9.81301 14.7906 9.90687L7.79062 14.9069C7.61677 15.031 7.38323 15.031 7.20938 14.9069L0.209381 9.90687C0.0779828 9.81301 0 9.66148 0 9.5V5.5C0 5.33852 0.0779828 5.18699 0.209381 5.09313L7.20938 0.0931333ZM1 6.47159L2.43977 7.5L1 8.52841V6.47159ZM1.36023 9.5L7 13.5284V10.7573L3.3 8.11445L1.36023 9.5ZM4.16023 7.5L7.5 9.88555L10.8398 7.5L7.5 5.11445L4.16023 7.5ZM8 4.24269L11.7 6.88555L13.6398 5.5L8 1.47159V4.24269ZM7 1.47159V4.24269L3.3 6.88555L1.36023 5.5L7 1.47159ZM14 6.47159L12.5602 7.5L14 8.52841V6.47159ZM13.6398 9.5L11.7 8.11445L8 10.7573V13.5284L13.6398 9.5Z"
+                      /></svg
+                  ></a>
+                </div>
+                 <div class="icon" id="stackoverflow">
+                  <a
+                    href="https://stackoverflow.com/users/19838487/escapingsamsara"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg class="stackoverflow"
+                  version="1.1" id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="stackoverflow.svg" inkscape:version="0.48.4 r9939" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve"  >
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path id="path22162" inkscape:connector-curvature="0" d="M284.146,943.869v97.896h472.857v-97.896H284.146z M292.149,767.778 l-6.773,97.896l471.627,32.018l6.156-97.281L292.149,767.778L292.149,767.778z M146.845,727.143V1200h78.193h619.394h49.872V727.143 h-78.192v394.049H225.038V727.143H146.845L146.845,727.143z M327.859,559.672l-23.396,94.817L763.16,768.393l23.396-95.433 L327.859,559.672z M429.45,322.627l-49.872,84.352l407.594,239.508l49.872-84.967L429.45,322.627z M678.192,97.896l-81.271,54.797 l262.903,392.201l81.271-54.182L678.192,97.896L678.192,97.896z M995.896,0l-97.281,11.698l57.261,469.164l97.28-11.698L995.896,0z"/> </g>
+</svg></a>
+                </div>
+                <div class="icon" id="figma">
+                  <a
+                    href="https://www.figma.com/@escapingsamsara"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="figma"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 48 48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="48" height="48" fill="none" />
+                      <path
+                        d="M35.4,17.3a7.9,7.9,0,0,0,3.4-6.6,8.2,8.2,0,0,0-8.1-8.2H17.3a8.2,8.2,0,0,0-8.1,8.2,7.9,7.9,0,0,0,3.4,6.6,8.3,8.3,0,0,0,0,13.4,7.9,7.9,0,0,0-3.4,6.6,8.2,8.2,0,0,0,8.1,8.2,8.2,8.2,0,0,0,8.2-8.2v-7a7.9,7.9,0,0,0,5.2,1.9,8.2,8.2,0,0,0,4.7-14.9Zm.4-6.6a5.1,5.1,0,0,1-5.1,5.1H25.5V5.5h5.2A5.1,5.1,0,0,1,35.8,10.7Zm-23.6,0a5.1,5.1,0,0,1,5.1-5.2h5.2V15.8H17.3A5.1,5.1,0,0,1,12.2,10.7Zm0,13.3a5.2,5.2,0,0,1,5.1-5.2h5.2V29.2H17.3A5.2,5.2,0,0,1,12.2,24ZM22.5,37.3a5.2,5.2,0,1,1-5.2-5.1h5.2Zm8.2-8.1A5.2,5.2,0,1,1,35.8,24,5.2,5.2,0,0,1,30.7,29.2Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="icon" id="instagram">
+                  <a
+                    href="https://www.instagram.com/jak.pu/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="instagram"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.06167 7.24464C3.10844 6.22264 3.26846 5.56351 3.48487 5.00402L3.48778 4.99629C3.70223 4.42695 4.03818 3.91119 4.47224 3.48489L4.47833 3.47891L4.48431 3.47282C4.91096 3.0382 5.42691 2.70258 5.99575 2.4887L6.00556 2.48495C6.56378 2.26786 7.22162 2.10843 8.24447 2.06167M3.06167 7.24464C3.0125 8.33659 2.99997 8.67508 2.99997 11.5063C2.99997 14.3381 3.01181 14.6758 3.06164 15.768M3.06167 7.24464L3.06167 7.52008M3.48867 18.0168C3.70255 18.5856 4.03817 19.1015 4.47279 19.5282L4.47887 19.5342L4.48484 19.5402C4.91116 19.9743 5.42694 20.3103 5.99628 20.5247L6.00478 20.5279C6.56351 20.7446 7.22167 20.9041 8.24447 20.9509M3.48867 18.0168L3.48492 18.0069C3.26783 17.4487 3.1084 16.7909 3.06164 15.768M3.48867 18.0168L3.47585 17.9492M3.06164 15.768L3.07839 15.8562M3.06164 15.768L3.06164 15.4919M3.47585 17.9492L3.07839 15.8562M3.47585 17.9492C3.30704 17.5033 3.13322 16.881 3.07839 15.8562M3.47585 17.9492C3.48177 17.9649 3.48768 17.9803 3.49359 17.9955C3.70766 18.5726 4.04685 19.0952 4.48679 19.5256C4.91708 19.9655 5.43944 20.3046 6.01636 20.5187C6.47934 20.699 7.13172 20.8875 8.24431 20.9385C9.3671 20.9896 9.71399 21 12.5062 21C15.2985 21 15.6457 20.9896 16.7685 20.9385C17.8824 20.8874 18.534 20.6979 18.9954 20.519C19.5726 20.305 20.0953 19.9657 20.5257 19.5256C20.9655 19.0953 21.3046 18.573 21.5187 17.9961C21.699 17.5331 21.8875 16.8808 21.9384 15.7682C21.9895 14.6454 22 14.2978 22 11.5063C22 8.71472 21.9895 8.36684 21.9384 7.24405C21.8871 6.12427 21.6959 5.47168 21.5161 5.00992C21.2811 4.40322 20.9831 3.94437 20.525 3.48627C20.0678 3.02999 19.6102 2.73179 19.003 2.49654C18.5396 2.31537 17.8866 2.12531 16.7685 2.07406C16.6712 2.06964 16.5798 2.06552 16.4921 2.06168M3.07839 15.8562C3.07684 15.8273 3.07539 15.7981 3.07403 15.7685C3.06961 15.6712 3.06548 15.5797 3.06164 15.4919M8.24447 2.06167C9.33668 2.01184 9.67505 2 12.5062 2C15.3374 2 15.6756 2.01252 16.7675 2.06168M8.24447 2.06167L8.52062 2.06167M16.7675 2.06168L16.4921 2.06168M16.7675 2.06168C17.7897 2.10844 18.4489 2.26844 19.0085 2.48487L19.0162 2.48781C19.5855 2.70226 20.1013 3.03821 20.5276 3.47227L20.5335 3.4783L20.5396 3.48422C20.9737 3.91055 21.3096 4.42646 21.5239 4.99596L21.5275 5.00559C21.7446 5.56381 21.9041 6.22165 21.9508 7.2445M8.52062 2.06167L16.4921 2.06168M8.52062 2.06167C9.44548 2.02123 9.95666 2.01253 12.5062 2.01253C15.056 2.01253 15.5671 2.02124 16.4921 2.06168M8.52062 2.06167C8.43284 2.06551 8.34134 2.06964 8.24402 2.07406C7.13004 2.12512 6.47843 2.31464 6.01708 2.49358C5.43767 2.70837 4.91328 3.04936 4.48192 3.49186C4.0281 3.94756 3.73105 4.40422 3.49655 5.0094C3.31536 5.4728 3.12527 6.12614 3.07402 7.24434C3.06961 7.34135 3.06549 7.43257 3.06167 7.52008M21.9508 15.768C21.9041 16.7908 21.7446 17.449 21.5279 18.0077L21.5247 18.0162C21.3102 18.5856 20.9743 19.1013 20.5402 19.5276L20.5341 19.5336L20.5282 19.5397C20.1015 19.9743 19.5856 20.3099 19.0167 20.5238L19.0069 20.5276C18.4487 20.7447 17.7908 20.9041 16.768 20.9509M3.06164 15.4919C3.0212 14.567 3.0125 14.0558 3.0125 11.5063C3.0125 8.95591 3.0212 8.44544 3.06167 7.52008M3.06164 15.4919L3.06167 7.52008M10.8155 15.5881C11.3515 15.8101 11.926 15.9244 12.5062 15.9244C13.678 15.9244 14.8018 15.4589 15.6304 14.6304C16.4589 13.8018 16.9244 12.678 16.9244 11.5063C16.9244 10.3345 16.4589 9.21072 15.6304 8.38215C14.8018 7.55359 13.678 7.0881 12.5062 7.0881C11.926 7.0881 11.3515 7.20238 10.8155 7.42442C10.2794 7.64645 9.79239 7.97189 9.38213 8.38215C8.97187 8.79242 8.64643 9.27947 8.42439 9.81551C8.20236 10.3515 8.08808 10.9261 8.08808 11.5063C8.08808 12.0865 8.20236 12.661 8.42439 13.197C8.64643 13.7331 8.97187 14.2201 9.38213 14.6304C9.79239 15.0406 10.2794 15.3661 10.8155 15.5881ZM9.37229 8.37231C10.2035 7.54113 11.3308 7.07418 12.5062 7.07418C13.6817 7.07418 14.809 7.54113 15.6402 8.37231C16.4714 9.20349 16.9383 10.3308 16.9383 11.5063C16.9383 12.6817 16.4714 13.809 15.6402 14.6402C14.809 15.4714 13.6817 15.9383 12.5062 15.9383C11.3308 15.9383 10.2035 15.4714 9.37229 14.6402C8.54111 13.809 8.07416 12.6817 8.07416 11.5063C8.07416 10.3308 8.54111 9.20349 9.37229 8.37231ZM19.434 6.04229C19.434 6.37873 19.3003 6.70139 19.0625 6.93929C18.8246 7.17719 18.5019 7.31084 18.1655 7.31084C17.829 7.31084 17.5064 7.17719 17.2685 6.93929C17.0306 6.70139 16.8969 6.37873 16.8969 6.04229C16.8969 5.70585 17.0306 5.38319 17.2685 5.1453C17.5064 4.9074 17.829 4.77375 18.1655 4.77375C18.5019 4.77375 18.8246 4.9074 19.0625 5.1453C19.3003 5.38319 19.434 5.70585 19.434 6.04229Z"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="icon" id="twitter">
+                  <a
+                    href="https://twitter.com/escapinSamsara"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg class="twitter"  width="800px" height="800px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path d="M1643.825 518.606c-14.457 11.294-22.588 28.8-21.685 47.096.565 16.377 1.017 32.753 1.017 49.355 0 530.372-373.497 1079.153-998.513 1079.153-122.203 0-242.598-24.282-355.765-71.153 136.433-22.588 266.428-82.447 374.965-173.816 17.957-15.247 24.62-39.868 16.828-62.005-7.793-22.136-28.574-37.157-52.179-37.722-105.374-2.146-200.81-62.682-256.376-157.214 38.06-1.13 79.059-7.116 109.779-16.038 24.847-7.228 41.562-30.381 40.771-56.132-.903-25.863-19.2-47.774-44.499-53.308-112.15-24.282-194.71-116.781-222.607-243.84 32.076 6.438 62.344 8.47 79.06 8.922 24.62 2.711 47.322-14.456 55.453-38.06 8.02-23.492-.226-49.582-20.442-64.151-78.042-56.245-161.619-161.167-161.619-286.42 0-30.832 3.84-61.326 11.181-90.804 195.163 217.186 461.478 348.31 743.83 363.558 18.975 1.016 34.674-6.438 46.08-19.765 11.408-13.327 15.926-31.398 12.312-48.565-5.648-25.637-8.471-52.178-8.471-79.058 0-188.951 141.063-342.664 314.428-342.664 87.19 0 168.283 37.835 228.141 106.73 13.327 15.36 34.334 22.475 54.212 18.183 28.687-6.099 56.922-13.779 84.706-23.153-16.49 16.715-34.673 31.624-54.438 44.386-22.25 14.343-31.51 42.014-22.475 66.861s34.56 39.868 60.31 36.593c14.683-1.92 29.252-4.179 43.709-7.002-18.297 17.731-37.497 34.447-57.713 50.033m261.685-199.68c-16.716-18.636-43.596-23.83-66.41-13.214-4.066 1.92-8.132 3.84-12.31 5.76 17.054-30.269 30.946-62.683 40.997-96.678 6.777-22.588-1.242-46.984-20.103-61.214-18.974-14.118-44.5-15.247-64.49-2.485-58.277 37.384-120.96 64.828-186.466 82.108-78.268-76.8-181.948-120.17-289.355-120.17-235.595 0-427.37 204.424-427.37 455.606 0 9.487.227 18.974.791 28.348C626 564.008 390.517 424.977 226.64 208.469c-11.52-15.247-30.155-23.04-49.242-22.136-19.2 1.468-36.367 12.536-45.516 29.477-37.157 68.894-56.809 147.614-56.809 227.464 0 86.626 28.687 165.007 70.25 230.739-19.426 9.035-32.98 28.574-32.98 51.388v5.195c0 139.821 49.808 261.91 133.497 344.47-9.035 2.937-17.28 8.246-23.943 15.36a56.566 56.566 0 0 0-12.537 54.326c40.772 136.997 137.788 242.145 258.41 289.807-122.88 69.571-268.688 97.129-404.443 80.753-26.541-3.953-50.485 11.858-59.633 36.028-9.261 24.282-.677 51.84 20.781 66.522 179.69 123.784 387.276 189.29 600.17 189.29 695.717 0 1111.454-606.156 1111.454-1192.095 0-8.583-.113-17.054-.339-25.524 68.555-57.149 127.51-125.365 175.737-203.069 13.214-21.345 10.842-48.903-5.986-67.538" fill-rule="evenodd"/> </g>
+</svg></a>
+                </div>
+                <div class="icon" id="medium">
+                  <a
+                    href="https://medium.com/@jpusterhofer"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                    class="medium"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.4093 12.2471C13.4093 15.6973 10.6313 18.4944 7.20451 18.4944C3.77768 18.4944 0.999969 15.6982 0.999969 12.2471C0.999969 8.79604 3.77789 6 7.20451 6C10.6311 6 13.4093 8.79688 13.4093 12.2471ZM20.2159 12.2471C20.2159 15.4951 18.8269 18.1278 17.1136 18.1278C15.4003 18.1278 14.0112 15.4942 14.0112 12.2471C14.0112 8.99998 15.4003 6.36639 17.1136 6.36639C18.8269 6.36639 20.2159 8.99998 20.2159 12.2471ZM23 12.2471C23 15.1571 22.5114 17.516 21.9088 17.516C21.3063 17.516 20.8177 15.1563 20.8177 12.2471C20.8177 9.33792 21.3063 6.97822 21.909 6.97822C22.5118 6.97822 23 9.33729 23 12.2471Z"
+
+                        stroke-linejoin="round"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="icon" id="soundcloud">
+                  <a
+                    href="https://soundcloud.com/escapingsamsara"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                    class="soundcloud"
+
+                      width="800px"
+                      height="800px"
+                      viewBox="-2 0 32 32"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <title>soundcloud</title>
+                        <path
+                          d="M23.2 22.68h-10.12c-0.28 0-0.56-0.16-0.72-0.4-0.080-0.12-0.12-0.32-0.12-0.48v-10.76c0-0.28 0.16-0.56 0.4-0.72 1.040-0.64 2.28-1 3.52-1 2.92 0 5.48 1.88 6.36 4.64 0.24-0.040 0.48-0.080 0.72-0.080 2.4 0 4.4 1.96 4.4 4.4s-2.040 4.4-4.44 4.4zM13.92 20.96h9.28c1.48 0 2.68-1.2 2.68-2.68s-1.2-2.68-2.68-2.68c-0.36 0-0.72 0.080-1.040 0.2-0.24 0.080-0.52 0.080-0.72-0.040-0.24-0.12-0.4-0.36-0.44-0.6-0.4-2.4-2.48-4.12-4.88-4.12-0.76 0-1.52 0.16-2.2 0.52v9.4zM10.84 21.8v-8.68c0-0.48-0.4-0.84-0.84-0.84s-0.84 0.4-0.84 0.84v8.72c0 0.48 0.4 0.84 0.84 0.84s0.84-0.4 0.84-0.88zM7.8 21.8v-9c0-0.48-0.4-0.84-0.84-0.84s-0.84 0.4-0.84 0.84v9.040c0 0.48 0.4 0.84 0.84 0.84s0.84-0.4 0.84-0.88zM4.76 21.8v-6.48c0-0.48-0.4-0.84-0.84-0.84s-0.84 0.4-0.84 0.84v6.52c0 0.48 0.4 0.84 0.84 0.84s0.84-0.4 0.84-0.88zM1.72 21.32v-5.32c0-0.48-0.4-0.84-0.84-0.84s-0.88 0.36-0.88 0.84v5.32c0 0.48 0.4 0.84 0.84 0.84s0.88-0.36 0.88-0.84z"
+                        />
+                      </g></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="contactContentBannerContainer">
+                  <a class="marqueeCTA"
+                    href="mailto:jpusterhofer@gmail.com?subject=let's talk"
+                    rel="noopener"
+                  >
+                  <div class="marquee3">
+                  <ul class="marquee-content3">
+                 <li><span class="rotated3">get in touch </span></li><li><span class="rotated1">get in touch</span></li><li><span class="rotated3">get in touch</span></li><li><span class="rotated1">get in touch</span></li><li><span class="rotated3">get in touch</span></li><li><span class="rotated1">get in touch</span></li><li><span class="rotated3">get in touch</span></li><li><span class="rotated1">get in touch</span></li>
+
+                  </ul>
+                </div>
+                <!-- <div class="marquee4">
+                  <ul class="marquee-content4">
+                    <li><span class="rotated2">get in touch</span></li><li><span>get in touch</span></li><li><span class="rotated2">get in touch</span></li><li><span>get in touch</span></li><li><span class="rotated2">get in touch</span></li><li><span>get in touch</span></li><li><span class="rotated2">get in touch</span></li><li><span>get in touch</span></li>
+                  </ul>
+                </div> -->
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- FOOTER SECTION -->
+    <footer id="footerWrapper">
+      <div class="footerContainer">
+        <div class="footerContainerText">
+          <span class="paragraphHoverGSAP"
+            >jakob pusterhofer &copy 2023<br />
+           annenstrasse 12, 8020 graz<br />
+            jpusterhofer@gmail.com
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>
+</main>
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- JS -->
+    <script src="main.js"></script>
+    <script src="./js/animationEffects/navBar.js"></script>
+    <!-- <script  rc="./js/animationEffects/aboutMeBanner.js"></script> -->
+       <script src="./js/animationEffects/portfolioBanner.js"></script>
+              <script src="./js/animationEffects/contactBanner.js"></script>
+    <script src="./js/animationEffects/b2tButton.js"></script>
+    <!-- WeatherAppWidget -->
+    <script
+      src="./WeatherAppWidget_portfolio/weatherAppWidgetScript.js"
+    ></script>
+    <!-- Webplayer -->
+    <script src="./webplayer_portfolio/appplayer.js"></script>
+    <!-- todoList -->
+    <script src="./todolist_portfolio/todolistScript.js"></script>
+  </body>
+</html>

@@ -803,7 +803,6 @@ p {
     position: absolute;
     .aboutButtonContact {
       z-index: 100;
-      z-index: 99;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -811,7 +810,7 @@ p {
       height: 10vh;
       .cta-btn {
         letter-spacing: 1.2;
-        z-index: 100;
+        z-index: 200;
         position: relative;
         display: flex;
         justify-content: center;

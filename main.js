@@ -2,15 +2,15 @@
 //PRELOADER
 ///////////////////////////////////////////////
 
-// window.addEventListener('load', function () {
-//   const preload = document.getElementById('preloader')
-//   this.setTimeout(function () {
-//     preload.classList.add('preload-finish')
-//   }, 50)
-//   this.setTimeout(function () {
-//     preload.style.display = 'none'
-//   }, 100)
-// })
+window.addEventListener('load', function () {
+  const preload = document.getElementById('preloader')
+  this.setTimeout(function () {
+    preload.classList.add('preload-finish')
+  }, 50)
+  this.setTimeout(function () {
+    preload.style.display = 'none'
+  }, 100)
+})
 //preloading screen end
 
 //wiggle button effet:

@@ -1,4 +1,8 @@
+//////////////////////////////////////////////
+/// Google Fonts
+//////////////////////////////////////////////
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
+
 //////////////////////////////////////////////
 /// Variables
 //////////////////////////////////////////////
@@ -1775,37 +1779,12 @@ p {
             align-items: center;
             padding-top: 1.5rem;
             padding: 2vh 0;
-            $background-color_1: #0c1016;
-            @-webkit-keyframes move-1 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 75px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
             @keyframes move-1 {
               0% {
                 transform: translate(0, 0);
               }
               99% {
                 transform: translate(0, 75px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
-            @-webkit-keyframes move-2 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 119px);
               }
               100% {
                 transform: translate(0, 0);
@@ -1824,36 +1803,12 @@ p {
                 opacity: 0;
               }
             }
-            @-webkit-keyframes move-3 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 115px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
             @keyframes move-3 {
               0% {
                 transform: translate(0, 0);
               }
               99% {
                 transform: translate(0, 115px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
-            @-webkit-keyframes move-4 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 71px);
               }
               100% {
                 transform: translate(0, 0);
@@ -1872,36 +1827,12 @@ p {
                 opacity: 0;
               }
             }
-            @-webkit-keyframes move-5 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 65px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
             @keyframes move-5 {
               0% {
                 transform: translate(0, 0);
               }
               99% {
                 transform: translate(0, 65px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
-            @-webkit-keyframes move-6 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 85px);
               }
               100% {
                 transform: translate(0, 0);
@@ -1920,36 +1851,12 @@ p {
                 opacity: 0;
               }
             }
-            @-webkit-keyframes move-7 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 70px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
             @keyframes move-7 {
               0% {
                 transform: translate(0, 0);
               }
               99% {
                 transform: translate(0, 70px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
-            @-webkit-keyframes move-8 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 329px);
               }
               100% {
                 transform: translate(0, 0);
@@ -1968,36 +1875,12 @@ p {
                 opacity: 0;
               }
             }
-            @-webkit-keyframes move-9 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 589px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
             @keyframes move-9 {
               0% {
                 transform: translate(0, 0);
               }
               99% {
                 transform: translate(0, 589px);
-              }
-              100% {
-                transform: translate(0, 0);
-                opacity: 0;
-              }
-            }
-            @-webkit-keyframes move-10 {
-              0% {
-                transform: translate(0, 0);
-              }
-              99% {
-                transform: translate(0, 400px);
               }
               100% {
                 transform: translate(0, 0);
@@ -2030,7 +1913,6 @@ p {
               filter: url('#gooey');
               position: relative;
               background-color: $highlightColor;
-
               &:focus {
                 outline: none;
               }
@@ -2330,7 +2212,7 @@ p {
   }
 }
 //////////////////////////////////////////////
-/// FOOTER Start
+/// FOOTER
 //////////////////////////////////////////////
 #footerWrapper {
   overflow-x: hidden;
@@ -2349,7 +2231,6 @@ p {
     text-align: center;
   }
 }
-//////////////////////////////////////////////
 //////////////////////////////////////////////
 //////////////////////////////////////////////
 //////////////////////////////////////////////

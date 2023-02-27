@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
   // https://api.openweathermap.org/data/2.5/weather?q=Graz&units=metric&lang=en&appid=bf1b245c3eb80c2eff8fdafb1d0ad17f
   //---------------------------------------------------------------------------------------------------
   let weather = {
-    apiKey: 'bf1b245c3eb80c2eff8fdafb1d0ad17f',
+    apiKey: config.WEATHER_API_KEY,
     fetchWeather: function fetchWeather(city) {
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=en&appid=${this.apiKey}`

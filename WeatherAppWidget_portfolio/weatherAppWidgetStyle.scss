@@ -11,9 +11,14 @@ $secondaryFont: 'Raleway', monospace;
   align-items: flex-end;
   flex-direction: row;
   position: relative;
-  height: 70%;
+  height: 100%;
   width: 100%;
-  margin: auto 0;
+  margin: 10px 0;
+  @media all and (max-width: 800px) {
+    margin: auto 0;
+
+    align-items: center;
+  }
   .card {
     background-image: url('https://source.unsplash.com/featured/?graz');
     background-size: cover;

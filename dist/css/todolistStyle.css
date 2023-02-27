@@ -9,7 +9,7 @@
   max-width: 390px;
   min-width: 160px;
   max-width: 360px;
-  height: 280px;
+  height: 90%;
   color: white;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -65,6 +65,9 @@
   from {
     stroke-dashoffset: 90;
   }
+}
+#mainContainer .todoListWrapper {
+  height: 90%;
 }
 #mainContainer #todoForm {
   z-index: 13;

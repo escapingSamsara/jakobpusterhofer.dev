@@ -748,12 +748,20 @@ p {
   height: 10vh;
   width: 100%;
   bottom: 20vh;
-  margin: 0 auto;
+  margin: 0 15vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: absolute;
+  border: 1px solid white;
+  width: 70%;
+}
+@media all and (max-width: 1000px) {
+  #aboutWrapper .aboutButtonContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 #aboutWrapper .aboutButtonContainer .aboutButtonContact {
   z-index: 100;
@@ -1528,10 +1536,10 @@ p {
 }
 #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer {
   flex-direction: row;
-  width: 70%;
   height: 10vh;
   display: flex;
   align-items: center;
+  width: 70%;
 }
 @media all and (max-width: 1000px) {
   #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer {
@@ -1669,10 +1677,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .todoListPortfolioButtons {
-  padding-top: 2rem;
-  margin: 0;
 }
 #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
   padding-top: 4vh;

@@ -16,7 +16,6 @@ $secondaryFont: 'Raleway', monospace;
   margin: 10px 0;
   @media all and (max-width: 800px) {
     margin: auto 0;
-
     align-items: center;
   }
   .card {
@@ -32,9 +31,12 @@ $secondaryFont: 'Raleway', monospace;
     border-radius: 30px;
     min-width: 160px;
     max-width: 390px;
-    height: 240px;
+    height: 300px;
     color: $primaryColor;
     font-family: $mainFont;
+    @media all and (min-width: 800px) {
+      height: 260px;
+    }
     &::after {
       border-radius: 30px;
       content: '';
@@ -93,7 +95,7 @@ $secondaryFont: 'Raleway', monospace;
       visibility: hidden;
       max-height: 20px;
       font-weight: 600px;
-      font-size: 100%;
+      font-size: 200%;
       position: relative;
       &::after {
         content: 'Loading...' !important;
@@ -109,7 +111,7 @@ $secondaryFont: 'Raleway', monospace;
       // border: 1px solid white;
       .weatherHeader {
         font-family: $mainFont;
-        font-size: 125%;
+        font-size: 200%;
         font-weight: 600;
       }
       .tempIconContainer {

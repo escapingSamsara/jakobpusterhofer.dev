@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Modak&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Modak&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .appContainer {
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
   }
 }
 .appContainer .card {
-  background-image: url('https://source.unsplash.com/featured/?graz');
+  background-image: url("https://source.unsplash.com/featured/?graz");
   background-size: cover;
   border-radius: 30px;
   backdrop-filter: blur(20px);
@@ -28,13 +28,18 @@
   border-radius: 30px;
   min-width: 160px;
   max-width: 390px;
-  height: 240px;
+  height: 300px;
   color: #ffffff;
-  font-family: 'Poppins', open-sans, sans-serif;
+  font-family: "Poppins", open-sans, sans-serif;
+}
+@media all and (min-width: 800px) {
+  .appContainer .card {
+    height: 260px;
+  }
 }
 .appContainer .card::after {
   border-radius: 30px;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -62,8 +67,7 @@
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
-.appContainer .card .search .search-bar:focus,
-.appContainer .card .search .search-bar:hover {
+.appContainer .card .search .search-bar:focus, .appContainer .card .search .search-bar:hover {
   background: rgba(164, 164, 164, 0.4196078431);
   transition: all 0.3s ease-in-out;
 }
@@ -90,11 +94,11 @@
   visibility: hidden;
   max-height: 20px;
   font-weight: 600px;
-  font-size: 100%;
+  font-size: 200%;
   position: relative;
 }
 .appContainer .card .loading::after {
-  content: 'Loading...' !important;
+  content: "Loading..." !important;
   position: absolute;
   left: 5px;
   top: 0;
@@ -105,8 +109,8 @@
   max-height: 100%;
 }
 .appContainer .card .weather .weatherHeader {
-  font-family: 'Poppins', open-sans, sans-serif;
-  font-size: 125%;
+  font-family: "Poppins", open-sans, sans-serif;
+  font-size: 200%;
   font-weight: 600;
 }
 .appContainer .card .weather .tempIconContainer {
@@ -116,7 +120,7 @@
   flex-direction: column;
 }
 .appContainer .card .weather .tempIconContainer .tempHeader {
-  font-family: 'Raleway', monospace;
+  font-family: "Raleway", monospace;
   font-size: 360%;
   font-weight: 700;
   max-height: 100%;
@@ -125,7 +129,7 @@
 .appContainer .card .weather .additionalInfo {
   height: 100%;
   font-size: 130%;
-  font-family: 'Poppins', open-sans, sans-serif;
+  font-family: "Poppins", open-sans, sans-serif;
   text-transform: lowercase;
   font-weight: 500;
   line-height: 0.85;
@@ -162,13 +166,7 @@
   height: 28px;
   width: 28px;
 }
-.appContainer
-  .card
-  .weather
-  .additionalInfo
-  .humidityCentainer
-  .humidityIcon
-  svg {
+.appContainer .card .weather .additionalInfo .humidityCentainer .humidityIcon svg {
   height: 55%;
   width: 55%;
 }
@@ -180,15 +178,10 @@
 .appContainer .card .weather .additionalInfo .windspeedContainer .wind {
   padding: 0.25rem 0;
 }
-.appContainer
-  .card
-  .weather
-  .additionalInfo
-  .windspeedContainer
-  .windspeedIcon {
+.appContainer .card .weather .additionalInfo .windspeedContainer .windspeedIcon {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 28px;
   width: 28px;
-} /*# sourceMappingURL=weatherAppWidgetStyle.css.map */
+}/*# sourceMappingURL=weatherAppWidgetStyle.css.map */

@@ -43,7 +43,7 @@ window.addEventListener('load', function () {
   //Geocode Object to determine Users Location (City only)
   let geocode = {
     reverseGeocode: function (latitude, longitude) {
-      let api_key = 'e4dd8f89a9d8442e8853cf32ef36cf9f'
+      let api_key = config.GEOCODE_API_KEY
       let api_url = 'https://api.opencagedata.com/geocode/v1/json'
       let request_url =
         api_url +

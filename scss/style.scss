@@ -2114,14 +2114,10 @@ p {
             text-decoration: none;
           }
           span {
-            font-size: 3.5rem;
+            font-size: 3.25rem;
             filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-
             color: white;
-            @media all and (min-width: 400px) {
-              font-size: 3.75rem;
-            }
-            @media all and (min-width: 550px) {
+            @media all and (min-width: 551px) {
               font-size: 4rem;
             }
           }
@@ -2145,7 +2141,7 @@ p {
 /// Contact Banner
 :root {
   --marquee3-width: 100vw;
-  --marquee3-height: 12vh;
+  --marquee3-height: 8vh;
   --marquee3-elements-displayed: 1.75;
   --marquee3-element-width: calc(
     var(--marquee3-width) / var(--marquee3-elements-displayed)
@@ -2207,8 +2203,8 @@ p {
 @media (max-width: 600px) {
   :root {
     --marquee3-width: 100vw;
-    --marquee3-height: 10vh;
-    --marquee3-elements-displayed: 2;
+    --marquee3-height: 8vh;
+    --marquee3-elements-displayed: 1.55;
   }
 }
 //////////////////////////////////////////////

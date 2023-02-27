@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +12,9 @@ body {
   cursor: none;
   height: 100dvh;
   width: 100vw;
-  background-color: #15191e;
+  background-color: rgb(21, 25, 30);
   font-size: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
 
@@ -56,7 +56,7 @@ p {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background-color: #15191e;
+  background-color: rgb(21, 25, 30);
   transition: all 5s linear;
 }
 #preloader .overlay {
@@ -181,27 +181,29 @@ p {
   transform: translateY(0);
 }
 #navbar .navbar {
-  height: 8vh;
+  position: fixed;
+  top: 0;
+  height: 7vh;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
-  filter: drop-shadow(0px 0px 10px hsla(0, 0%, 0%, 0.25));
+  background-color: rgb(21, 25, 30);
+  filter: drop-shadow(0px 7px 7px rgb(21, 25, 30));
 }
 #navbar .logo {
-  padding-left: 1vw;
-  padding-top: 4vh;
+  padding-left: 0vw;
   width: 40%;
   height: auto;
 }
 #navbar .logo .jP {
-  filter: drop-shadow(0px 0px 10px hsla(183, 98%, 32%, 0.25));
-  height: 50%;
-  scale: 0.9;
+  filter: drop-shadow(0px 0px 10px rgba(2, 154, 162, 0.25));
+  height: 55%;
+  scale: 0.7;
   width: auto;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-35%, -50%);
   stroke-dasharray: 40;
   stroke-dashoffset: 100;
   animation: dash 4s infinite alternate;
@@ -217,7 +219,7 @@ p {
 #navbar .logo .jP_2 {
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.25));
   height: 100%;
-  scale: 1;
+  scale: 0.5;
   width: auto;
   stroke-dasharray: 40;
   stroke-dashoffset: 100;
@@ -256,7 +258,7 @@ p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: lowercase;
-  font-family: 'Poppins', sans-serif, sans-serif;
+  font-family: "Poppins", sans-serif, sans-serif;
 }
 @media all and (min-width: 400px) {
   #navbar nav a {
@@ -334,8 +336,7 @@ p {
   transition: all 0.4s ease-in-out;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
-#heroWrapper a .enterCTAsvg:hover,
-#heroWrapper a .enterCTAsvg:active {
+#heroWrapper a .enterCTAsvg:hover, #heroWrapper a .enterCTAsvg:active {
   stroke: #00adb5;
   scale: 1.15;
   transition: all 0.4s ease-in-out;
@@ -652,11 +653,11 @@ p {
   stroke-dashoffset: 537 !important;
   -webkit-animation-play-state: paused;
 }
-#aboutWrapper .aboutContainerBottom .chart[data-percent='100'] .outer {
+#aboutWrapper .aboutContainerBottom .chart[data-percent="100"] .outer {
   stroke-dashoffset: 0;
   animation: show100 2s;
 }
-#aboutWrapper .aboutContainerBottom .chart[data-percent='75'] .outer {
+#aboutWrapper .aboutContainerBottom .chart[data-percent="75"] .outer {
   stroke-dashoffset: 134;
   animation: show75 2s;
 }
@@ -668,7 +669,7 @@ p {
     stroke-dashoffset: 134;
   }
 }
-#aboutWrapper .aboutContainerBottom .chart[data-percent='70'] .outer {
+#aboutWrapper .aboutContainerBottom .chart[data-percent="70"] .outer {
   stroke-dashoffset: 161;
   animation: show70 2s;
 }
@@ -680,7 +681,7 @@ p {
     stroke-dashoffset: 161;
   }
 }
-#aboutWrapper .aboutContainerBottom .chart[data-percent='65'] .outer {
+#aboutWrapper .aboutContainerBottom .chart[data-percent="65"] .outer {
   stroke-dashoffset: 187;
   animation: show65 2s;
 }
@@ -692,7 +693,7 @@ p {
     stroke-dashoffset: 187;
   }
 }
-#aboutWrapper .aboutContainerBottom .chart[data-percent='50'] .outer {
+#aboutWrapper .aboutContainerBottom .chart[data-percent="50"] .outer {
   stroke-dashoffset: 267;
   animation: show50 2s;
 }
@@ -704,7 +705,7 @@ p {
     stroke-dashoffset: 267;
   }
 }
-#aboutWrapper .aboutContainerBottom .chart[data-percent='25'] .outer {
+#aboutWrapper .aboutContainerBottom .chart[data-percent="25"] .outer {
   stroke-dashoffset: 401;
   animation: show25 2s;
 }
@@ -790,8 +791,7 @@ p {
   color: white;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
-#aboutWrapper .aboutButtonContainer .aboutButtonContact .cta-btn:hover,
-#aboutWrapper .aboutButtonContainer .aboutButtonContact .cta-btn:active {
+#aboutWrapper .aboutButtonContainer .aboutButtonContact .cta-btn:hover, #aboutWrapper .aboutButtonContainer .aboutButtonContact .cta-btn:active {
   filter: drop-shadow(0px 0px 10px rgba(187, 187, 187, 0.25));
   background-color: white;
   color: #000000;
@@ -801,7 +801,7 @@ p {
   text-align: justify;
   width: 100%;
   line-height: 1;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
 }
 @media all and (min-width: 400px) {
   #aboutWrapper .aboutButtonContainer .aboutButtonContact p {
@@ -830,8 +830,7 @@ p {
   position: relative;
   justify-content: space-evenly;
 }
-.marquee .marquee-content:hover,
-.marquee .marquee-content:active {
+.marquee .marquee-content:hover, .marquee .marquee-content:active {
   animation-play-state: paused;
 }
 .marquee .marquee-content span {
@@ -1103,9 +1102,7 @@ p {
   height: 80vh;
   width: 100%;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -1114,44 +1111,29 @@ p {
   width: 100vw;
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox {
     flex-direction: row;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1 {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 {
   height: 35%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 @media all and (min-width: 480px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 {
     flex-direction: row;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 {
     flex-direction: column;
     height: 100%;
     width: 100%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerPhoneBox {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox {
   height: 100%;
   width: 100%;
   display: flex;
@@ -1160,12 +1142,7 @@ p {
   align-items: center;
   flex-direction: row;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerPhoneBox
-  .portfolioPhoneContainer {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioPhoneContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1174,22 +1151,11 @@ p {
   position: relative;
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioPhoneContainer {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioPhoneContainer {
     width: 30%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerPhoneBox
-  .portfolioPhoneContainer
-  img {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioPhoneContainer img {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
   height: 20vmin;
   min-height: 120px;
@@ -1198,25 +1164,13 @@ p {
   width: auto;
 }
 @media all and (min-width: 480px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioPhoneContainer
-    img {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioPhoneContainer img {
     height: 18vmin;
     padding-bottom: 0;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioPhoneContainer
-    img {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioPhoneContainer img {
     height: 22vmin;
     max-height: 180px;
   }
@@ -1232,12 +1186,7 @@ p {
     scale: 1;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerPhoneBox
-  .portfolioContainerPhoneBox1 {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox1 {
   position: relative;
   top: 0%;
   z-index: 1;
@@ -1245,22 +1194,12 @@ p {
   animation: pulsePhone 6s infinite alternate ease-in-out;
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioContainerPhoneBox1 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox1 {
     top: 35%;
     left: 10%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerPhoneBox
-  .portfolioContainerPhoneBox2 {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox2 {
   position: relative;
   top: 0%;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1268,33 +1207,18 @@ p {
   z-index: 2;
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioContainerPhoneBox2 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox2 {
     top: 45%;
     left: 10%;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioContainerPhoneBox2 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox2 {
     top: 17.5%;
     left: 5%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerPhoneBox
-  .portfolioContainerPhoneBox3 {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox3 {
   position: relative;
   top: 0%;
   z-index: 3000;
@@ -1304,32 +1228,18 @@ p {
   z-index: 1;
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioContainerPhoneBox3 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox3 {
     top: 45%;
     left: 10%;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerPhoneBox
-    .portfolioContainerPhoneBox3 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerPhoneBox .portfolioContainerPhoneBox3 {
     top: -7.5%;
     left: 0%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerTopBoxProject1Text {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text {
   width: 100%;
   height: 100%;
   padding: 0 8vw 0 8vw;
@@ -1339,87 +1249,44 @@ p {
   flex-direction: column;
 }
 @media all and (min-width: 480px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text {
     padding: 0 6vw 0 8vw;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text {
     padding: 0 2vw 0 8vw;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerTopBoxProject1Text
-  .portfolioContainerMacbookTextBoxTop {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxTop {
   width: 100%;
   display: flex;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerTopBoxProject1Text
-  .portfolioContainerMacbookTextBoxTop
-  h2 {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxTop h2 {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
   margin: 0;
   z-index: 81;
   line-height: 1.25;
   font-size: 1.85rem;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 @media all and (min-width: 400px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text
-    .portfolioContainerMacbookTextBoxTop
-    h2 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxTop h2 {
     font-size: 1.95rem;
   }
 }
 @media all and (min-width: 550px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text
-    .portfolioContainerMacbookTextBoxTop
-    h2 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxTop h2 {
     font-size: 2.15rem;
   }
 }
 @media all and (min-width: 768px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text
-    .portfolioContainerMacbookTextBoxTop
-    h2 {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxTop h2 {
     font-size: 2.25rem;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContainerTopBoxProject1
-  .portfolioContainerTopBoxProject1Text
-  .portfolioContainerMacbookTextBoxBottom
-  p {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxBottom p {
   position: relative;
   line-height: 1.45;
   align-items: center;
@@ -1430,64 +1297,35 @@ p {
   font-size: 1.32rem;
 }
 @media all and (min-width: 400px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text
-    .portfolioContainerMacbookTextBoxBottom
-    p {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxBottom p {
     font-size: 1.6rem;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContainerTopBoxProject1
-    .portfolioContainerTopBoxProject1Text
-    .portfolioContainerMacbookTextBoxBottom
-    p {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContainerTopBoxProject1 .portfolioContainerTopBoxProject1Text .portfolioContainerMacbookTextBoxBottom p {
     width: 90%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook {
   display: flex;
   justify-content: center;
   height: 65%;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook {
     height: 100%;
     width: 65%;
   }
 }
 @media all and (min-width: 1200px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook {
     position: relative;
     right: 2%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch {
   position: relative;
   display: flex;
   height: 100%;
@@ -1497,171 +1335,67 @@ p {
   z-index: 1;
 }
 @media all and (min-width: 700px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch {
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook:hover,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch:hover {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook:hover,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch:hover {
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     scale: 1.025;
   }
 }
 @media all and (min-width: 680px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch {
     margin: 0;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .macbookBody,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .macbookBody {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
   scale: 0.6;
   max-height: 100%;
   width: auto;
   z-index: 1;
 }
 @media all and (min-width: 520px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .macbookBody,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .macbookBody {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
     scale: 0.85;
   }
 }
 @media all and (min-width: 580px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .macbookBody,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .macbookBody {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
     scale: 0.9;
   }
 }
 @media all and (min-width: 640px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .macbookBody,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .macbookBody {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
     scale: 1;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .macbookBody,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .macbookBody {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
     scale: 0.6;
   }
 }
 @media all and (min-width: 1100px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .macbookBody,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .macbookBody {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
     scale: 0.65;
   }
 }
 @media all and (min-width: 1200px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .macbookBody,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .macbookBody {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .macbookBody,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .macbookBody {
     scale: 0.85;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen {
   position: absolute;
   top: 46%;
   left: 50.5%;
@@ -1670,48 +1404,12 @@ p {
   height: 80%;
   z-index: 2;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen
-  .macbookHero,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen
-  .macbookAbout,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen
-  .macbookContact,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen
-  .macbookHero,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen
-  .macbookAbout,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen
-  .macbookContact {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
   scale: 0.6;
   width: 100%;
   position: absolute;
@@ -1722,278 +1420,62 @@ p {
   animation: fadeInOut 15s infinite ease-in-out;
 }
 @media all and (min-width: 520px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
     scale: 0.85;
   }
 }
 @media all and (min-width: 580px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
     scale: 0.9;
   }
 }
 @media all and (min-width: 640px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
     scale: 1;
   }
 }
 @media all and (min-width: 960px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
     scale: 0.6;
   }
 }
 @media all and (min-width: 1100px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
     scale: 0.65;
   }
 }
 @media all and (min-width: 1200px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbook
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookHero,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookAbout,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerMacbookBox
-    .portfolioContentProject1Macbook
-    .portfolioContentProjectImageMacbookTouch
-    .portfolioContentProjectImageMacbookScreen
-    .macbookContact {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
     scale: 0.85;
   }
 }
@@ -2014,87 +1496,37 @@ p {
     opacity: 1;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen
-  .macbookHero,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen
-  .macbookHero {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookHero,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookHero {
   animation-delay: 0s;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen
-  .macbookAbout,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen
-  .macbookAbout {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookAbout,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookAbout {
   animation-delay: 5s;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbook
-  .portfolioContentProjectImageMacbookScreen
-  .macbookContact,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerMacbookBox
-  .portfolioContentProject1Macbook
-  .portfolioContentProjectImageMacbookTouch
-  .portfolioContentProjectImageMacbookScreen
-  .macbookContact {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbook .portfolioContentProjectImageMacbookScreen .macbookContact,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerMacbookBox .portfolioContentProject1Macbook .portfolioContentProjectImageMacbookTouch .portfolioContentProjectImageMacbookScreen .macbookContact {
   animation-delay: 10s;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom {
   height: 10vh;
   width: 100%;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100%;
   width: 100%;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   align-items: center;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer {
   flex-direction: row;
   width: 70%;
   height: 10vh;
@@ -2102,44 +1534,19 @@ p {
   align-items: center;
 }
 @media all and (max-width: 1000px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerProjectMacbookBottom
-    .portfolioContainerMacbookTextBox
-    .portfolioContainerMacbookBoxBottom
-    .portfolioProject1LinkBtnContainer {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer {
     width: 100%;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn {
   height: 20%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Demo,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Code {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Demo,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Code {
   letter-spacing: 1.2;
   padding: 5.5px 15px;
   border-radius: 100px;
@@ -2151,77 +1558,20 @@ p {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
 @media all and (min-width: 400px) {
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerProjectMacbookBottom
-    .portfolioContainerMacbookTextBox
-    .portfolioContainerMacbookBoxBottom
-    .portfolioProject1LinkBtnContainer
-    .portfolioLinkBtn
-    .cta-btn-Project1-Demo,
-  #portfolioWrapper1
-    .portfolioContainerContentProject1
-    .portfolioContainerProjectMacbookBottom
-    .portfolioContainerMacbookTextBox
-    .portfolioContainerMacbookBoxBottom
-    .portfolioProject1LinkBtnContainer
-    .portfolioLinkBtn
-    .cta-btn-Project1-Code {
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Demo,
+  #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Code {
     font-size: 1.6rem;
   }
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Demo,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Code {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Demo,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Code {
   background-color: black;
   color: white;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Demo:hover,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Demo:active,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Code:hover,
-#portfolioWrapper1
-  .portfolioContainerContentProject1
-  .portfolioContainerProjectMacbookBottom
-  .portfolioContainerMacbookTextBox
-  .portfolioContainerMacbookBoxBottom
-  .portfolioProject1LinkBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project1-Code:active {
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Demo:hover, #portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Demo:active,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Code:hover,
+#portfolioWrapper1 .portfolioContainerContentProject1 .portfolioContainerProjectMacbookBottom .portfolioContainerMacbookTextBox .portfolioContainerMacbookBoxBottom .portfolioProject1LinkBtnContainer .portfolioLinkBtn .cta-btn-Project1-Code:active {
   filter: drop-shadow(0px 0px 10px rgba(187, 187, 187, 0.25));
   background-color: white;
   color: #000000;
@@ -2236,7 +1586,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #15191e;
+  background: rgb(21, 25, 30);
 }
 @media all and (min-width: 800px) {
   #portfolioWrapperWidgets {
@@ -2270,10 +1620,7 @@ p {
     width: 100%;
   }
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer {
   position: relative;
   bottom: 0%;
   z-index: 4;
@@ -2285,29 +1632,15 @@ p {
   flex-direction: row;
   margin-bottom: 2rem;
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn {
   z-index: 300;
   width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project3-Code,
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project3-Figma {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Code,
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Figma {
   letter-spacing: 1.2;
   padding: 5.5px 15px;
   border-radius: 100px;
@@ -2319,47 +1652,16 @@ p {
   color: rgb(255, 255, 255);
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project3-Code:hover,
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project3-Code:active,
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project3-Figma:hover,
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .portfolioBtnContainer
-  .portfolioLinkBtn
-  .cta-btn-Project3-Figma:active {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Code:hover, #portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Code:active,
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Figma:hover,
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Figma:active {
   filter: drop-shadow(0px 0px 10px rgba(187, 187, 187, 0.25));
   background-color: white;
   color: #000000;
 }
 @media all and (min-width: 400px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .gridBox
-    .portfolioBtnContainer
-    .portfolioLinkBtn
-    .cta-btn-Project3-Code,
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .gridBox
-    .portfolioBtnContainer
-    .portfolioLinkBtn
-    .cta-btn-Project3-Figma {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Code,
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .portfolioBtnContainer .portfolioLinkBtn .cta-btn-Project3-Figma {
     font-size: 1.6rem;
   }
 }
@@ -2368,36 +1670,24 @@ p {
   justify-content: center;
   align-items: center;
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .gridBox
-  .todoListPortfolioButtons {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .gridBox .todoListPortfolioButtons {
   padding-top: 2rem;
   margin: 0;
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .portfolioWidgetsContentBox_Text {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
   padding-top: 4vh;
 }
 @media all and (max-width: 800px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
     padding-top: 8vh;
   }
 }
 @media all and (min-width: 1315px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
     padding-top: 0;
   }
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .portfolioWidgetsContentBox_Text
-  .appContainerText {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2406,72 +1696,41 @@ p {
   padding: 0 8vw 0 8vw;
 }
 @media all and (min-width: 640px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText {
     font-size: 1.6rem;
   }
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .portfolioWidgetsContentBox_Text
-  .appContainerText
-  .widgetHeader {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText .widgetHeader {
   font-size: 1.85rem;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 @media all and (min-width: 400px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    .widgetHeader {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText .widgetHeader {
     font-size: 1.95rem;
   }
 }
 @media all and (min-width: 550px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    .widgetHeader {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText .widgetHeader {
     font-size: 2.15rem;
   }
 }
 @media all and (min-width: 768px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    .widgetHeader {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText .widgetHeader {
     font-size: 2.25rem;
   }
 }
 @media all and (min-width: 950px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    .widgetHeader {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText .widgetHeader {
     font-size: 2.3rem;
   }
 }
 @media all and (min-width: 1000px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    .widgetHeader {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText .widgetHeader {
     font-size: 2.4rem;
   }
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .portfolioWidgetsContentBox_Text
-  .appContainerText
-  p {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText p {
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -2479,26 +1738,16 @@ p {
   font-size: 1.32rem;
 }
 @media all and (min-width: 400px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    p {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText p {
     font-size: 1.6rem;
   }
 }
 @media all and (max-width: 1000px) {
-  #portfolioWrapperWidgets
-    .portfolioWidgets_Grid
-    .portfolioWidgetsContentBox_Text
-    .appContainerText
-    p {
+  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText p {
     width: 100%;
   }
 }
-#portfolioWrapperWidgets
-  .portfolioWidgets_Grid
-  .portfolioWidgetsContentBox_WeatherWidget {
+#portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_WeatherWidget {
   flex-direction: column-reverse;
 }
 
@@ -2569,11 +1818,7 @@ p {
   height: 74vh;
   width: 100%;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2581,12 +1826,7 @@ p {
   height: 39vh;
   width: 100%;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .contactTextWrapper {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .contactTextWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2595,23 +1835,13 @@ p {
   width: 100%;
 }
 @media all and (min-width: 800px) {
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentText
-    .contactTextWrapper {
+  #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .contactTextWrapper {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .contactText {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .contactText {
   justify-items: center;
   align-items: center;
   display: flex;
@@ -2622,31 +1852,15 @@ p {
   text-align: justify;
   z-index: 100;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .contactText
-  .breakContact {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .contactText .breakContact {
   margin: 0.5rem 0;
 }
 @media all and (min-width: 400px) {
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentText
-    .contactText {
+  #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .contactText {
     font-size: 1.6rem;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn {
   height: 39vh;
   width: 100%;
   display: flex;
@@ -2775,65 +1989,32 @@ p {
     opacity: 0;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  svg {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn svg {
   position: absolute;
   top: -4000px;
   left: -4000px;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button {
   padding: 1rem;
   font-size: 2rem;
   font-weight: 500;
   border: none;
   color: white;
-  filter: url('#gooey');
+  filter: url("#gooey");
   position: relative;
   background-color: #00adb5;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button:focus {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button:focus {
   outline: none;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble {
   background-color: #00adb5;
   border-radius: 100%;
   position: absolute;
@@ -2842,173 +2023,84 @@ p {
   display: block;
   z-index: -1;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(1) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(1) {
   left: 91px;
   width: 25px;
   height: 25px;
   animation: move-1 4s infinite;
   animation-delay: 0.2s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(2) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(2) {
   left: 22px;
   width: 25px;
   height: 25px;
   animation: move-2 4.02s infinite;
   animation-delay: 0.4s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(3) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(3) {
   left: 48px;
   width: 25px;
   height: 25px;
   animation: move-3 4.06s infinite;
   animation-delay: 0.6s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(4) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(4) {
   left: 96px;
   width: 25px;
   height: 25px;
   animation: move-4 3.08s infinite;
   animation-delay: 0.8s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(5) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(5) {
   left: 82px;
   width: 25px;
   height: 25px;
   animation: move-5 4.1s infinite;
   animation-delay: 1s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(6) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(6) {
   left: 31px;
   width: 25px;
   height: 25px;
   animation: move-6 4.12s infinite;
   animation-delay: 1.2s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(7) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(7) {
   left: 77px;
   width: 25px;
   height: 25px;
   animation: move-7 3.14s infinite;
   animation-delay: 1.4s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(8) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(8) {
   left: 54px;
   width: 25px;
   height: 25px;
   animation: move-8 4.16s infinite;
   animation-delay: 1.6s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(9) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(9) {
   left: 74px;
   width: 25px;
   height: 25px;
   animation: move-9 4.18s infinite;
   animation-delay: 1.8s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentText
-  .gooeyBtn
-  #gooey-button
-  .bubbles
-  .bubble:nth-child(10) {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentText .gooeyBtn #gooey-button .bubbles .bubble:nth-child(10) {
   left: 38px;
   width: 25px;
   height: 25px;
   animation: move-10 4.2s infinite;
   animation-delay: 2s;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower {
   height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -3017,168 +2109,39 @@ p {
   width: 80%;
 }
 @media all and (min-width: 600px) {
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentLower
-    .contactContentCodingIconsCode {
+  #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode {
     width: 50%;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon {
   width: 25%;
   height: 45%;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .github,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .instagram {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .github,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .instagram {
   stroke: #00adb5;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .github:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .instagram:hover {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .github:hover,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .instagram:hover {
   stroke: white;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .codepen,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .figma,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .stackoverflow,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .twitter,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .medium,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .soundcloud {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .codepen,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .figma,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .stackoverflow,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .twitter,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .medium,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .soundcloud {
   fill: #00adb5;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .codepen:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .figma:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .stackoverflow:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .twitter:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .medium:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  .icon
-  .soundcloud:hover {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .codepen:hover,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .figma:hover,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .stackoverflow:hover,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .twitter:hover,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .medium:hover,
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode .icon .soundcloud:hover {
   fill: white;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  svg {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode svg {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
   position: relative;
   top: 50%;
@@ -3192,58 +2155,22 @@ p {
   transition: all 0.5s ease-in-out;
 }
 @media all and (min-width: 600px) {
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentLower
-    .contactContentCodingIconsCode
-    svg {
+  #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode svg {
     height: 75%;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  svg:hover,
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentLower
-  .contactContentCodingIconsCode
-  svg:active {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode svg:hover, #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode svg:active {
   filter: drop-shadow(0px 0px 4px rgba(1, 150, 158, 0.25));
   height: 13vmin;
   transition: all 0.5s ease-in-out;
   background-color: #00adb5;
 }
 @media all and (min-width: 600px) {
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentLower
-    .contactContentCodingIconsCode
-    svg:hover,
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentLower
-    .contactContentCodingIconsCode
-    svg:active {
+  #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode svg:hover, #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentLower .contactContentCodingIconsCode svg:active {
     height: 70%;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentBannerContainer {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer {
   width: 100%;
   width: 100%;
   height: 15vh;
@@ -3257,58 +2184,28 @@ p {
   align-items: center;
   padding: 0 0 7.5vh;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentBannerContainer
-  a {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer a {
   text-decoration: none;
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentBannerContainer
-  span {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer span {
   font-size: 3.25rem;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
   color: white;
 }
 @media all and (min-width: 551px) {
-  #contactWrapper
-    .contactContainer
-    .contactContentContainer
-    .contactContentMain
-    .contactContentBannerContainer
-    span {
+  #contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer span {
     font-size: 4rem;
   }
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentBannerContainer
-  .rotated2 {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer .rotated2 {
   color: #00adb5;
   filter: drop-shadow(0px 0px 2px rgba(0, 150, 158, 0.3294117647));
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentBannerContainer
-  .rotated1 {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer .rotated1 {
   color: #00adb5;
   filter: drop-shadow(0px 0px 2px rgba(0, 150, 158, 0.3294117647));
 }
-#contactWrapper
-  .contactContainer
-  .contactContentContainer
-  .contactContentMain
-  .contactContentBannerContainer
-  .rotated3 {
+#contactWrapper .contactContainer .contactContentContainer .contactContentMain .contactContentBannerContainer .rotated3 {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
   transition: all 0.4s ease-in-out;
 }
@@ -3358,9 +2255,7 @@ p {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      calc(-1 * var(--marquee3-element-width) * var(--marquee3-elements))
-    );
+    transform: translateX(calc(-1 * var(--marquee3-element-width) * var(--marquee3-elements)));
   }
 }
 .marquee-content3 li {
@@ -3375,7 +2270,7 @@ p {
   max-height: 100%;
   white-space: nowrap;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .marquee-content3 span {
@@ -3403,4 +2298,4 @@ p {
   font-size: 0.85rem;
   display: flex;
   text-align: center;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

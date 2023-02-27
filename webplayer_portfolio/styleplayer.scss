@@ -35,7 +35,7 @@ h3 {
   flex-direction: column;
   bottom: 0vh;
   z-index: 3;
-  width: 50%;
+  width: 100%;
   height: 90%;
   padding: 0;
   position: relative;
@@ -61,7 +61,7 @@ h3 {
 }
 #background {
   height: 280px;
-  max-width: 500px;
+  width: 355px;
   margin: auto;
   object-fit: cover;
   position: relative;
@@ -81,7 +81,7 @@ h3 {
 #music .player-container {
   margin: auto;
   height: 280px;
-  max-width: 500px;
+  width: 355px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -90,10 +90,10 @@ h3 {
   border-radius: 30px;
 }
 #music .img-container {
-  max-width: 120px;
-  max-height: 120px;
+  max-width: 185px;
+  max-height: 185px;
   position: absolute;
-  top: -25px;
+  top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,12 +318,12 @@ h3 {
 /* MOBILE DEVICES 320px-480px */
 @media all and (min-width: 320px) and (max-width: 390px) {
   #background {
-    height: 280px;
-    width: 100%;
+    height: 260px;
+    width: 355px;
   }
   #music .player-container {
-    height: 280px;
-    width: 90%;
+    height: 260px;
+    width: 355px;
   }
   #music h2 {
     font-size: 350%;
@@ -331,26 +331,26 @@ h3 {
   }
   #music h3 {
     font-size: 120%;
-    bottom: 100px;
+    bottom: 120px;
   }
 }
 @media all and (min-width: 391px) and (max-width: 485px) {
-  #background {
-    height: 280px;
-    width: 100%;
-  }
-  #music .player-container {
-    height: 300px;
-    width: 80%;
-  }
-  #music .img-container {
-    max-width: 135px;
-    max-height: 135px;
-    top: -25px;
-  }
+  // #background {
+  //   height: 280px;
+  //   width: 100%;
+  // }
+  // #music .player-container {
+  //   height: 300px;
+  //   width: 80%;
+  // }
+  // #music .img-container {
+  //   max-width: 135px;
+  //   max-height: 135px;
+  //   top: -25px;
+  // }
   #music h2 {
     font-size: 400%;
-    bottom: 125px;
+    bottom: 150px;
   }
   #music h3 {
     font-size: 120%;
@@ -369,27 +369,27 @@ h3 {
 }
 /* iPADs TABLET 481px-768px */
 @media all and (min-width: 486px) and (max-width: 610px) {
-  #background {
-    height: 100%;
-    width: 100%;
-    border-radius: 40px;
-  }
-  #music .player-container {
-    height: 280px;
-    width: 75%;
-    border-radius: 40px;
-  }
-  #music .img-container {
-    max-width: 150px;
-    max-height: 150px;
-    top: -42px;
-  }
+  // #background {
+  //   height: 100%;
+  //   width: 100%;
+  //   border-radius: 40px;
+  // }
+  // #music .player-container {
+  //   height: 280px;
+  //   width: 75%;
+  //   border-radius: 40px;
+  // }
+  // #music .img-container {
+  //   max-width: 150px;
+  //   max-height: 150px;
+  //   top: -42px;
+  // }
   #music h2 {
     font-size: 390%;
-    bottom: 125px;
+    bottom: 150px;
   }
   #music h3 {
-    font-size: 130;
+    font-size: 130%;
     bottom: 92.5px;
   }
   #music .player-controls {
@@ -432,27 +432,35 @@ h3 {
   }
 }
 @media all and (min-width: 611px) {
-  #background {
-    height: 100%;
-    width: 100%;
-    border-radius: 45px;
-  }
-  #music .player-container {
-    height: 280px;
-    width: 80%;
-    border-radius: 45px;
-  }
-  #music .img-container {
-    max-width: 160px;
-    max-height: 160px;
-    top: -40px;
-  }
+  // #background {
+  //   height: 100%;
+  //   width: 100%;
+  //   border-radius: 45px;
+  // }
+  // #music .player-container {
+  //   height: 280px;
+  //   width: 80%;
+  //   border-radius: 45px;
+  // }
+  // #music .img-container {
+  //   max-width: 160px;
+  //   max-height: 160px;
+  //   top: -40px;
+  // }
+  // #music h2 {
+  //   font-size: 450%;
+  //   bottom: 125px;
+  // }
+  // #music h3 {
+  //   font-size: 175%;
+  //   bottom: 92.5px;
+  // }
   #music h2 {
-    font-size: 450%;
-    bottom: 125px;
+    font-size: 390%;
+    bottom: 150px;
   }
   #music h3 {
-    font-size: 175%;
+    font-size: 130%;
     bottom: 92.5px;
   }
   #music .player-controls {
@@ -494,28 +502,26 @@ h3 {
     top: 12.5px;
   }
 }
-@media all and (min-width: 1000px) {
+@media all and (min-width: 800px) {
   #music {
     margin-top: 3vh;
   }
   #background {
-    height: 280px;
-    width: 100%;
+    height: 394px;
+    width: 360px;
     border-radius: 45px;
   }
 
   #music .player-container {
-    height: 280px;
-    // background-color: #000000;
-    // height: 100%;
-    width: 95%;
+    height: 394px;
+    width: 360px;
     border-radius: 45px;
     margin-bottom: 3vh;
   }
 
   #music .img-container {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 240px;
+    max-height: 240px;
     top: -55px;
   }
   #music h2 {

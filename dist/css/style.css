@@ -754,7 +754,6 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  border: 1px solid white;
   width: 70%;
 }
 @media all and (max-width: 1000px) {

@@ -36,7 +36,8 @@ h3 {
   bottom: 0vh;
   z-index: 3;
   width: 100%;
-  height: 90%;
+  max-width: 360px;
+  height: 100%;
   padding: 0;
   position: relative;
   // border: 2px dashed rgb(255, 255, 255);
@@ -60,8 +61,8 @@ h3 {
   // border: 1px solid white;
 }
 #background {
-  height: 280px;
-  width: 355px;
+  height: 100%;
+  max-width: 360px;
   margin: auto;
   object-fit: cover;
   position: relative;
@@ -81,7 +82,7 @@ h3 {
 #music .player-container {
   margin: auto;
   height: 280px;
-  width: 355px;
+  width: 360px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -90,8 +91,8 @@ h3 {
   border-radius: 30px;
 }
 #music .img-container {
-  max-width: 185px;
-  max-height: 185px;
+  width: 185px;
+  height: 185px;
   position: absolute;
   top: -20px;
   display: flex;
@@ -348,6 +349,7 @@ h3 {
   //   max-height: 135px;
   //   top: -25px;
   // }
+
   #music h2 {
     font-size: 400%;
     bottom: 150px;
@@ -369,92 +371,6 @@ h3 {
 }
 /* iPADs TABLET 481px-768px */
 @media all and (min-width: 486px) and (max-width: 610px) {
-  // #background {
-  //   height: 100%;
-  //   width: 100%;
-  //   border-radius: 40px;
-  // }
-  // #music .player-container {
-  //   height: 280px;
-  //   width: 75%;
-  //   border-radius: 40px;
-  // }
-  // #music .img-container {
-  //   max-width: 150px;
-  //   max-height: 150px;
-  //   top: -42px;
-  // }
-  #music h2 {
-    font-size: 390%;
-    bottom: 150px;
-  }
-  #music h3 {
-    font-size: 130%;
-    bottom: 92.5px;
-  }
-  #music .player-controls {
-    bottom: -32px;
-    width: 100px;
-  }
-  #music .fa-forward,
-  #music .fa-backward {
-    font-size: 19px;
-    position: relative;
-    top: -80px;
-  }
-  #music .fa-volume-up,
-  #music .fa-volume-off {
-    font-size: 11px;
-  }
-  #music .main-button {
-    font-size: 21.5px;
-    position: relative;
-    top: -81px;
-  }
-  #music .volumeHolder {
-    width: 190px;
-    bottom: 30px;
-  }
-  #music .volume-bar {
-    position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 5px;
-  }
-  #volume {
-    width: 50%;
-    height: 0.25rem;
-  }
-
-  #music .volumeBtn {
-    top: 12.5px;
-  }
-}
-@media all and (min-width: 611px) {
-  // #background {
-  //   height: 100%;
-  //   width: 100%;
-  //   border-radius: 45px;
-  // }
-  // #music .player-container {
-  //   height: 280px;
-  //   width: 80%;
-  //   border-radius: 45px;
-  // }
-  // #music .img-container {
-  //   max-width: 160px;
-  //   max-height: 160px;
-  //   top: -40px;
-  // }
-  // #music h2 {
-  //   font-size: 450%;
-  //   bottom: 125px;
-  // }
-  // #music h3 {
-  //   font-size: 175%;
-  //   bottom: 92.5px;
-  // }
   #music h2 {
     font-size: 390%;
     bottom: 150px;
@@ -504,38 +420,37 @@ h3 {
 }
 @media all and (min-width: 800px) {
   #music {
-    margin-top: 3vh;
+    // margin-bottom: 1.5rem;
+    position: relative;
+    bottom: 0.15rem;
   }
   #background {
-    height: 394px;
     width: 360px;
-    border-radius: 45px;
+    height: 348px;
+    border-radius: 30px;
   }
-
   #music .player-container {
-    height: 394px;
     width: 360px;
-    border-radius: 45px;
-    margin-bottom: 3vh;
+    height: 348px;
+    border-radius: 30px;
   }
-
   #music .img-container {
-    max-width: 240px;
-    max-height: 240px;
-    top: -55px;
+    width: 200px;
+    height: 200px;
+    top: -40px;
   }
   #music h2 {
     font-weight: 500;
-    font-size: 475%;
-    bottom: 110px;
+    font-size: 450%;
+    bottom: 140px;
   }
   #music h3 {
     font-weight: 600;
     font-size: 180%;
-    bottom: 75px;
+    bottom: 100px;
   }
   #music .progress-container {
-    bottom: 68px;
+    bottom: 88px;
     height: 0.4rem;
     width: 80%;
   }
@@ -545,7 +460,7 @@ h3 {
     width: 0%;
   }
   #music .player-controls {
-    bottom: -43px;
+    bottom: -25px;
     width: 110px;
   }
   #music .fa-forward,
@@ -571,7 +486,7 @@ h3 {
   }
   #music .volumeHolder {
     width: 200px;
-    bottom: 25px;
+    bottom: 40px;
   }
   #music .volume-bar {
     position: absolute;

@@ -198,12 +198,12 @@ p {
 }
 #navbar .logo .jP {
   filter: drop-shadow(0px 0px 10px rgba(2, 154, 162, 0.25));
-  height: 55%;
+  height: 50%;
   scale: 0.7;
   width: auto;
   position: absolute;
-  top: 50%;
-  transform: translate(-35%, -50%);
+  top: 38%;
+  transform: translate(-40%, -50%);
   stroke-dasharray: 40;
   stroke-dashoffset: 100;
   animation: dash 4s infinite alternate;

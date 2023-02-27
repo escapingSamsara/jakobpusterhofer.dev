@@ -28,12 +28,12 @@ https://docs.google.com/uc?export=download&id=1_zuMc6KCqCrN7o8cvUU1I-NT58U1ra0Q 
 https://docs.google.com/uc?export=download&id=1aEJ2GpUv2Ge10NOLlK8ow9u0bxLe2iyJ   *tulip
 IMAGES FOR SONGS WITH DIRECT DOWNLOAD LINK FROM GOOGLE DRIVE
 https://docs.google.com/uc?export=download&id=1J1BIg_tfi7EHnb9yZssSTECN5kZ2Ph-H  *lost tape
-https://docs.google.com/uc?export=download&id=11XRdNATAeM-QKTiNbNqhb25Cdsey2KZX  *vanilla ice cream
+https://drive.google.com/uc?export=download&id=1whXEVW5e4LHct4l0dU0LOvGebf8bBVt0  *vanilla ice cream
 https://docs.google.com/uc?export=download&id=1fOl0nk2axCXig9STCnsCh_utJCG8lt8r   *through the forest
 https://docs.google.com/uc?export=download&id=1FDxXqUxkwt-HWk1uEo0Vt8l82zs3H3z2  *today is a gift
-https://docs.google.com/uc?export=download&id=14vrB6AKaF6sNx7zT4kNoKboVAAQfC541  *the message
+https://drive.google.com/uc?export=download&id=14vrB6AKaF6sNx7zT4kNoKboVAAQfC541  *the message
 https://docs.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h   *float
-https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2  *tulip
+https://drive.google.com/file/d/1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2/view?usp=share_link  *tulip
 */
 //SONG ARRAY (PLAYER SONG LIST)
 const songs = [
@@ -44,7 +44,7 @@ const songs = [
     artist: 'escapingSamsara',
     // cover: '../webplayer_portfolio/img/song-img/compressedSongImg/tulip.png',
     cover:
-      'https://docs.google.com/uc?export=download&id=1mpyFj7rlv47GLzIoHVcH0R14MSn4dzn2',
+      'https://drive.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
   },
   {
     // path: '../webplayer_portfolio/audioFiles/float_mastered_v1.mp3',
@@ -53,7 +53,7 @@ const songs = [
     artist: 'escapingSamsara',
     // cover: '../webplayer_portfolio/img/song-img/compressedSongImg/float.jpg',
     cover:
-      'https://docs.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
+      'https://drive.google.com/uc?export=download&id=14mKEEEw-OJH4tCtXU6zM__eX-ZnBuD4h',
   },
   {
     // path: '../webplayer_portfolio/audioFiles/todayisagift_audio.mp3',
@@ -77,7 +77,7 @@ const songs = [
   },
   {
     // path: '../webplayer_portfolio/audioFiles/vanillaicecream_audio.mp3',
-    path: 'https://docs.google.com/uc?export=download&id=17h8mMXdi6tsgT2TAS9XfvbX6eLOnUfPa',
+    path: 'https://drive.google.com/uc?export=download&id=1whXEVW5e4LHct4l0dU0LOvGebf8bBVt0',
     musicName: 'vanilla icecream',
     artist: 'escapingSamsara',
     // cover:

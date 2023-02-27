@@ -2284,7 +2284,7 @@ p {
   :root {
     --marquee3-width: 100vw;
     --marquee3-height: 10vh;
-    --marquee3-elements-displayed: 1;
+    --marquee3-elements-displayed: 2;
   }
 }
 #footerWrapper {

@@ -1,7 +1,4 @@
 window.addEventListener('load', function () {
-  //initializing API from https://openweathermap.org/ via registered API Key
-  // https://api.openweathermap.org/data/2.5/weather?q=Graz&units=metric&lang=en&appid=bf1b245c3eb80c2eff8fdafb1d0ad17f
-  //---------------------------------------------------------------------------------------------------
   let weather = {
     apiKey: config.WEATHER_API_KEY,
     fetchWeather: function fetchWeather(city) {

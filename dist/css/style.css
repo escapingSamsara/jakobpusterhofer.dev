@@ -1679,16 +1679,11 @@ p {
   align-items: center;
 }
 #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
-  padding-top: 4vh;
+  padding-top: 8vh;
 }
-@media all and (max-width: 800px) {
+@media all and (min-width: 800px) {
   #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
-    padding-top: 8vh;
-  }
-}
-@media all and (min-width: 1315px) {
-  #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text {
-    padding-top: 0;
+    padding-top: 10vh;
   }
 }
 #portfolioWrapperWidgets .portfolioWidgets_Grid .portfolioWidgetsContentBox_Text .appContainerText {

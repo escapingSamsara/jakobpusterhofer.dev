@@ -1612,12 +1612,9 @@ p {
       }
     }
     .portfolioWidgetsContentBox_Text {
-      padding-top: 4vh;
-      @media all and (max-width: 800px) {
-        padding-top: 8vh;
-      }
-      @media all and (min-width: 1315px) {
-        padding-top: 0;
+      padding-top: 8vh;
+      @media all and (min-width: 800px) {
+        padding-top: 10vh;
       }
       .appContainerText {
         display: flex;

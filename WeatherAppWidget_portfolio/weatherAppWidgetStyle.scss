@@ -35,7 +35,7 @@ $secondaryFont: 'Raleway', monospace;
     color: $primaryColor;
     font-family: $mainFont;
     @media all and (min-width: 800px) {
-      height: 260px;
+      height: 300px;
     }
     &::after {
       border-radius: 30px;

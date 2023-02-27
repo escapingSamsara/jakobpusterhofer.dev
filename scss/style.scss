@@ -68,7 +68,7 @@ p {
   position: fixed;
   z-index: 1000;
   background-color: $bgColor;
-  transition: all 3s ease-in-out;
+  transition: all 5s linear;
   .overlay {
     position: fixed;
     top: 0;
@@ -82,7 +82,7 @@ p {
       width: 100%;
       height: 100vh;
       padding: 1%;
-      animation: fadeOut 3s linear forwards 3s;
+      animation: fadeOut 5s linear forwards 4s;
       @keyframes fadeOut {
         0% {
           opacity: 1;
@@ -119,7 +119,7 @@ p {
   }
   .preload-finish {
     opacity: 0;
-    transition: all 2s ease-in-out;
+    transition: all 4s ease-in-out;
   }
 }
 //////////////////////////////////////////////

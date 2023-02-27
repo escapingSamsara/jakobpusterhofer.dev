@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
   const preload = document.getElementById('preloader')
   this.setTimeout(function () {
     preload.classList.add('preload-finish')
-  }, 50)
+  }, 60)
   this.setTimeout(function () {
     preload.style.display = 'none'
   }, 100)

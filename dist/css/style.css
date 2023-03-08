@@ -421,7 +421,7 @@ p {
   display: flex;
   height: 20vh;
   width: 100vw;
-  padding: 8vh 0 0 7vw;
+  padding: 8vh 0 0 8vw;
   z-index: 100;
 }
 #aboutWrapper .aboutHeader h2 {
@@ -1074,7 +1074,7 @@ p {
 #portfolioWrapper1 .portfolioHeader {
   height: 20vh;
   width: 100vw;
-  padding: 8vh 0 0 7vw;
+  padding: 8vh 0 0 8vw;
 }
 #portfolioWrapper1 .portfolioHeader h2 {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
@@ -1773,7 +1773,7 @@ p {
 #contactWrapper .contactContainer .contactHeader .contactHeaderBox {
   display: flex;
   height: 100%;
-  padding: 8vh 0 0 7vw;
+  padding: 8vh 0 0 8vw;
 }
 #contactWrapper .contactContainer .contactHeader .contactHeaderBox h2 {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
